@@ -1,0 +1,112 @@
+Run embedding with queries /home/liuzhuan/rag/benchmark/21st_strip.txt, 1 users...
+===== 请求统计结果 =====
+总请求数: 11129
+成功率: 100.00%
+错误率: 0.00%
+QPS: 18.55 请求/秒
+总耗时: 600.08 秒
+===== First Chunk 统计 =====
+平均值: 0.0537s
+中位数: 0.0484s
+P90: 0.0895s
+P95: 0.0966s
+===== Question Length 统计 =====
+最小值: 3
+最大值: 976
+平均值: 168.53
+Run embedding with queries /home/liuzhuan/rag/benchmark/21st_strip.txt, 4 users...
+===== 请求统计结果 =====
+总请求数: 11809
+成功率: 100.00%
+错误率: 0.00%
+QPS: 19.68 请求/秒
+总耗时: 600.07 秒
+===== First Chunk 统计 =====
+平均值: 0.2024s
+中位数: 0.1986s
+P90: 0.2954s
+P95: 0.3186s
+===== Question Length 统计 =====
+最小值: 3
+最大值: 976
+平均值: 168.74
+Run embedding with queries /home/liuzhuan/rag/benchmark/21st_strip.txt, 8 users...
+===== 请求统计结果 =====
+总请求数: 12934
+成功率: 100.00%
+错误率: 0.00%
+QPS: 21.55 请求/秒
+总耗时: 600.11 秒
+===== First Chunk 统计 =====
+平均值: 0.3681s
+中位数: 0.3778s
+P90: 0.5086s
+P95: 0.5417s
+===== Question Length 统计 =====
+最小值: 3
+最大值: 976
+平均值: 170.83
+Run embedding with queries /home/liuzhuan/rag/benchmark/21st_strip.txt, 16 users...
+===== 请求统计结果 =====
+总请求数: 13455
+成功率: 100.00%
+错误率: 0.00%
+QPS: 22.42 请求/秒
+总耗时: 600.13 秒
+===== First Chunk 统计 =====
+平均值: 0.7027s
+中位数: 0.7370s
+P90: 0.9240s
+P95: 0.9622s
+===== Question Length 统计 =====
+最小值: 3
+最大值: 976
+平均值: 171.04
+Run embedding with queries /home/liuzhuan/rag/benchmark/21st_strip.txt, 32 users...
+===== 请求统计结果 =====
+总请求数: 12711
+成功率: 100.00%
+错误率: 0.00%
+QPS: 21.18 请求/秒
+总耗时: 600.16 秒
+===== First Chunk 统计 =====
+平均值: 1.4655s
+中位数: 1.5347s
+P90: 1.9079s
+P95: 1.9364s
+===== Question Length 统计 =====
+最小值: 3
+最大值: 976
+平均值: 171.57
+Run embedding with queries /home/liuzhuan/rag/benchmark/21st_strip.txt, 48 users...
+===== 请求统计结果 =====
+总请求数: 12370
+成功率: 100.00%
+错误率: 0.00%
+QPS: 20.61 请求/秒
+总耗时: 600.07 秒
+===== First Chunk 统计 =====
+平均值: 2.2255s
+中位数: 2.3567s
+P90: 2.8359s
+P95: 2.8829s
+===== Question Length 统计 =====
+最小值: 3
+最大值: 976
+平均值: 169.88
+Run embedding with queries /home/liuzhuan/rag/benchmark/21st_strip.txt, 64 users...
+===== 请求统计结果 =====
+总请求数: 11941
+成功率: 100.00%
+错误率: 0.00%
+QPS: 19.89 请求/秒
+总耗时: 600.21 秒
+===== First Chunk 统计 =====
+平均值: 3.0318s
+中位数: 3.2650s
+P90: 3.7612s
+P95: 3.8385s
+===== Question Length 统计 =====
+最小值: 3
+最大值: 976
+平均值: 168.68

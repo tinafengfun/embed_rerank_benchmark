@@ -1,0 +1,29 @@
+# Copyright (C) 2025 Intel Corporation
+# SPDX-License-Identifier: Apache-2.0
+# image: ghcr.io/huggingface/text-embeddings-inference:cpu-1.6
+
+services:
+  tei-reranking-serving:
+    image: appliedmlwf/tei-cpu:bytedance
+    container_name: tei-reranking-serving
+    entrypoint: /bin/sh -c "apt-get update && apt-get install -y curl && text-embeddings-router --json-output --model-id ${RERANK_MODEL_ID} --auto-truncate"
+    pull_policy: never
+    ports:
+      - "${TEI_RERANKING_PORT:-12003}:80"
+    volumes:
+      - "${DATA_PATH:-./data}:/data"
+    shm_size: 1g
+    cpuset: "24-55,136-167"
+    environment:
+      no_proxy: ${no_proxy}
+      http_proxy: ${http_proxy}
+      https_proxy: ${https_proxy}
+      host_ip: ${host_ip}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/health"]
+      interval: 10s
+      timeout: 6s
+      retries: 48
+
+
+

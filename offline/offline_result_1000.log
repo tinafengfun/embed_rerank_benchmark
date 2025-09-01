@@ -1,0 +1,2945 @@
+test model bge-base-zh-v1.5, batch 1
+[W623 07:23:46.276250154 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_addmm_activation(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1, bool use_gelu=False) -> Tensor
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: AutocastCPU
+  previous kernel: registered at /pytorch/aten/src/ATen/autocast_mode.cpp:327
+       new kernel: registered at /opt/workspace/ipex-cpu-dev/csrc/cpu/autocast/autocast_mode.cpp:112 (function operator())
+Using CPU device
+Traceback (most recent call last):
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 190, in <module>
+    benchmark(args.input, args.model, args.device, args.batch)
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 109, in benchmark
+    outputs = model(**padding_data)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 952, in forward
+    embedding_output = self.embeddings(
+                       ^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 184, in forward
+    embeddings += position_embeddings
+RuntimeError: The size of tensor a (1024) must match the size of tensor b (512) at non-singleton dimension 1
+complete test model bge-base-zh-v1.5, batch 1
+test model bge-base-zh-v1.5, batch 4
+[W623 07:23:51.772922015 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_addmm_activation(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1, bool use_gelu=False) -> Tensor
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: AutocastCPU
+  previous kernel: registered at /pytorch/aten/src/ATen/autocast_mode.cpp:327
+       new kernel: registered at /opt/workspace/ipex-cpu-dev/csrc/cpu/autocast/autocast_mode.cpp:112 (function operator())
+Using CPU device
+Traceback (most recent call last):
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 190, in <module>
+    benchmark(args.input, args.model, args.device, args.batch)
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 109, in benchmark
+    outputs = model(**padding_data)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 952, in forward
+    embedding_output = self.embeddings(
+                       ^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 184, in forward
+    embeddings += position_embeddings
+RuntimeError: The size of tensor a (1024) must match the size of tensor b (512) at non-singleton dimension 1
+complete test model bge-base-zh-v1.5, batch 4
+test model bge-base-zh-v1.5, batch 8
+[W623 07:23:55.250072124 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_addmm_activation(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1, bool use_gelu=False) -> Tensor
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: AutocastCPU
+  previous kernel: registered at /pytorch/aten/src/ATen/autocast_mode.cpp:327
+       new kernel: registered at /opt/workspace/ipex-cpu-dev/csrc/cpu/autocast/autocast_mode.cpp:112 (function operator())
+Using CPU device
+Traceback (most recent call last):
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 190, in <module>
+    benchmark(args.input, args.model, args.device, args.batch)
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 109, in benchmark
+    outputs = model(**padding_data)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 952, in forward
+    embedding_output = self.embeddings(
+                       ^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 184, in forward
+    embeddings += position_embeddings
+RuntimeError: The size of tensor a (1024) must match the size of tensor b (512) at non-singleton dimension 1
+complete test model bge-base-zh-v1.5, batch 8
+test model bge-base-zh-v1.5, batch 16
+[W623 07:24:00.731801006 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_addmm_activation(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1, bool use_gelu=False) -> Tensor
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: AutocastCPU
+  previous kernel: registered at /pytorch/aten/src/ATen/autocast_mode.cpp:327
+       new kernel: registered at /opt/workspace/ipex-cpu-dev/csrc/cpu/autocast/autocast_mode.cpp:112 (function operator())
+Using CPU device
+Traceback (most recent call last):
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 190, in <module>
+    benchmark(args.input, args.model, args.device, args.batch)
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 109, in benchmark
+    outputs = model(**padding_data)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 952, in forward
+    embedding_output = self.embeddings(
+                       ^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 184, in forward
+    embeddings += position_embeddings
+RuntimeError: The size of tensor a (1024) must match the size of tensor b (512) at non-singleton dimension 1
+complete test model bge-base-zh-v1.5, batch 16
+test model bge-base-zh-v1.5, batch 32
+[W623 07:24:04.250548841 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_addmm_activation(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1, bool use_gelu=False) -> Tensor
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: AutocastCPU
+  previous kernel: registered at /pytorch/aten/src/ATen/autocast_mode.cpp:327
+       new kernel: registered at /opt/workspace/ipex-cpu-dev/csrc/cpu/autocast/autocast_mode.cpp:112 (function operator())
+Using CPU device
+Traceback (most recent call last):
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 190, in <module>
+    benchmark(args.input, args.model, args.device, args.batch)
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 109, in benchmark
+    outputs = model(**padding_data)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 952, in forward
+    embedding_output = self.embeddings(
+                       ^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 184, in forward
+    embeddings += position_embeddings
+RuntimeError: The size of tensor a (1024) must match the size of tensor b (512) at non-singleton dimension 1
+complete test model bge-base-zh-v1.5, batch 32
+test model bge-base-zh-v1.5, batch 64
+[W623 07:24:09.778463734 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_addmm_activation(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1, bool use_gelu=False) -> Tensor
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: AutocastCPU
+  previous kernel: registered at /pytorch/aten/src/ATen/autocast_mode.cpp:327
+       new kernel: registered at /opt/workspace/ipex-cpu-dev/csrc/cpu/autocast/autocast_mode.cpp:112 (function operator())
+Using CPU device
+Traceback (most recent call last):
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 190, in <module>
+    benchmark(args.input, args.model, args.device, args.batch)
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 109, in benchmark
+    outputs = model(**padding_data)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 952, in forward
+    embedding_output = self.embeddings(
+                       ^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 184, in forward
+    embeddings += position_embeddings
+RuntimeError: The size of tensor a (1024) must match the size of tensor b (512) at non-singleton dimension 1
+complete test model bge-base-zh-v1.5, batch 64
+test model bge-large-zh-v1.5, batch 1
+[W623 07:24:13.355688199 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_addmm_activation(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1, bool use_gelu=False) -> Tensor
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: AutocastCPU
+  previous kernel: registered at /pytorch/aten/src/ATen/autocast_mode.cpp:327
+       new kernel: registered at /opt/workspace/ipex-cpu-dev/csrc/cpu/autocast/autocast_mode.cpp:112 (function operator())
+Using CPU device
+Traceback (most recent call last):
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 190, in <module>
+    benchmark(args.input, args.model, args.device, args.batch)
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 109, in benchmark
+    outputs = model(**padding_data)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 952, in forward
+    embedding_output = self.embeddings(
+                       ^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 184, in forward
+    embeddings += position_embeddings
+RuntimeError: The size of tensor a (1024) must match the size of tensor b (512) at non-singleton dimension 1
+complete test model bge-large-zh-v1.5, batch 1
+test model bge-large-zh-v1.5, batch 4
+[W623 07:24:18.260791021 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_addmm_activation(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1, bool use_gelu=False) -> Tensor
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: AutocastCPU
+  previous kernel: registered at /pytorch/aten/src/ATen/autocast_mode.cpp:327
+       new kernel: registered at /opt/workspace/ipex-cpu-dev/csrc/cpu/autocast/autocast_mode.cpp:112 (function operator())
+Using CPU device
+Traceback (most recent call last):
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 190, in <module>
+    benchmark(args.input, args.model, args.device, args.batch)
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 109, in benchmark
+    outputs = model(**padding_data)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 952, in forward
+    embedding_output = self.embeddings(
+                       ^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 184, in forward
+    embeddings += position_embeddings
+RuntimeError: The size of tensor a (1024) must match the size of tensor b (512) at non-singleton dimension 1
+complete test model bge-large-zh-v1.5, batch 4
+test model bge-large-zh-v1.5, batch 8
+[W623 07:24:23.133334775 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_addmm_activation(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1, bool use_gelu=False) -> Tensor
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: AutocastCPU
+  previous kernel: registered at /pytorch/aten/src/ATen/autocast_mode.cpp:327
+       new kernel: registered at /opt/workspace/ipex-cpu-dev/csrc/cpu/autocast/autocast_mode.cpp:112 (function operator())
+Using CPU device
+Traceback (most recent call last):
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 190, in <module>
+    benchmark(args.input, args.model, args.device, args.batch)
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 109, in benchmark
+    outputs = model(**padding_data)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 952, in forward
+    embedding_output = self.embeddings(
+                       ^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 184, in forward
+    embeddings += position_embeddings
+RuntimeError: The size of tensor a (1024) must match the size of tensor b (512) at non-singleton dimension 1
+complete test model bge-large-zh-v1.5, batch 8
+test model bge-large-zh-v1.5, batch 16
+[W623 07:24:28.044071074 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_addmm_activation(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1, bool use_gelu=False) -> Tensor
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: AutocastCPU
+  previous kernel: registered at /pytorch/aten/src/ATen/autocast_mode.cpp:327
+       new kernel: registered at /opt/workspace/ipex-cpu-dev/csrc/cpu/autocast/autocast_mode.cpp:112 (function operator())
+Using CPU device
+Traceback (most recent call last):
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 190, in <module>
+    benchmark(args.input, args.model, args.device, args.batch)
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 109, in benchmark
+    outputs = model(**padding_data)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 952, in forward
+    embedding_output = self.embeddings(
+                       ^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 184, in forward
+    embeddings += position_embeddings
+RuntimeError: The size of tensor a (1024) must match the size of tensor b (512) at non-singleton dimension 1
+complete test model bge-large-zh-v1.5, batch 16
+test model bge-large-zh-v1.5, batch 32
+[W623 07:24:33.976307096 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_addmm_activation(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1, bool use_gelu=False) -> Tensor
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: AutocastCPU
+  previous kernel: registered at /pytorch/aten/src/ATen/autocast_mode.cpp:327
+       new kernel: registered at /opt/workspace/ipex-cpu-dev/csrc/cpu/autocast/autocast_mode.cpp:112 (function operator())
+Using CPU device
+Traceback (most recent call last):
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 190, in <module>
+    benchmark(args.input, args.model, args.device, args.batch)
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 109, in benchmark
+    outputs = model(**padding_data)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 952, in forward
+    embedding_output = self.embeddings(
+                       ^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 184, in forward
+    embeddings += position_embeddings
+RuntimeError: The size of tensor a (1024) must match the size of tensor b (512) at non-singleton dimension 1
+complete test model bge-large-zh-v1.5, batch 32
+test model bge-large-zh-v1.5, batch 64
+[W623 07:24:38.900467743 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_addmm_activation(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1, bool use_gelu=False) -> Tensor
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: AutocastCPU
+  previous kernel: registered at /pytorch/aten/src/ATen/autocast_mode.cpp:327
+       new kernel: registered at /opt/workspace/ipex-cpu-dev/csrc/cpu/autocast/autocast_mode.cpp:112 (function operator())
+Using CPU device
+Traceback (most recent call last):
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 190, in <module>
+    benchmark(args.input, args.model, args.device, args.batch)
+  File "/home/liuzhuan/rag/benchmark_gaudi/offline/benchmark_embedding_bge_offline.py", line 109, in benchmark
+    outputs = model(**padding_data)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 952, in forward
+    embedding_output = self.embeddings(
+                       ^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuzhuan/rag/benchmark_gaudi/myenv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 184, in forward
+    embeddings += position_embeddings
+RuntimeError: The size of tensor a (1024) must match the size of tensor b (512) at non-singleton dimension 1
+complete test model bge-large-zh-v1.5, batch 64
+test model bge-m3, batch 1
+[W623 07:24:43.865196196 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_addmm_activation(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1, bool use_gelu=False) -> Tensor
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: AutocastCPU
+  previous kernel: registered at /pytorch/aten/src/ATen/autocast_mode.cpp:327
+       new kernel: registered at /opt/workspace/ipex-cpu-dev/csrc/cpu/autocast/autocast_mode.cpp:112 (function operator())
+Using CPU device
+Starting benchmark with 321 texts...
+
+Processing batch #1 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0855s (tokenize: 0.0022s, model: 0.0833s)
+  Throughput: 11.69 texts/sec | 11972.37 tokens/sec
+
+Processing batch #2 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0850s (tokenize: 0.0022s, model: 0.0828s)
+  Throughput: 11.76 texts/sec | 12040.13 tokens/sec
+
+Processing batch #3 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0845s (tokenize: 0.0029s, model: 0.0816s)
+  Throughput: 11.84 texts/sec | 12121.96 tokens/sec
+
+Processing batch #4 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0820s (tokenize: 0.0028s, model: 0.0792s)
+  Throughput: 12.20 texts/sec | 12489.91 tokens/sec
+
+Processing batch #5 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0917s (tokenize: 0.0027s, model: 0.0890s)
+  Throughput: 10.91 texts/sec | 11171.20 tokens/sec
+
+Processing batch #6 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0850s (tokenize: 0.0030s, model: 0.0819s)
+  Throughput: 11.77 texts/sec | 12053.78 tokens/sec
+
+Processing batch #7 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0824s (tokenize: 0.0029s, model: 0.0795s)
+  Throughput: 12.14 texts/sec | 12429.33 tokens/sec
+
+Processing batch #8 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0841s (tokenize: 0.0026s, model: 0.0815s)
+  Throughput: 11.89 texts/sec | 12176.29 tokens/sec
+
+Processing batch #9 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0847s (tokenize: 0.0027s, model: 0.0820s)
+  Throughput: 11.81 texts/sec | 12090.33 tokens/sec
+
+Processing batch #10 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0838s (tokenize: 0.0027s, model: 0.0811s)
+  Throughput: 11.93 texts/sec | 12215.70 tokens/sec
+
+Processing batch #11 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0822s (tokenize: 0.0030s, model: 0.0792s)
+  Throughput: 12.17 texts/sec | 12458.89 tokens/sec
+
+Processing batch #12 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0839s (tokenize: 0.0024s, model: 0.0816s)
+  Throughput: 11.91 texts/sec | 12199.53 tokens/sec
+
+Processing batch #13 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0817s (tokenize: 0.0027s, model: 0.0790s)
+  Throughput: 12.25 texts/sec | 12541.19 tokens/sec
+
+Processing batch #14 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0816s (tokenize: 0.0025s, model: 0.0792s)
+  Throughput: 12.25 texts/sec | 12544.48 tokens/sec
+
+Processing batch #15 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0838s (tokenize: 0.0024s, model: 0.0814s)
+  Throughput: 11.93 texts/sec | 12220.53 tokens/sec
+
+Processing batch #16 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0839s (tokenize: 0.0023s, model: 0.0816s)
+  Throughput: 11.91 texts/sec | 12199.39 tokens/sec
+
+Processing batch #17 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0843s (tokenize: 0.0024s, model: 0.0819s)
+  Throughput: 11.87 texts/sec | 12152.24 tokens/sec
+
+Processing batch #18 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0820s (tokenize: 0.0026s, model: 0.0794s)
+  Throughput: 12.19 texts/sec | 12486.97 tokens/sec
+
+Processing batch #19 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0819s (tokenize: 0.0026s, model: 0.0793s)
+  Throughput: 12.21 texts/sec | 12501.03 tokens/sec
+
+Processing batch #20 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0819s (tokenize: 0.0026s, model: 0.0792s)
+  Throughput: 12.22 texts/sec | 12508.28 tokens/sec
+
+Processing batch #21 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0819s (tokenize: 0.0027s, model: 0.0791s)
+  Throughput: 12.22 texts/sec | 12509.95 tokens/sec
+
+Processing batch #22 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0819s (tokenize: 0.0028s, model: 0.0792s)
+  Throughput: 12.21 texts/sec | 12498.30 tokens/sec
+
+Processing batch #23 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0822s (tokenize: 0.0028s, model: 0.0794s)
+  Throughput: 12.16 texts/sec | 12455.35 tokens/sec
+
+Processing batch #24 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0823s (tokenize: 0.0029s, model: 0.0793s)
+  Throughput: 12.16 texts/sec | 12449.29 tokens/sec
+
+Processing batch #25 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0842s (tokenize: 0.0026s, model: 0.0817s)
+  Throughput: 11.87 texts/sec | 12156.37 tokens/sec
+
+Processing batch #26 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0817s (tokenize: 0.0028s, model: 0.0789s)
+  Throughput: 12.24 texts/sec | 12538.51 tokens/sec
+
+Processing batch #27 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0865s (tokenize: 0.0047s, model: 0.0818s)
+  Throughput: 11.56 texts/sec | 11838.98 tokens/sec
+
+Processing batch #28 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0877s (tokenize: 0.0042s, model: 0.0835s)
+  Throughput: 11.40 texts/sec | 11676.63 tokens/sec
+
+Processing batch #29 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0856s (tokenize: 0.0040s, model: 0.0816s)
+  Throughput: 11.68 texts/sec | 11959.80 tokens/sec
+
+Processing batch #30 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0860s (tokenize: 0.0039s, model: 0.0822s)
+  Throughput: 11.62 texts/sec | 11902.13 tokens/sec
+
+Processing batch #31 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0861s (tokenize: 0.0037s, model: 0.0824s)
+  Throughput: 11.62 texts/sec | 11898.70 tokens/sec
+
+Processing batch #32 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0830s (tokenize: 0.0033s, model: 0.0797s)
+  Throughput: 12.05 texts/sec | 12340.87 tokens/sec
+
+Processing batch #33 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0831s (tokenize: 0.0029s, model: 0.0803s)
+  Throughput: 12.03 texts/sec | 12316.02 tokens/sec
+
+Processing batch #34 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0843s (tokenize: 0.0026s, model: 0.0817s)
+  Throughput: 11.86 texts/sec | 12144.65 tokens/sec
+
+Processing batch #35 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0830s (tokenize: 0.0029s, model: 0.0801s)
+  Throughput: 12.05 texts/sec | 12334.13 tokens/sec
+
+Processing batch #36 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0821s (tokenize: 0.0028s, model: 0.0793s)
+  Throughput: 12.18 texts/sec | 12470.72 tokens/sec
+
+Processing batch #37 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0845s (tokenize: 0.0026s, model: 0.0818s)
+  Throughput: 11.84 texts/sec | 12125.04 tokens/sec
+
+Processing batch #38 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0849s (tokenize: 0.0029s, model: 0.0820s)
+  Throughput: 11.77 texts/sec | 12054.73 tokens/sec
+
+Processing batch #39 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0821s (tokenize: 0.0029s, model: 0.0793s)
+  Throughput: 12.17 texts/sec | 12465.73 tokens/sec
+
+Processing batch #40 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0829s (tokenize: 0.0028s, model: 0.0801s)
+  Throughput: 12.06 texts/sec | 12351.80 tokens/sec
+
+Processing batch #41 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0854s (tokenize: 0.0027s, model: 0.0827s)
+  Throughput: 11.70 texts/sec | 11985.83 tokens/sec
+
+Processing batch #42 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0851s (tokenize: 0.0034s, model: 0.0818s)
+  Throughput: 11.74 texts/sec | 12026.07 tokens/sec
+
+Processing batch #43 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0827s (tokenize: 0.0031s, model: 0.0796s)
+  Throughput: 12.10 texts/sec | 12386.35 tokens/sec
+
+Processing batch #44 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0841s (tokenize: 0.0024s, model: 0.0817s)
+  Throughput: 11.89 texts/sec | 12170.25 tokens/sec
+
+Processing batch #45 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0819s (tokenize: 0.0027s, model: 0.0792s)
+  Throughput: 12.21 texts/sec | 12504.56 tokens/sec
+
+Processing batch #46 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0832s (tokenize: 0.0028s, model: 0.0804s)
+  Throughput: 12.02 texts/sec | 12305.37 tokens/sec
+
+Processing batch #47 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0822s (tokenize: 0.0027s, model: 0.0795s)
+  Throughput: 12.16 texts/sec | 12453.01 tokens/sec
+
+Processing batch #48 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0826s (tokenize: 0.0028s, model: 0.0798s)
+  Throughput: 12.11 texts/sec | 12397.94 tokens/sec
+
+Processing batch #49 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0826s (tokenize: 0.0025s, model: 0.0800s)
+  Throughput: 12.11 texts/sec | 12399.30 tokens/sec
+
+Processing batch #50 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0827s (tokenize: 0.0027s, model: 0.0800s)
+  Throughput: 12.09 texts/sec | 12380.42 tokens/sec
+
+Processing batch #51 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0831s (tokenize: 0.0027s, model: 0.0803s)
+  Throughput: 12.04 texts/sec | 12326.24 tokens/sec
+
+Processing batch #52 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0830s (tokenize: 0.0027s, model: 0.0803s)
+  Throughput: 12.05 texts/sec | 12338.31 tokens/sec
+
+Processing batch #53 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0856s (tokenize: 0.0027s, model: 0.0829s)
+  Throughput: 11.69 texts/sec | 11969.37 tokens/sec
+
+Processing batch #54 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0840s (tokenize: 0.0026s, model: 0.0814s)
+  Throughput: 11.91 texts/sec | 12192.74 tokens/sec
+
+Processing batch #55 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0822s (tokenize: 0.0026s, model: 0.0797s)
+  Throughput: 12.16 texts/sec | 12449.94 tokens/sec
+
+Processing batch #56 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0849s (tokenize: 0.0024s, model: 0.0825s)
+  Throughput: 11.77 texts/sec | 12056.32 tokens/sec
+
+Processing batch #57 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0816s (tokenize: 0.0024s, model: 0.0792s)
+  Throughput: 12.25 texts/sec | 12546.17 tokens/sec
+
+Processing batch #58 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0844s (tokenize: 0.0024s, model: 0.0819s)
+  Throughput: 11.86 texts/sec | 12139.74 tokens/sec
+
+Processing batch #59 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0849s (tokenize: 0.0028s, model: 0.0822s)
+  Throughput: 11.77 texts/sec | 12055.78 tokens/sec
+
+Processing batch #60 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0848s (tokenize: 0.0022s, model: 0.0825s)
+  Throughput: 11.79 texts/sec | 12077.03 tokens/sec
+
+Processing batch #61 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0846s (tokenize: 0.0023s, model: 0.0823s)
+  Throughput: 11.82 texts/sec | 12102.73 tokens/sec
+
+Processing batch #62 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0833s (tokenize: 0.0025s, model: 0.0808s)
+  Throughput: 12.01 texts/sec | 12296.56 tokens/sec
+
+Processing batch #63 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0819s (tokenize: 0.0025s, model: 0.0794s)
+  Throughput: 12.22 texts/sec | 12508.50 tokens/sec
+
+Processing batch #64 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0822s (tokenize: 0.0026s, model: 0.0796s)
+  Throughput: 12.17 texts/sec | 12461.43 tokens/sec
+
+Processing batch #65 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0872s (tokenize: 0.0025s, model: 0.0846s)
+  Throughput: 11.47 texts/sec | 11747.88 tokens/sec
+
+Processing batch #66 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0847s (tokenize: 0.0021s, model: 0.0826s)
+  Throughput: 11.80 texts/sec | 12083.18 tokens/sec
+
+Processing batch #67 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0836s (tokenize: 0.0023s, model: 0.0813s)
+  Throughput: 11.96 texts/sec | 12248.34 tokens/sec
+
+Processing batch #68 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0844s (tokenize: 0.0021s, model: 0.0823s)
+  Throughput: 11.85 texts/sec | 12136.28 tokens/sec
+
+Processing batch #69 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0841s (tokenize: 0.0025s, model: 0.0816s)
+  Throughput: 11.89 texts/sec | 12180.16 tokens/sec
+
+Processing batch #70 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0834s (tokenize: 0.0026s, model: 0.0808s)
+  Throughput: 11.99 texts/sec | 12274.95 tokens/sec
+
+Processing batch #71 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0838s (tokenize: 0.0026s, model: 0.0812s)
+  Throughput: 11.94 texts/sec | 12222.76 tokens/sec
+
+Processing batch #72 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0837s (tokenize: 0.0023s, model: 0.0814s)
+  Throughput: 11.95 texts/sec | 12237.70 tokens/sec
+
+Processing batch #73 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0825s (tokenize: 0.0027s, model: 0.0798s)
+  Throughput: 12.12 texts/sec | 12407.00 tokens/sec
+
+Processing batch #74 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0841s (tokenize: 0.0025s, model: 0.0816s)
+  Throughput: 11.89 texts/sec | 12178.33 tokens/sec
+
+Processing batch #75 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0837s (tokenize: 0.0023s, model: 0.0813s)
+  Throughput: 11.95 texts/sec | 12236.44 tokens/sec
+
+Processing batch #76 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0848s (tokenize: 0.0024s, model: 0.0824s)
+  Throughput: 11.79 texts/sec | 12068.82 tokens/sec
+
+Processing batch #77 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0870s (tokenize: 0.0023s, model: 0.0847s)
+  Throughput: 11.50 texts/sec | 11771.87 tokens/sec
+
+Processing batch #78 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0853s (tokenize: 0.0023s, model: 0.0830s)
+  Throughput: 11.73 texts/sec | 12008.05 tokens/sec
+
+Processing batch #79 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0844s (tokenize: 0.0023s, model: 0.0821s)
+  Throughput: 11.84 texts/sec | 12127.02 tokens/sec
+
+Processing batch #80 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0837s (tokenize: 0.0023s, model: 0.0814s)
+  Throughput: 11.95 texts/sec | 12237.66 tokens/sec
+
+Processing batch #81 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0843s (tokenize: 0.0022s, model: 0.0822s)
+  Throughput: 11.86 texts/sec | 12144.99 tokens/sec
+
+Processing batch #82 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0835s (tokenize: 0.0022s, model: 0.0812s)
+  Throughput: 11.98 texts/sec | 12267.30 tokens/sec
+
+Processing batch #83 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0820s (tokenize: 0.0026s, model: 0.0794s)
+  Throughput: 12.19 texts/sec | 12487.22 tokens/sec
+
+Processing batch #84 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0820s (tokenize: 0.0026s, model: 0.0795s)
+  Throughput: 12.19 texts/sec | 12482.00 tokens/sec
+
+Processing batch #85 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0834s (tokenize: 0.0022s, model: 0.0812s)
+  Throughput: 11.99 texts/sec | 12281.12 tokens/sec
+
+Processing batch #86 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0817s (tokenize: 0.0025s, model: 0.0793s)
+  Throughput: 12.24 texts/sec | 12530.94 tokens/sec
+
+Processing batch #87 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0824s (tokenize: 0.0024s, model: 0.0800s)
+  Throughput: 12.13 texts/sec | 12421.60 tokens/sec
+
+Processing batch #88 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0842s (tokenize: 0.0023s, model: 0.0819s)
+  Throughput: 11.88 texts/sec | 12165.50 tokens/sec
+
+Processing batch #89 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0883s (tokenize: 0.0022s, model: 0.0861s)
+  Throughput: 11.33 texts/sec | 11598.36 tokens/sec
+
+Processing batch #90 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0857s (tokenize: 0.0024s, model: 0.0832s)
+  Throughput: 11.67 texts/sec | 11952.31 tokens/sec
+
+Processing batch #91 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0833s (tokenize: 0.0023s, model: 0.0810s)
+  Throughput: 12.00 texts/sec | 12289.17 tokens/sec
+
+Processing batch #92 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0857s (tokenize: 0.0040s, model: 0.0817s)
+  Throughput: 11.67 texts/sec | 11952.58 tokens/sec
+
+Processing batch #93 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0838s (tokenize: 0.0027s, model: 0.0811s)
+  Throughput: 11.94 texts/sec | 12222.41 tokens/sec
+
+Processing batch #94 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0839s (tokenize: 0.0023s, model: 0.0816s)
+  Throughput: 11.92 texts/sec | 12203.93 tokens/sec
+
+Processing batch #95 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0844s (tokenize: 0.0028s, model: 0.0816s)
+  Throughput: 11.85 texts/sec | 12130.41 tokens/sec
+
+Processing batch #96 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0833s (tokenize: 0.0022s, model: 0.0811s)
+  Throughput: 12.00 texts/sec | 12287.70 tokens/sec
+
+Processing batch #97 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0847s (tokenize: 0.0026s, model: 0.0821s)
+  Throughput: 11.81 texts/sec | 12093.32 tokens/sec
+
+Processing batch #98 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0831s (tokenize: 0.0023s, model: 0.0808s)
+  Throughput: 12.03 texts/sec | 12319.45 tokens/sec
+
+Processing batch #99 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0839s (tokenize: 0.0023s, model: 0.0816s)
+  Throughput: 11.92 texts/sec | 12207.96 tokens/sec
+
+Processing batch #100 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0838s (tokenize: 0.0023s, model: 0.0815s)
+  Throughput: 11.93 texts/sec | 12218.48 tokens/sec
+
+Processing batch #101 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0877s (tokenize: 0.0023s, model: 0.0853s)
+  Throughput: 11.41 texts/sec | 11679.23 tokens/sec
+
+Processing batch #102 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0865s (tokenize: 0.0023s, model: 0.0842s)
+  Throughput: 11.56 texts/sec | 11835.32 tokens/sec
+
+Processing batch #103 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0832s (tokenize: 0.0023s, model: 0.0808s)
+  Throughput: 12.02 texts/sec | 12312.07 tokens/sec
+
+Processing batch #104 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0838s (tokenize: 0.0023s, model: 0.0815s)
+  Throughput: 11.93 texts/sec | 12212.92 tokens/sec
+
+Processing batch #105 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0838s (tokenize: 0.0024s, model: 0.0814s)
+  Throughput: 11.94 texts/sec | 12223.25 tokens/sec
+
+Processing batch #106 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0834s (tokenize: 0.0022s, model: 0.0811s)
+  Throughput: 11.99 texts/sec | 12280.39 tokens/sec
+
+Processing batch #107 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0809s (tokenize: 0.0024s, model: 0.0785s)
+  Throughput: 12.37 texts/sec | 12662.87 tokens/sec
+
+Processing batch #108 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0816s (tokenize: 0.0026s, model: 0.0790s)
+  Throughput: 12.25 texts/sec | 12549.06 tokens/sec
+
+Processing batch #109 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0865s (tokenize: 0.0023s, model: 0.0842s)
+  Throughput: 11.56 texts/sec | 11839.40 tokens/sec
+
+Processing batch #110 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0838s (tokenize: 0.0021s, model: 0.0816s)
+  Throughput: 11.93 texts/sec | 12220.98 tokens/sec
+
+Processing batch #111 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0835s (tokenize: 0.0022s, model: 0.0813s)
+  Throughput: 11.97 texts/sec | 12260.34 tokens/sec
+
+Processing batch #112 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0839s (tokenize: 0.0023s, model: 0.0816s)
+  Throughput: 11.91 texts/sec | 12200.16 tokens/sec
+
+Processing batch #113 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0847s (tokenize: 0.0023s, model: 0.0825s)
+  Throughput: 11.80 texts/sec | 12084.85 tokens/sec
+
+Processing batch #114 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0812s (tokenize: 0.0024s, model: 0.0788s)
+  Throughput: 12.31 texts/sec | 12607.45 tokens/sec
+
+Processing batch #115 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0843s (tokenize: 0.0021s, model: 0.0821s)
+  Throughput: 11.87 texts/sec | 12153.52 tokens/sec
+
+Processing batch #116 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0839s (tokenize: 0.0024s, model: 0.0815s)
+  Throughput: 11.92 texts/sec | 12207.40 tokens/sec
+
+Processing batch #117 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0842s (tokenize: 0.0024s, model: 0.0817s)
+  Throughput: 11.88 texts/sec | 12166.22 tokens/sec
+
+Processing batch #118 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0838s (tokenize: 0.0024s, model: 0.0813s)
+  Throughput: 11.94 texts/sec | 12224.01 tokens/sec
+
+Processing batch #119 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0839s (tokenize: 0.0025s, model: 0.0814s)
+  Throughput: 11.92 texts/sec | 12207.72 tokens/sec
+
+Processing batch #120 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0835s (tokenize: 0.0024s, model: 0.0812s)
+  Throughput: 11.97 texts/sec | 12259.04 tokens/sec
+
+Processing batch #121 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0837s (tokenize: 0.0023s, model: 0.0814s)
+  Throughput: 11.95 texts/sec | 12234.63 tokens/sec
+
+Processing batch #122 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0815s (tokenize: 0.0028s, model: 0.0788s)
+  Throughput: 12.26 texts/sec | 12558.75 tokens/sec
+
+Processing batch #123 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0839s (tokenize: 0.0022s, model: 0.0817s)
+  Throughput: 11.92 texts/sec | 12207.40 tokens/sec
+
+Processing batch #124 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0816s (tokenize: 0.0025s, model: 0.0791s)
+  Throughput: 12.26 texts/sec | 12550.86 tokens/sec
+
+Processing batch #125 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0848s (tokenize: 0.0024s, model: 0.0824s)
+  Throughput: 11.80 texts/sec | 12080.29 tokens/sec
+
+Processing batch #126 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0843s (tokenize: 0.0025s, model: 0.0818s)
+  Throughput: 11.87 texts/sec | 12153.96 tokens/sec
+
+Processing batch #127 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0817s (tokenize: 0.0025s, model: 0.0792s)
+  Throughput: 12.24 texts/sec | 12533.21 tokens/sec
+
+Processing batch #128 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0828s (tokenize: 0.0027s, model: 0.0800s)
+  Throughput: 12.08 texts/sec | 12373.18 tokens/sec
+
+Processing batch #129 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0824s (tokenize: 0.0027s, model: 0.0797s)
+  Throughput: 12.13 texts/sec | 12424.48 tokens/sec
+
+Processing batch #130 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0825s (tokenize: 0.0024s, model: 0.0801s)
+  Throughput: 12.13 texts/sec | 12416.93 tokens/sec
+
+Processing batch #131 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0845s (tokenize: 0.0023s, model: 0.0822s)
+  Throughput: 11.83 texts/sec | 12114.78 tokens/sec
+
+Processing batch #132 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0846s (tokenize: 0.0028s, model: 0.0818s)
+  Throughput: 11.82 texts/sec | 12107.67 tokens/sec
+
+Processing batch #133 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0837s (tokenize: 0.0023s, model: 0.0813s)
+  Throughput: 11.95 texts/sec | 12240.42 tokens/sec
+
+Processing batch #134 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0837s (tokenize: 0.0024s, model: 0.0813s)
+  Throughput: 11.95 texts/sec | 12232.12 tokens/sec
+
+Processing batch #135 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0834s (tokenize: 0.0024s, model: 0.0810s)
+  Throughput: 11.99 texts/sec | 12275.93 tokens/sec
+
+Processing batch #136 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0814s (tokenize: 0.0025s, model: 0.0790s)
+  Throughput: 12.28 texts/sec | 12574.60 tokens/sec
+
+Processing batch #137 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0824s (tokenize: 0.0025s, model: 0.0799s)
+  Throughput: 12.13 texts/sec | 12423.18 tokens/sec
+
+Processing batch #138 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0819s (tokenize: 0.0025s, model: 0.0794s)
+  Throughput: 12.21 texts/sec | 12498.30 tokens/sec
+
+Processing batch #139 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0822s (tokenize: 0.0025s, model: 0.0798s)
+  Throughput: 12.16 texts/sec | 12453.84 tokens/sec
+
+Processing batch #140 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0822s (tokenize: 0.0024s, model: 0.0798s)
+  Throughput: 12.17 texts/sec | 12462.29 tokens/sec
+
+Processing batch #141 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0818s (tokenize: 0.0025s, model: 0.0793s)
+  Throughput: 12.22 texts/sec | 12512.98 tokens/sec
+
+Processing batch #142 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0817s (tokenize: 0.0026s, model: 0.0791s)
+  Throughput: 12.25 texts/sec | 12540.49 tokens/sec
+
+Processing batch #143 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0838s (tokenize: 0.0021s, model: 0.0817s)
+  Throughput: 11.94 texts/sec | 12222.97 tokens/sec
+
+Processing batch #144 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0831s (tokenize: 0.0018s, model: 0.0813s)
+  Throughput: 12.03 texts/sec | 12318.53 tokens/sec
+
+Processing batch #145 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0824s (tokenize: 0.0024s, model: 0.0800s)
+  Throughput: 12.13 texts/sec | 12423.54 tokens/sec
+
+Processing batch #146 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0839s (tokenize: 0.0023s, model: 0.0816s)
+  Throughput: 11.92 texts/sec | 12206.12 tokens/sec
+
+Processing batch #147 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0836s (tokenize: 0.0022s, model: 0.0814s)
+  Throughput: 11.96 texts/sec | 12248.69 tokens/sec
+
+Processing batch #148 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0834s (tokenize: 0.0023s, model: 0.0811s)
+  Throughput: 11.98 texts/sec | 12271.41 tokens/sec
+
+Processing batch #149 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0859s (tokenize: 0.0022s, model: 0.0838s)
+  Throughput: 11.64 texts/sec | 11916.26 tokens/sec
+
+Processing batch #150 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0844s (tokenize: 0.0022s, model: 0.0822s)
+  Throughput: 11.85 texts/sec | 12135.14 tokens/sec
+
+Processing batch #151 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0843s (tokenize: 0.0023s, model: 0.0820s)
+  Throughput: 11.87 texts/sec | 12153.52 tokens/sec
+
+Processing batch #152 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0813s (tokenize: 0.0024s, model: 0.0789s)
+  Throughput: 12.30 texts/sec | 12592.18 tokens/sec
+
+Processing batch #153 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0840s (tokenize: 0.0023s, model: 0.0818s)
+  Throughput: 11.90 texts/sec | 12186.45 tokens/sec
+
+Processing batch #154 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0820s (tokenize: 0.0027s, model: 0.0793s)
+  Throughput: 12.19 texts/sec | 12487.33 tokens/sec
+
+Processing batch #155 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0835s (tokenize: 0.0022s, model: 0.0813s)
+  Throughput: 11.98 texts/sec | 12269.69 tokens/sec
+
+Processing batch #156 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0843s (tokenize: 0.0023s, model: 0.0819s)
+  Throughput: 11.87 texts/sec | 12152.69 tokens/sec
+
+Processing batch #157 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0842s (tokenize: 0.0022s, model: 0.0820s)
+  Throughput: 11.88 texts/sec | 12161.67 tokens/sec
+
+Processing batch #158 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0839s (tokenize: 0.0023s, model: 0.0816s)
+  Throughput: 11.92 texts/sec | 12209.24 tokens/sec
+
+Processing batch #159 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0835s (tokenize: 0.0023s, model: 0.0812s)
+  Throughput: 11.97 texts/sec | 12261.07 tokens/sec
+
+Processing batch #160 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0835s (tokenize: 0.0022s, model: 0.0813s)
+  Throughput: 11.97 texts/sec | 12262.26 tokens/sec
+
+Processing batch #161 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0845s (tokenize: 0.0024s, model: 0.0821s)
+  Throughput: 11.84 texts/sec | 12121.68 tokens/sec
+
+Processing batch #162 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0833s (tokenize: 0.0022s, model: 0.0811s)
+  Throughput: 12.00 texts/sec | 12289.73 tokens/sec
+
+Processing batch #163 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0839s (tokenize: 0.0024s, model: 0.0814s)
+  Throughput: 11.92 texts/sec | 12210.21 tokens/sec
+
+Processing batch #164 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0837s (tokenize: 0.0023s, model: 0.0814s)
+  Throughput: 11.95 texts/sec | 12235.64 tokens/sec
+
+Processing batch #165 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0845s (tokenize: 0.0025s, model: 0.0820s)
+  Throughput: 11.84 texts/sec | 12120.25 tokens/sec
+
+Processing batch #166 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0838s (tokenize: 0.0022s, model: 0.0816s)
+  Throughput: 11.94 texts/sec | 12226.38 tokens/sec
+
+Processing batch #167 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0835s (tokenize: 0.0022s, model: 0.0813s)
+  Throughput: 11.97 texts/sec | 12260.97 tokens/sec
+
+Processing batch #168 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0839s (tokenize: 0.0024s, model: 0.0815s)
+  Throughput: 11.92 texts/sec | 12205.50 tokens/sec
+
+Processing batch #169 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0845s (tokenize: 0.0026s, model: 0.0819s)
+  Throughput: 11.83 texts/sec | 12112.52 tokens/sec
+
+Processing batch #170 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0835s (tokenize: 0.0025s, model: 0.0810s)
+  Throughput: 11.98 texts/sec | 12265.76 tokens/sec
+
+Processing batch #171 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0842s (tokenize: 0.0026s, model: 0.0816s)
+  Throughput: 11.87 texts/sec | 12154.75 tokens/sec
+
+Processing batch #172 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0811s (tokenize: 0.0025s, model: 0.0786s)
+  Throughput: 12.32 texts/sec | 12619.38 tokens/sec
+
+Processing batch #173 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0819s (tokenize: 0.0027s, model: 0.0792s)
+  Throughput: 12.21 texts/sec | 12505.55 tokens/sec
+
+Processing batch #174 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0831s (tokenize: 0.0022s, model: 0.0810s)
+  Throughput: 12.03 texts/sec | 12315.42 tokens/sec
+
+Processing batch #175 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0814s (tokenize: 0.0026s, model: 0.0789s)
+  Throughput: 12.28 texts/sec | 12575.08 tokens/sec
+
+Processing batch #176 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0819s (tokenize: 0.0027s, model: 0.0792s)
+  Throughput: 12.22 texts/sec | 12508.28 tokens/sec
+
+Processing batch #177 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0842s (tokenize: 0.0025s, model: 0.0817s)
+  Throughput: 11.88 texts/sec | 12162.12 tokens/sec
+
+Processing batch #178 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0843s (tokenize: 0.0021s, model: 0.0821s)
+  Throughput: 11.87 texts/sec | 12154.03 tokens/sec
+
+Processing batch #179 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0841s (tokenize: 0.0022s, model: 0.0818s)
+  Throughput: 11.90 texts/sec | 12182.47 tokens/sec
+
+Processing batch #180 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0833s (tokenize: 0.0021s, model: 0.0812s)
+  Throughput: 12.01 texts/sec | 12295.50 tokens/sec
+
+Processing batch #181 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0841s (tokenize: 0.0021s, model: 0.0820s)
+  Throughput: 11.89 texts/sec | 12175.60 tokens/sec
+
+Processing batch #182 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0835s (tokenize: 0.0023s, model: 0.0812s)
+  Throughput: 11.98 texts/sec | 12264.22 tokens/sec
+
+Processing batch #183 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0835s (tokenize: 0.0020s, model: 0.0815s)
+  Throughput: 11.98 texts/sec | 12263.31 tokens/sec
+
+Processing batch #184 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0838s (tokenize: 0.0024s, model: 0.0814s)
+  Throughput: 11.94 texts/sec | 12223.94 tokens/sec
+
+Processing batch #185 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0823s (tokenize: 0.0027s, model: 0.0796s)
+  Throughput: 12.16 texts/sec | 12449.36 tokens/sec
+
+Processing batch #186 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0813s (tokenize: 0.0025s, model: 0.0787s)
+  Throughput: 12.30 texts/sec | 12598.65 tokens/sec
+
+Processing batch #187 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0813s (tokenize: 0.0027s, model: 0.0786s)
+  Throughput: 12.30 texts/sec | 12592.59 tokens/sec
+
+Processing batch #188 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0813s (tokenize: 0.0025s, model: 0.0788s)
+  Throughput: 12.30 texts/sec | 12591.22 tokens/sec
+
+Processing batch #189 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0835s (tokenize: 0.0023s, model: 0.0812s)
+  Throughput: 11.98 texts/sec | 12266.99 tokens/sec
+
+Processing batch #190 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0832s (tokenize: 0.0021s, model: 0.0811s)
+  Throughput: 12.03 texts/sec | 12314.68 tokens/sec
+
+Processing batch #191 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0839s (tokenize: 0.0024s, model: 0.0815s)
+  Throughput: 11.92 texts/sec | 12202.30 tokens/sec
+
+Processing batch #192 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0840s (tokenize: 0.0023s, model: 0.0818s)
+  Throughput: 11.90 texts/sec | 12186.00 tokens/sec
+
+Processing batch #193 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0831s (tokenize: 0.0021s, model: 0.0810s)
+  Throughput: 12.03 texts/sec | 12318.96 tokens/sec
+
+Processing batch #194 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0840s (tokenize: 0.0023s, model: 0.0817s)
+  Throughput: 11.90 texts/sec | 12185.93 tokens/sec
+
+Processing batch #195 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0836s (tokenize: 0.0024s, model: 0.0812s)
+  Throughput: 11.96 texts/sec | 12246.91 tokens/sec
+
+Processing batch #196 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0840s (tokenize: 0.0023s, model: 0.0816s)
+  Throughput: 11.91 texts/sec | 12196.52 tokens/sec
+
+Processing batch #197 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0861s (tokenize: 0.0023s, model: 0.0838s)
+  Throughput: 11.62 texts/sec | 11898.87 tokens/sec
+
+Processing batch #198 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0818s (tokenize: 0.0028s, model: 0.0790s)
+  Throughput: 12.22 texts/sec | 12515.64 tokens/sec
+
+Processing batch #199 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0815s (tokenize: 0.0025s, model: 0.0790s)
+  Throughput: 12.27 texts/sec | 12563.12 tokens/sec
+
+Processing batch #200 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0837s (tokenize: 0.0025s, model: 0.0812s)
+  Throughput: 11.95 texts/sec | 12234.00 tokens/sec
+
+Processing batch #201 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0837s (tokenize: 0.0022s, model: 0.0815s)
+  Throughput: 11.94 texts/sec | 12229.02 tokens/sec
+
+Processing batch #202 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0836s (tokenize: 0.0023s, model: 0.0813s)
+  Throughput: 11.96 texts/sec | 12247.64 tokens/sec
+
+Processing batch #203 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0839s (tokenize: 0.0024s, model: 0.0815s)
+  Throughput: 11.92 texts/sec | 12205.91 tokens/sec
+
+Processing batch #204 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0839s (tokenize: 0.0024s, model: 0.0816s)
+  Throughput: 11.91 texts/sec | 12200.29 tokens/sec
+
+Processing batch #205 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0834s (tokenize: 0.0021s, model: 0.0813s)
+  Throughput: 11.99 texts/sec | 12275.47 tokens/sec
+
+Processing batch #206 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0840s (tokenize: 0.0022s, model: 0.0817s)
+  Throughput: 11.90 texts/sec | 12190.25 tokens/sec
+
+Processing batch #207 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0836s (tokenize: 0.0026s, model: 0.0810s)
+  Throughput: 11.96 texts/sec | 12249.85 tokens/sec
+
+Processing batch #208 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0812s (tokenize: 0.0026s, model: 0.0786s)
+  Throughput: 12.31 texts/sec | 12604.53 tokens/sec
+
+Processing batch #209 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0837s (tokenize: 0.0023s, model: 0.0814s)
+  Throughput: 11.95 texts/sec | 12234.84 tokens/sec
+
+Processing batch #210 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0808s (tokenize: 0.0025s, model: 0.0783s)
+  Throughput: 12.38 texts/sec | 12677.34 tokens/sec
+
+Processing batch #211 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0817s (tokenize: 0.0025s, model: 0.0792s)
+  Throughput: 12.25 texts/sec | 12539.43 tokens/sec
+
+Processing batch #212 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0836s (tokenize: 0.0024s, model: 0.0812s)
+  Throughput: 11.96 texts/sec | 12249.11 tokens/sec
+
+Processing batch #213 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0838s (tokenize: 0.0022s, model: 0.0816s)
+  Throughput: 11.93 texts/sec | 12215.84 tokens/sec
+
+Processing batch #214 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0838s (tokenize: 0.0022s, model: 0.0815s)
+  Throughput: 11.94 texts/sec | 12226.76 tokens/sec
+
+Processing batch #215 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0838s (tokenize: 0.0022s, model: 0.0816s)
+  Throughput: 11.94 texts/sec | 12224.60 tokens/sec
+
+Processing batch #216 of size 1
+  Token count: 768 tokens
+  Batch time: 0.0720s (tokenize: 0.0020s, model: 0.0700s)
+  Throughput: 13.89 texts/sec | 10667.02 tokens/sec
+
+Processing batch #217 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0840s (tokenize: 0.0023s, model: 0.0817s)
+  Throughput: 11.90 texts/sec | 12189.04 tokens/sec
+
+Processing batch #218 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0831s (tokenize: 0.0021s, model: 0.0810s)
+  Throughput: 12.03 texts/sec | 12318.82 tokens/sec
+
+Processing batch #219 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0842s (tokenize: 0.0023s, model: 0.0818s)
+  Throughput: 11.88 texts/sec | 12167.70 tokens/sec
+
+Processing batch #220 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0838s (tokenize: 0.0022s, model: 0.0816s)
+  Throughput: 11.93 texts/sec | 12217.44 tokens/sec
+
+Processing batch #221 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0841s (tokenize: 0.0022s, model: 0.0818s)
+  Throughput: 11.90 texts/sec | 12182.75 tokens/sec
+
+Processing batch #222 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0836s (tokenize: 0.0022s, model: 0.0814s)
+  Throughput: 11.96 texts/sec | 12246.35 tokens/sec
+
+Processing batch #223 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0835s (tokenize: 0.0022s, model: 0.0813s)
+  Throughput: 11.98 texts/sec | 12264.96 tokens/sec
+
+Processing batch #224 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0842s (tokenize: 0.0022s, model: 0.0820s)
+  Throughput: 11.87 texts/sec | 12155.75 tokens/sec
+
+Processing batch #225 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0837s (tokenize: 0.0023s, model: 0.0815s)
+  Throughput: 11.94 texts/sec | 12227.73 tokens/sec
+
+Processing batch #226 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0832s (tokenize: 0.0022s, model: 0.0810s)
+  Throughput: 12.03 texts/sec | 12314.58 tokens/sec
+
+Processing batch #227 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0843s (tokenize: 0.0022s, model: 0.0821s)
+  Throughput: 11.86 texts/sec | 12144.82 tokens/sec
+
+Processing batch #228 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0836s (tokenize: 0.0022s, model: 0.0814s)
+  Throughput: 11.96 texts/sec | 12247.12 tokens/sec
+
+Processing batch #229 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0853s (tokenize: 0.0024s, model: 0.0830s)
+  Throughput: 11.72 texts/sec | 11997.89 tokens/sec
+
+Processing batch #230 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0833s (tokenize: 0.0027s, model: 0.0807s)
+  Throughput: 12.00 texts/sec | 12290.09 tokens/sec
+
+Processing batch #231 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0822s (tokenize: 0.0025s, model: 0.0797s)
+  Throughput: 12.16 texts/sec | 12450.05 tokens/sec
+
+Processing batch #232 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0832s (tokenize: 0.0023s, model: 0.0810s)
+  Throughput: 12.02 texts/sec | 12306.14 tokens/sec
+
+Processing batch #233 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0820s (tokenize: 0.0026s, model: 0.0794s)
+  Throughput: 12.20 texts/sec | 12489.58 tokens/sec
+
+Processing batch #234 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0833s (tokenize: 0.0022s, model: 0.0810s)
+  Throughput: 12.01 texts/sec | 12299.73 tokens/sec
+
+Processing batch #235 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0834s (tokenize: 0.0022s, model: 0.0812s)
+  Throughput: 11.99 texts/sec | 12281.97 tokens/sec
+
+Processing batch #236 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0842s (tokenize: 0.0026s, model: 0.0816s)
+  Throughput: 11.87 texts/sec | 12157.54 tokens/sec
+
+Processing batch #237 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0842s (tokenize: 0.0027s, model: 0.0815s)
+  Throughput: 11.88 texts/sec | 12162.81 tokens/sec
+
+Processing batch #238 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0851s (tokenize: 0.0029s, model: 0.0822s)
+  Throughput: 11.75 texts/sec | 12034.26 tokens/sec
+
+Processing batch #239 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0840s (tokenize: 0.0027s, model: 0.0814s)
+  Throughput: 11.90 texts/sec | 12187.04 tokens/sec
+
+Processing batch #240 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0846s (tokenize: 0.0029s, model: 0.0817s)
+  Throughput: 11.81 texts/sec | 12097.31 tokens/sec
+
+Processing batch #241 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0845s (tokenize: 0.0029s, model: 0.0816s)
+  Throughput: 11.83 texts/sec | 12118.23 tokens/sec
+
+Processing batch #242 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0845s (tokenize: 0.0027s, model: 0.0818s)
+  Throughput: 11.83 texts/sec | 12118.67 tokens/sec
+
+Processing batch #243 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0835s (tokenize: 0.0026s, model: 0.0808s)
+  Throughput: 11.98 texts/sec | 12269.20 tokens/sec
+
+Processing batch #244 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0823s (tokenize: 0.0028s, model: 0.0795s)
+  Throughput: 12.15 texts/sec | 12440.17 tokens/sec
+
+Processing batch #245 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0822s (tokenize: 0.0028s, model: 0.0794s)
+  Throughput: 12.17 texts/sec | 12459.00 tokens/sec
+
+Processing batch #246 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0845s (tokenize: 0.0030s, model: 0.0815s)
+  Throughput: 11.83 texts/sec | 12118.13 tokens/sec
+
+Processing batch #247 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0838s (tokenize: 0.0022s, model: 0.0815s)
+  Throughput: 11.94 texts/sec | 12224.98 tokens/sec
+
+Processing batch #248 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0843s (tokenize: 0.0025s, model: 0.0818s)
+  Throughput: 11.86 texts/sec | 12148.84 tokens/sec
+
+Processing batch #249 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0842s (tokenize: 0.0025s, model: 0.0816s)
+  Throughput: 11.88 texts/sec | 12168.29 tokens/sec
+
+Processing batch #250 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0819s (tokenize: 0.0027s, model: 0.0792s)
+  Throughput: 12.21 texts/sec | 12504.67 tokens/sec
+
+Processing batch #251 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0818s (tokenize: 0.0026s, model: 0.0793s)
+  Throughput: 12.22 texts/sec | 12511.30 tokens/sec
+
+Processing batch #252 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0838s (tokenize: 0.0025s, model: 0.0812s)
+  Throughput: 11.94 texts/sec | 12223.84 tokens/sec
+
+Processing batch #253 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0916s (tokenize: 0.0026s, model: 0.0890s)
+  Throughput: 10.92 texts/sec | 11179.05 tokens/sec
+
+Processing batch #254 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0842s (tokenize: 0.0030s, model: 0.0812s)
+  Throughput: 11.88 texts/sec | 12163.84 tokens/sec
+
+Processing batch #255 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0830s (tokenize: 0.0029s, model: 0.0801s)
+  Throughput: 12.05 texts/sec | 12343.49 tokens/sec
+
+Processing batch #256 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0824s (tokenize: 0.0030s, model: 0.0794s)
+  Throughput: 12.14 texts/sec | 12434.62 tokens/sec
+
+Processing batch #257 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0845s (tokenize: 0.0029s, model: 0.0815s)
+  Throughput: 11.84 texts/sec | 12123.74 tokens/sec
+
+Processing batch #258 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0827s (tokenize: 0.0027s, model: 0.0800s)
+  Throughput: 12.09 texts/sec | 12378.18 tokens/sec
+
+Processing batch #259 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0842s (tokenize: 0.0025s, model: 0.0816s)
+  Throughput: 11.88 texts/sec | 12161.91 tokens/sec
+
+Processing batch #260 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0842s (tokenize: 0.0024s, model: 0.0818s)
+  Throughput: 11.88 texts/sec | 12165.25 tokens/sec
+
+Processing batch #261 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0850s (tokenize: 0.0027s, model: 0.0823s)
+  Throughput: 11.76 texts/sec | 12043.74 tokens/sec
+
+Processing batch #262 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0820s (tokenize: 0.0027s, model: 0.0793s)
+  Throughput: 12.19 texts/sec | 12484.57 tokens/sec
+
+Processing batch #263 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0842s (tokenize: 0.0027s, model: 0.0815s)
+  Throughput: 11.88 texts/sec | 12165.63 tokens/sec
+
+Processing batch #264 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0819s (tokenize: 0.0028s, model: 0.0791s)
+  Throughput: 12.20 texts/sec | 12495.43 tokens/sec
+
+Processing batch #265 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0843s (tokenize: 0.0026s, model: 0.0817s)
+  Throughput: 11.86 texts/sec | 12144.13 tokens/sec
+
+Processing batch #266 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0848s (tokenize: 0.0030s, model: 0.0818s)
+  Throughput: 11.79 texts/sec | 12068.58 tokens/sec
+
+Processing batch #267 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0861s (tokenize: 0.0030s, model: 0.0831s)
+  Throughput: 11.61 texts/sec | 11891.92 tokens/sec
+
+Processing batch #268 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0878s (tokenize: 0.0027s, model: 0.0852s)
+  Throughput: 11.39 texts/sec | 11659.00 tokens/sec
+
+Processing batch #269 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0844s (tokenize: 0.0027s, model: 0.0817s)
+  Throughput: 11.85 texts/sec | 12133.46 tokens/sec
+
+Processing batch #270 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0852s (tokenize: 0.0028s, model: 0.0823s)
+  Throughput: 11.74 texts/sec | 12024.02 tokens/sec
+
+Processing batch #271 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0814s (tokenize: 0.0026s, model: 0.0788s)
+  Throughput: 12.28 texts/sec | 12572.61 tokens/sec
+
+Processing batch #272 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0821s (tokenize: 0.0027s, model: 0.0794s)
+  Throughput: 12.19 texts/sec | 12477.46 tokens/sec
+
+Processing batch #273 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0845s (tokenize: 0.0025s, model: 0.0819s)
+  Throughput: 11.83 texts/sec | 12118.02 tokens/sec
+
+Processing batch #274 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0840s (tokenize: 0.0024s, model: 0.0816s)
+  Throughput: 11.91 texts/sec | 12195.31 tokens/sec
+
+Processing batch #275 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0850s (tokenize: 0.0027s, model: 0.0823s)
+  Throughput: 11.76 texts/sec | 12043.68 tokens/sec
+
+Processing batch #276 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0842s (tokenize: 0.0026s, model: 0.0816s)
+  Throughput: 11.88 texts/sec | 12167.49 tokens/sec
+
+Processing batch #277 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0827s (tokenize: 0.0028s, model: 0.0799s)
+  Throughput: 12.09 texts/sec | 12378.96 tokens/sec
+
+Processing batch #278 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0839s (tokenize: 0.0026s, model: 0.0814s)
+  Throughput: 11.92 texts/sec | 12202.48 tokens/sec
+
+Processing batch #279 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0839s (tokenize: 0.0023s, model: 0.0816s)
+  Throughput: 11.91 texts/sec | 12198.74 tokens/sec
+
+Processing batch #280 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0846s (tokenize: 0.0027s, model: 0.0819s)
+  Throughput: 11.82 texts/sec | 12103.82 tokens/sec
+
+Processing batch #281 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0821s (tokenize: 0.0025s, model: 0.0796s)
+  Throughput: 12.17 texts/sec | 12466.96 tokens/sec
+
+Processing batch #282 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0828s (tokenize: 0.0029s, model: 0.0799s)
+  Throughput: 12.08 texts/sec | 12370.62 tokens/sec
+
+Processing batch #283 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0850s (tokenize: 0.0029s, model: 0.0820s)
+  Throughput: 11.77 texts/sec | 12052.06 tokens/sec
+
+Processing batch #284 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0846s (tokenize: 0.0030s, model: 0.0816s)
+  Throughput: 11.82 texts/sec | 12106.51 tokens/sec
+
+Processing batch #285 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0833s (tokenize: 0.0027s, model: 0.0806s)
+  Throughput: 12.01 texts/sec | 12294.27 tokens/sec
+
+Processing batch #286 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0816s (tokenize: 0.0026s, model: 0.0790s)
+  Throughput: 12.25 texts/sec | 12544.85 tokens/sec
+
+Processing batch #287 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0818s (tokenize: 0.0029s, model: 0.0789s)
+  Throughput: 12.22 texts/sec | 12511.67 tokens/sec
+
+Processing batch #288 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0827s (tokenize: 0.0027s, model: 0.0801s)
+  Throughput: 12.08 texts/sec | 12374.72 tokens/sec
+
+Processing batch #289 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0818s (tokenize: 0.0026s, model: 0.0792s)
+  Throughput: 12.22 texts/sec | 12517.83 tokens/sec
+
+Processing batch #290 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0812s (tokenize: 0.0026s, model: 0.0786s)
+  Throughput: 12.31 texts/sec | 12603.97 tokens/sec
+
+Processing batch #291 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0849s (tokenize: 0.0026s, model: 0.0823s)
+  Throughput: 11.78 texts/sec | 12063.36 tokens/sec
+
+Processing batch #292 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0838s (tokenize: 0.0024s, model: 0.0814s)
+  Throughput: 11.93 texts/sec | 12216.47 tokens/sec
+
+Processing batch #293 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0850s (tokenize: 0.0024s, model: 0.0826s)
+  Throughput: 11.77 texts/sec | 12049.62 tokens/sec
+
+Processing batch #294 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0817s (tokenize: 0.0025s, model: 0.0791s)
+  Throughput: 12.25 texts/sec | 12539.65 tokens/sec
+
+Processing batch #295 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0845s (tokenize: 0.0026s, model: 0.0820s)
+  Throughput: 11.83 texts/sec | 12114.85 tokens/sec
+
+Processing batch #296 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0848s (tokenize: 0.0027s, model: 0.0821s)
+  Throughput: 11.80 texts/sec | 12078.63 tokens/sec
+
+Processing batch #297 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0847s (tokenize: 0.0027s, model: 0.0820s)
+  Throughput: 11.81 texts/sec | 12092.30 tokens/sec
+
+Processing batch #298 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0850s (tokenize: 0.0025s, model: 0.0824s)
+  Throughput: 11.77 texts/sec | 12050.64 tokens/sec
+
+Processing batch #299 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0825s (tokenize: 0.0026s, model: 0.0799s)
+  Throughput: 12.12 texts/sec | 12415.78 tokens/sec
+
+Processing batch #300 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0841s (tokenize: 0.0024s, model: 0.0817s)
+  Throughput: 11.88 texts/sec | 12170.22 tokens/sec
+
+Processing batch #301 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0821s (tokenize: 0.0027s, model: 0.0794s)
+  Throughput: 12.17 texts/sec | 12466.56 tokens/sec
+
+Processing batch #302 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0818s (tokenize: 0.0027s, model: 0.0791s)
+  Throughput: 12.22 texts/sec | 12515.90 tokens/sec
+
+Processing batch #303 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0815s (tokenize: 0.0027s, model: 0.0789s)
+  Throughput: 12.26 texts/sec | 12557.61 tokens/sec
+
+Processing batch #304 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0846s (tokenize: 0.0024s, model: 0.0822s)
+  Throughput: 11.82 texts/sec | 12098.87 tokens/sec
+
+Processing batch #305 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0817s (tokenize: 0.0027s, model: 0.0789s)
+  Throughput: 12.25 texts/sec | 12539.21 tokens/sec
+
+Processing batch #306 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0843s (tokenize: 0.0024s, model: 0.0819s)
+  Throughput: 11.86 texts/sec | 12148.91 tokens/sec
+
+Processing batch #307 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0819s (tokenize: 0.0026s, model: 0.0793s)
+  Throughput: 12.21 texts/sec | 12501.54 tokens/sec
+
+Processing batch #308 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0815s (tokenize: 0.0027s, model: 0.0789s)
+  Throughput: 12.26 texts/sec | 12558.38 tokens/sec
+
+Processing batch #309 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0818s (tokenize: 0.0026s, model: 0.0792s)
+  Throughput: 12.22 texts/sec | 12518.34 tokens/sec
+
+Processing batch #310 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0815s (tokenize: 0.0026s, model: 0.0788s)
+  Throughput: 12.27 texts/sec | 12568.20 tokens/sec
+
+Processing batch #311 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0812s (tokenize: 0.0029s, model: 0.0783s)
+  Throughput: 12.32 texts/sec | 12613.37 tokens/sec
+
+Processing batch #312 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0818s (tokenize: 0.0024s, model: 0.0794s)
+  Throughput: 12.22 texts/sec | 12512.98 tokens/sec
+
+Processing batch #313 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0813s (tokenize: 0.0027s, model: 0.0786s)
+  Throughput: 12.29 texts/sec | 12588.71 tokens/sec
+
+Processing batch #314 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0827s (tokenize: 0.0026s, model: 0.0801s)
+  Throughput: 12.09 texts/sec | 12382.85 tokens/sec
+
+Processing batch #315 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0818s (tokenize: 0.0027s, model: 0.0791s)
+  Throughput: 12.22 texts/sec | 12512.32 tokens/sec
+
+Processing batch #316 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0863s (tokenize: 0.0026s, model: 0.0837s)
+  Throughput: 11.58 texts/sec | 11862.06 tokens/sec
+
+Processing batch #317 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0841s (tokenize: 0.0026s, model: 0.0815s)
+  Throughput: 11.89 texts/sec | 12170.46 tokens/sec
+
+Processing batch #318 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0815s (tokenize: 0.0027s, model: 0.0788s)
+  Throughput: 12.27 texts/sec | 12564.74 tokens/sec
+
+Processing batch #319 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0842s (tokenize: 0.0025s, model: 0.0817s)
+  Throughput: 11.87 texts/sec | 12159.05 tokens/sec
+
+Processing batch #320 of size 1
+  Token count: 1024 tokens
+  Batch time: 0.0845s (tokenize: 0.0024s, model: 0.0821s)
+  Throughput: 11.83 texts/sec | 12113.38 tokens/sec
+
+Processing batch #321 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0635s (tokenize: 0.0014s, model: 0.0621s)
+  Throughput: 15.75 texts/sec | 8064.12 tokens/sec
+
+==================================================
+Benchmark Summary:
+  Device: CPU
+  Total texts processed: 321
+  Total tokens processed: 327936
+  Total batches: 321
+  Total time: 26.80 seconds
+  Average throughput: 11.98 texts/sec
+  Average throughput: 12235.38 tokens/sec
+==================================================
+complete test model bge-m3, batch 1
+test model bge-m3, batch 4
+[W623 07:25:16.090552958 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_addmm_activation(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1, bool use_gelu=False) -> Tensor
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: AutocastCPU
+  previous kernel: registered at /pytorch/aten/src/ATen/autocast_mode.cpp:327
+       new kernel: registered at /opt/workspace/ipex-cpu-dev/csrc/cpu/autocast/autocast_mode.cpp:112 (function operator())
+Using CPU device
+Starting benchmark with 321 texts...
+
+Processing batch #1 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2971s (tokenize: 0.0033s, model: 0.2938s)
+  Throughput: 13.46 texts/sec | 13786.86 tokens/sec
+
+Processing batch #2 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2602s (tokenize: 0.0033s, model: 0.2569s)
+  Throughput: 15.37 texts/sec | 15741.84 tokens/sec
+
+Processing batch #3 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2481s (tokenize: 0.0035s, model: 0.2445s)
+  Throughput: 16.13 texts/sec | 16512.72 tokens/sec
+
+Processing batch #4 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.3057s (tokenize: 0.0033s, model: 0.3024s)
+  Throughput: 13.09 texts/sec | 13399.12 tokens/sec
+
+Processing batch #5 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2514s (tokenize: 0.0054s, model: 0.2460s)
+  Throughput: 15.91 texts/sec | 16292.76 tokens/sec
+
+Processing batch #6 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2372s (tokenize: 0.0040s, model: 0.2332s)
+  Throughput: 16.86 texts/sec | 17268.47 tokens/sec
+
+Processing batch #7 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2514s (tokenize: 0.0058s, model: 0.2456s)
+  Throughput: 15.91 texts/sec | 16291.40 tokens/sec
+
+Processing batch #8 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2493s (tokenize: 0.0051s, model: 0.2441s)
+  Throughput: 16.05 texts/sec | 16432.77 tokens/sec
+
+Processing batch #9 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2483s (tokenize: 0.0036s, model: 0.2447s)
+  Throughput: 16.11 texts/sec | 16493.27 tokens/sec
+
+Processing batch #10 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2485s (tokenize: 0.0040s, model: 0.2444s)
+  Throughput: 16.10 texts/sec | 16484.35 tokens/sec
+
+Processing batch #11 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2519s (tokenize: 0.0058s, model: 0.2461s)
+  Throughput: 15.88 texts/sec | 16260.53 tokens/sec
+
+Processing batch #12 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2370s (tokenize: 0.0040s, model: 0.2329s)
+  Throughput: 16.88 texts/sec | 17284.84 tokens/sec
+
+Processing batch #13 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2420s (tokenize: 0.0084s, model: 0.2336s)
+  Throughput: 16.53 texts/sec | 16923.15 tokens/sec
+
+Processing batch #14 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2501s (tokenize: 0.0037s, model: 0.2464s)
+  Throughput: 15.99 texts/sec | 16376.25 tokens/sec
+
+Processing batch #15 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2521s (tokenize: 0.0052s, model: 0.2469s)
+  Throughput: 15.87 texts/sec | 16248.23 tokens/sec
+
+Processing batch #16 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2545s (tokenize: 0.0057s, model: 0.2488s)
+  Throughput: 15.72 texts/sec | 16093.67 tokens/sec
+
+Processing batch #17 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2527s (tokenize: 0.0051s, model: 0.2476s)
+  Throughput: 15.83 texts/sec | 16207.84 tokens/sec
+
+Processing batch #18 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2514s (tokenize: 0.0036s, model: 0.2478s)
+  Throughput: 15.91 texts/sec | 16295.81 tokens/sec
+
+Processing batch #19 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2489s (tokenize: 0.0037s, model: 0.2452s)
+  Throughput: 16.07 texts/sec | 16453.86 tokens/sec
+
+Processing batch #20 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2512s (tokenize: 0.0033s, model: 0.2478s)
+  Throughput: 15.93 texts/sec | 16308.89 tokens/sec
+
+Processing batch #21 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2535s (tokenize: 0.0065s, model: 0.2470s)
+  Throughput: 15.78 texts/sec | 16157.44 tokens/sec
+
+Processing batch #22 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2526s (tokenize: 0.0073s, model: 0.2453s)
+  Throughput: 15.84 texts/sec | 16218.27 tokens/sec
+
+Processing batch #23 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2491s (tokenize: 0.0036s, model: 0.2456s)
+  Throughput: 16.06 texts/sec | 16441.45 tokens/sec
+
+Processing batch #24 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2508s (tokenize: 0.0036s, model: 0.2471s)
+  Throughput: 15.95 texts/sec | 16334.88 tokens/sec
+
+Processing batch #25 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2572s (tokenize: 0.0035s, model: 0.2537s)
+  Throughput: 15.55 texts/sec | 15925.10 tokens/sec
+
+Processing batch #26 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2508s (tokenize: 0.0033s, model: 0.2475s)
+  Throughput: 15.95 texts/sec | 16333.44 tokens/sec
+
+Processing batch #27 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2485s (tokenize: 0.0035s, model: 0.2450s)
+  Throughput: 16.10 texts/sec | 16484.20 tokens/sec
+
+Processing batch #28 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2481s (tokenize: 0.0035s, model: 0.2446s)
+  Throughput: 16.13 texts/sec | 16512.18 tokens/sec
+
+Processing batch #29 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2488s (tokenize: 0.0034s, model: 0.2454s)
+  Throughput: 16.08 texts/sec | 16465.23 tokens/sec
+
+Processing batch #30 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2519s (tokenize: 0.0051s, model: 0.2468s)
+  Throughput: 15.88 texts/sec | 16263.24 tokens/sec
+
+Processing batch #31 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2541s (tokenize: 0.0076s, model: 0.2465s)
+  Throughput: 15.74 texts/sec | 16118.18 tokens/sec
+
+Processing batch #32 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2634s (tokenize: 0.0045s, model: 0.2589s)
+  Throughput: 15.19 texts/sec | 15550.98 tokens/sec
+
+Processing batch #33 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2518s (tokenize: 0.0082s, model: 0.2436s)
+  Throughput: 15.89 texts/sec | 16267.91 tokens/sec
+
+Processing batch #34 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2479s (tokenize: 0.0038s, model: 0.2441s)
+  Throughput: 16.13 texts/sec | 16521.46 tokens/sec
+
+Processing batch #35 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2412s (tokenize: 0.0079s, model: 0.2333s)
+  Throughput: 16.58 texts/sec | 16978.32 tokens/sec
+
+Processing batch #36 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2616s (tokenize: 0.0036s, model: 0.2580s)
+  Throughput: 15.29 texts/sec | 15657.43 tokens/sec
+
+Processing batch #37 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2570s (tokenize: 0.0036s, model: 0.2534s)
+  Throughput: 15.56 texts/sec | 15936.00 tokens/sec
+
+Processing batch #38 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2496s (tokenize: 0.0042s, model: 0.2454s)
+  Throughput: 16.02 texts/sec | 16407.11 tokens/sec
+
+Processing batch #39 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2495s (tokenize: 0.0046s, model: 0.2450s)
+  Throughput: 16.03 texts/sec | 16415.34 tokens/sec
+
+Processing batch #40 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2500s (tokenize: 0.0035s, model: 0.2465s)
+  Throughput: 16.00 texts/sec | 16382.59 tokens/sec
+
+Processing batch #41 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2501s (tokenize: 0.0034s, model: 0.2467s)
+  Throughput: 16.00 texts/sec | 16379.83 tokens/sec
+
+Processing batch #42 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2494s (tokenize: 0.0035s, model: 0.2459s)
+  Throughput: 16.04 texts/sec | 16423.11 tokens/sec
+
+Processing batch #43 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2486s (tokenize: 0.0036s, model: 0.2449s)
+  Throughput: 16.09 texts/sec | 16479.57 tokens/sec
+
+Processing batch #44 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2532s (tokenize: 0.0038s, model: 0.2493s)
+  Throughput: 15.80 texts/sec | 16179.38 tokens/sec
+
+Processing batch #45 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2506s (tokenize: 0.0039s, model: 0.2467s)
+  Throughput: 15.96 texts/sec | 16347.49 tokens/sec
+
+Processing batch #46 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2496s (tokenize: 0.0036s, model: 0.2460s)
+  Throughput: 16.02 texts/sec | 16407.35 tokens/sec
+
+Processing batch #47 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2442s (tokenize: 0.0085s, model: 0.2356s)
+  Throughput: 16.38 texts/sec | 16776.41 tokens/sec
+
+Processing batch #48 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2510s (tokenize: 0.0036s, model: 0.2474s)
+  Throughput: 15.94 texts/sec | 16321.78 tokens/sec
+
+Processing batch #49 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2550s (tokenize: 0.0076s, model: 0.2474s)
+  Throughput: 15.69 texts/sec | 16063.43 tokens/sec
+
+Processing batch #50 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2502s (tokenize: 0.0039s, model: 0.2463s)
+  Throughput: 15.98 texts/sec | 16367.83 tokens/sec
+
+Processing batch #51 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2520s (tokenize: 0.0075s, model: 0.2445s)
+  Throughput: 15.87 texts/sec | 16254.73 tokens/sec
+
+Processing batch #52 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2517s (tokenize: 0.0038s, model: 0.2479s)
+  Throughput: 15.89 texts/sec | 16273.04 tokens/sec
+
+Processing batch #53 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2523s (tokenize: 0.0075s, model: 0.2448s)
+  Throughput: 15.85 texts/sec | 16232.19 tokens/sec
+
+Processing batch #54 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2496s (tokenize: 0.0032s, model: 0.2464s)
+  Throughput: 16.03 texts/sec | 16411.53 tokens/sec
+
+Processing batch #55 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2483s (tokenize: 0.0032s, model: 0.2451s)
+  Throughput: 16.11 texts/sec | 16497.78 tokens/sec
+
+Processing batch #56 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2497s (tokenize: 0.0032s, model: 0.2465s)
+  Throughput: 16.02 texts/sec | 16404.31 tokens/sec
+
+Processing batch #57 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2467s (tokenize: 0.0031s, model: 0.2436s)
+  Throughput: 16.21 texts/sec | 16602.48 tokens/sec
+
+Processing batch #58 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2508s (tokenize: 0.0045s, model: 0.2463s)
+  Throughput: 15.95 texts/sec | 16331.68 tokens/sec
+
+Processing batch #59 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2537s (tokenize: 0.0076s, model: 0.2462s)
+  Throughput: 15.76 texts/sec | 16142.18 tokens/sec
+
+Processing batch #60 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2519s (tokenize: 0.0034s, model: 0.2485s)
+  Throughput: 15.88 texts/sec | 16260.05 tokens/sec
+
+Processing batch #61 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2511s (tokenize: 0.0045s, model: 0.2466s)
+  Throughput: 15.93 texts/sec | 16311.85 tokens/sec
+
+Processing batch #62 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2494s (tokenize: 0.0040s, model: 0.2455s)
+  Throughput: 16.04 texts/sec | 16422.06 tokens/sec
+
+Processing batch #63 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2501s (tokenize: 0.0037s, model: 0.2464s)
+  Throughput: 15.99 texts/sec | 16375.96 tokens/sec
+
+Processing batch #64 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2678s (tokenize: 0.0051s, model: 0.2626s)
+  Throughput: 14.94 texts/sec | 15297.29 tokens/sec
+
+Processing batch #65 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2644s (tokenize: 0.0041s, model: 0.2603s)
+  Throughput: 15.13 texts/sec | 15492.63 tokens/sec
+
+Processing batch #66 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2507s (tokenize: 0.0038s, model: 0.2469s)
+  Throughput: 15.95 texts/sec | 16337.43 tokens/sec
+
+Processing batch #67 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2518s (tokenize: 0.0041s, model: 0.2477s)
+  Throughput: 15.89 texts/sec | 16267.60 tokens/sec
+
+Processing batch #68 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2520s (tokenize: 0.0038s, model: 0.2481s)
+  Throughput: 15.87 texts/sec | 16254.70 tokens/sec
+
+Processing batch #69 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.3077s (tokenize: 0.0037s, model: 0.3039s)
+  Throughput: 13.00 texts/sec | 13312.84 tokens/sec
+
+Processing batch #70 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2524s (tokenize: 0.0039s, model: 0.2485s)
+  Throughput: 15.85 texts/sec | 16229.81 tokens/sec
+
+Processing batch #71 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2520s (tokenize: 0.0062s, model: 0.2458s)
+  Throughput: 15.87 texts/sec | 16253.18 tokens/sec
+
+Processing batch #72 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2384s (tokenize: 0.0038s, model: 0.2346s)
+  Throughput: 16.78 texts/sec | 17178.32 tokens/sec
+
+Processing batch #73 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2533s (tokenize: 0.0036s, model: 0.2497s)
+  Throughput: 15.79 texts/sec | 16169.06 tokens/sec
+
+Processing batch #74 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2523s (tokenize: 0.0038s, model: 0.2485s)
+  Throughput: 15.86 texts/sec | 16237.43 tokens/sec
+
+Processing batch #75 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2512s (tokenize: 0.0039s, model: 0.2473s)
+  Throughput: 15.92 texts/sec | 16302.62 tokens/sec
+
+Processing batch #76 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2498s (tokenize: 0.0037s, model: 0.2460s)
+  Throughput: 16.01 texts/sec | 16398.11 tokens/sec
+
+Processing batch #77 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2506s (tokenize: 0.0038s, model: 0.2468s)
+  Throughput: 15.96 texts/sec | 16347.36 tokens/sec
+
+Processing batch #78 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2386s (tokenize: 0.0038s, model: 0.2347s)
+  Throughput: 16.76 texts/sec | 17166.69 tokens/sec
+
+Processing batch #79 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2403s (tokenize: 0.0036s, model: 0.2367s)
+  Throughput: 16.65 texts/sec | 17048.14 tokens/sec
+
+Processing batch #80 of size 4
+  Token count: 4096 tokens
+  Batch time: 0.2505s (tokenize: 0.0037s, model: 0.2468s)
+  Throughput: 15.97 texts/sec | 16349.18 tokens/sec
+
+Processing batch #81 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0598s (tokenize: 0.0016s, model: 0.0582s)
+  Throughput: 16.72 texts/sec | 8562.53 tokens/sec
+
+==================================================
+Benchmark Summary:
+  Device: CPU
+  Total texts processed: 321
+  Total tokens processed: 328192
+  Total batches: 81
+  Total time: 20.27 seconds
+  Average throughput: 15.84 texts/sec
+  Average throughput: 16190.34 tokens/sec
+==================================================
+complete test model bge-m3, batch 4
+test model bge-m3, batch 8
+[W623 07:25:43.340253817 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_addmm_activation(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1, bool use_gelu=False) -> Tensor
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: AutocastCPU
+  previous kernel: registered at /pytorch/aten/src/ATen/autocast_mode.cpp:327
+       new kernel: registered at /opt/workspace/ipex-cpu-dev/csrc/cpu/autocast/autocast_mode.cpp:112 (function operator())
+Using CPU device
+Starting benchmark with 321 texts...
+
+Processing batch #1 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4530s (tokenize: 0.0040s, model: 0.4490s)
+  Throughput: 17.66 texts/sec | 18085.59 tokens/sec
+
+Processing batch #2 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4306s (tokenize: 0.0044s, model: 0.4262s)
+  Throughput: 18.58 texts/sec | 19024.67 tokens/sec
+
+Processing batch #3 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4633s (tokenize: 0.0068s, model: 0.4565s)
+  Throughput: 17.27 texts/sec | 17682.36 tokens/sec
+
+Processing batch #4 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4324s (tokenize: 0.0072s, model: 0.4252s)
+  Throughput: 18.50 texts/sec | 18946.02 tokens/sec
+
+Processing batch #5 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4346s (tokenize: 0.0066s, model: 0.4281s)
+  Throughput: 18.41 texts/sec | 18847.99 tokens/sec
+
+Processing batch #6 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4312s (tokenize: 0.0090s, model: 0.4222s)
+  Throughput: 18.55 texts/sec | 18998.23 tokens/sec
+
+Processing batch #7 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4318s (tokenize: 0.0048s, model: 0.4270s)
+  Throughput: 18.53 texts/sec | 18973.58 tokens/sec
+
+Processing batch #8 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4571s (tokenize: 0.0068s, model: 0.4502s)
+  Throughput: 17.50 texts/sec | 17922.89 tokens/sec
+
+Processing batch #9 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4272s (tokenize: 0.0064s, model: 0.4209s)
+  Throughput: 18.72 texts/sec | 19174.14 tokens/sec
+
+Processing batch #10 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4400s (tokenize: 0.0084s, model: 0.4316s)
+  Throughput: 18.18 texts/sec | 18618.69 tokens/sec
+
+Processing batch #11 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4455s (tokenize: 0.0050s, model: 0.4404s)
+  Throughput: 17.96 texts/sec | 18390.00 tokens/sec
+
+Processing batch #12 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4343s (tokenize: 0.0078s, model: 0.4265s)
+  Throughput: 18.42 texts/sec | 18862.88 tokens/sec
+
+Processing batch #13 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4604s (tokenize: 0.0044s, model: 0.4560s)
+  Throughput: 17.38 texts/sec | 17792.92 tokens/sec
+
+Processing batch #14 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4320s (tokenize: 0.0084s, model: 0.4235s)
+  Throughput: 18.52 texts/sec | 18965.03 tokens/sec
+
+Processing batch #15 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4486s (tokenize: 0.0053s, model: 0.4433s)
+  Throughput: 17.83 texts/sec | 18261.34 tokens/sec
+
+Processing batch #16 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4311s (tokenize: 0.0061s, model: 0.4250s)
+  Throughput: 18.56 texts/sec | 19004.31 tokens/sec
+
+Processing batch #17 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4524s (tokenize: 0.0079s, model: 0.4445s)
+  Throughput: 17.68 texts/sec | 18106.97 tokens/sec
+
+Processing batch #18 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4472s (tokenize: 0.0046s, model: 0.4426s)
+  Throughput: 17.89 texts/sec | 18319.09 tokens/sec
+
+Processing batch #19 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4317s (tokenize: 0.0047s, model: 0.4270s)
+  Throughput: 18.53 texts/sec | 18975.80 tokens/sec
+
+Processing batch #20 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4320s (tokenize: 0.0068s, model: 0.4251s)
+  Throughput: 18.52 texts/sec | 18964.87 tokens/sec
+
+Processing batch #21 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4258s (tokenize: 0.0044s, model: 0.4214s)
+  Throughput: 18.79 texts/sec | 19238.88 tokens/sec
+
+Processing batch #22 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4358s (tokenize: 0.0048s, model: 0.4310s)
+  Throughput: 18.36 texts/sec | 18799.01 tokens/sec
+
+Processing batch #23 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4279s (tokenize: 0.0045s, model: 0.4234s)
+  Throughput: 18.70 texts/sec | 19144.91 tokens/sec
+
+Processing batch #24 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4284s (tokenize: 0.0048s, model: 0.4236s)
+  Throughput: 18.68 texts/sec | 19124.12 tokens/sec
+
+Processing batch #25 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4340s (tokenize: 0.0049s, model: 0.4292s)
+  Throughput: 18.43 texts/sec | 18873.72 tokens/sec
+
+Processing batch #26 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4312s (tokenize: 0.0051s, model: 0.4262s)
+  Throughput: 18.55 texts/sec | 18996.15 tokens/sec
+
+Processing batch #27 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4345s (tokenize: 0.0076s, model: 0.4269s)
+  Throughput: 18.41 texts/sec | 18854.14 tokens/sec
+
+Processing batch #28 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4352s (tokenize: 0.0084s, model: 0.4268s)
+  Throughput: 18.38 texts/sec | 18821.63 tokens/sec
+
+Processing batch #29 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4325s (tokenize: 0.0050s, model: 0.4274s)
+  Throughput: 18.50 texts/sec | 18942.41 tokens/sec
+
+Processing batch #30 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4370s (tokenize: 0.0081s, model: 0.4289s)
+  Throughput: 18.31 texts/sec | 18747.96 tokens/sec
+
+Processing batch #31 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4325s (tokenize: 0.0048s, model: 0.4277s)
+  Throughput: 18.50 texts/sec | 18938.88 tokens/sec
+
+Processing batch #32 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4338s (tokenize: 0.0061s, model: 0.4277s)
+  Throughput: 18.44 texts/sec | 18882.91 tokens/sec
+
+Processing batch #33 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4309s (tokenize: 0.0051s, model: 0.4258s)
+  Throughput: 18.57 texts/sec | 19013.50 tokens/sec
+
+Processing batch #34 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4319s (tokenize: 0.0064s, model: 0.4255s)
+  Throughput: 18.52 texts/sec | 18967.22 tokens/sec
+
+Processing batch #35 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4290s (tokenize: 0.0049s, model: 0.4240s)
+  Throughput: 18.65 texts/sec | 19097.62 tokens/sec
+
+Processing batch #36 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4335s (tokenize: 0.0067s, model: 0.4268s)
+  Throughput: 18.45 texts/sec | 18896.49 tokens/sec
+
+Processing batch #37 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4348s (tokenize: 0.0077s, model: 0.4271s)
+  Throughput: 18.40 texts/sec | 18840.51 tokens/sec
+
+Processing batch #38 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4369s (tokenize: 0.0048s, model: 0.4321s)
+  Throughput: 18.31 texts/sec | 18751.83 tokens/sec
+
+Processing batch #39 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4333s (tokenize: 0.0048s, model: 0.4284s)
+  Throughput: 18.46 texts/sec | 18906.84 tokens/sec
+
+Processing batch #40 of size 8
+  Token count: 8192 tokens
+  Batch time: 0.4332s (tokenize: 0.0048s, model: 0.4284s)
+  Throughput: 18.47 texts/sec | 18909.03 tokens/sec
+
+Processing batch #41 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0603s (tokenize: 0.0019s, model: 0.0584s)
+  Throughput: 16.58 texts/sec | 8490.12 tokens/sec
+
+==================================================
+Benchmark Summary:
+  Device: CPU
+  Total texts processed: 321
+  Total tokens processed: 328192
+  Total batches: 41
+  Total time: 17.53 seconds
+  Average throughput: 18.31 texts/sec
+  Average throughput: 18722.17 tokens/sec
+==================================================
+complete test model bge-m3, batch 8
+test model bge-m3, batch 16
+[W623 07:26:08.517864625 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_addmm_activation(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1, bool use_gelu=False) -> Tensor
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: AutocastCPU
+  previous kernel: registered at /pytorch/aten/src/ATen/autocast_mode.cpp:327
+       new kernel: registered at /opt/workspace/ipex-cpu-dev/csrc/cpu/autocast/autocast_mode.cpp:112 (function operator())
+Using CPU device
+Starting benchmark with 321 texts...
+
+Processing batch #1 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.1507s (tokenize: 0.0058s, model: 1.1449s)
+  Throughput: 13.90 texts/sec | 14238.20 tokens/sec
+
+Processing batch #2 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.1182s (tokenize: 0.0088s, model: 1.1094s)
+  Throughput: 14.31 texts/sec | 14652.73 tokens/sec
+
+Processing batch #3 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.0964s (tokenize: 0.0104s, model: 1.0859s)
+  Throughput: 14.59 texts/sec | 14943.81 tokens/sec
+
+Processing batch #4 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.0977s (tokenize: 0.0101s, model: 1.0876s)
+  Throughput: 14.58 texts/sec | 14925.72 tokens/sec
+
+Processing batch #5 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.0943s (tokenize: 0.0090s, model: 1.0854s)
+  Throughput: 14.62 texts/sec | 14971.71 tokens/sec
+
+Processing batch #6 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.0958s (tokenize: 0.0096s, model: 1.0862s)
+  Throughput: 14.60 texts/sec | 14952.05 tokens/sec
+
+Processing batch #7 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.0881s (tokenize: 0.0082s, model: 1.0799s)
+  Throughput: 14.70 texts/sec | 15056.94 tokens/sec
+
+Processing batch #8 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.0934s (tokenize: 0.0088s, model: 1.0846s)
+  Throughput: 14.63 texts/sec | 14984.79 tokens/sec
+
+Processing batch #9 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.0944s (tokenize: 0.0121s, model: 1.0823s)
+  Throughput: 14.62 texts/sec | 14971.40 tokens/sec
+
+Processing batch #10 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.0922s (tokenize: 0.0074s, model: 1.0848s)
+  Throughput: 14.65 texts/sec | 15000.91 tokens/sec
+
+Processing batch #11 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.0919s (tokenize: 0.0092s, model: 1.0827s)
+  Throughput: 14.65 texts/sec | 15004.44 tokens/sec
+
+Processing batch #12 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.0925s (tokenize: 0.0086s, model: 1.0839s)
+  Throughput: 14.65 texts/sec | 14996.66 tokens/sec
+
+Processing batch #13 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.1537s (tokenize: 0.0101s, model: 1.1436s)
+  Throughput: 13.87 texts/sec | 14201.60 tokens/sec
+
+Processing batch #14 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.1463s (tokenize: 0.0077s, model: 1.1386s)
+  Throughput: 13.96 texts/sec | 14293.17 tokens/sec
+
+Processing batch #15 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.1634s (tokenize: 0.0085s, model: 1.1549s)
+  Throughput: 13.75 texts/sec | 14082.30 tokens/sec
+
+Processing batch #16 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.1342s (tokenize: 0.0083s, model: 1.1259s)
+  Throughput: 14.11 texts/sec | 14445.14 tokens/sec
+
+Processing batch #17 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.0930s (tokenize: 0.0085s, model: 1.0845s)
+  Throughput: 14.64 texts/sec | 14989.34 tokens/sec
+
+Processing batch #18 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.0927s (tokenize: 0.0111s, model: 1.0817s)
+  Throughput: 14.64 texts/sec | 14993.39 tokens/sec
+
+Processing batch #19 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.0889s (tokenize: 0.0080s, model: 1.0809s)
+  Throughput: 14.69 texts/sec | 15046.42 tokens/sec
+
+Processing batch #20 of size 16
+  Token count: 16384 tokens
+  Batch time: 1.0900s (tokenize: 0.0086s, model: 1.0814s)
+  Throughput: 14.68 texts/sec | 15031.20 tokens/sec
+
+Processing batch #21 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0641s (tokenize: 0.0025s, model: 0.0615s)
+  Throughput: 15.61 texts/sec | 7993.58 tokens/sec
+
+==================================================
+Benchmark Summary:
+  Device: CPU
+  Total texts processed: 321
+  Total tokens processed: 328192
+  Total batches: 21
+  Total time: 22.23 seconds
+  Average throughput: 14.44 texts/sec
+  Average throughput: 14761.75 tokens/sec
+==================================================
+complete test model bge-m3, batch 16
+test model bge-m3, batch 32
+[W623 07:26:40.944434030 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_addmm_activation(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1, bool use_gelu=False) -> Tensor
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: AutocastCPU
+  previous kernel: registered at /pytorch/aten/src/ATen/autocast_mode.cpp:327
+       new kernel: registered at /opt/workspace/ipex-cpu-dev/csrc/cpu/autocast/autocast_mode.cpp:112 (function operator())
+Using CPU device
+Starting benchmark with 321 texts...
+
+Processing batch #1 of size 32
+  Token count: 32768 tokens
+  Batch time: 1.8966s (tokenize: 0.0103s, model: 1.8862s)
+  Throughput: 16.87 texts/sec | 17277.50 tokens/sec
+
+Processing batch #2 of size 32
+  Token count: 32768 tokens
+  Batch time: 1.7235s (tokenize: 0.0115s, model: 1.7120s)
+  Throughput: 18.57 texts/sec | 19012.85 tokens/sec
+
+Processing batch #3 of size 32
+  Token count: 32768 tokens
+  Batch time: 1.6999s (tokenize: 0.0156s, model: 1.6843s)
+  Throughput: 18.82 texts/sec | 19276.21 tokens/sec
+
+Processing batch #4 of size 32
+  Token count: 32768 tokens
+  Batch time: 1.6667s (tokenize: 0.0121s, model: 1.6546s)
+  Throughput: 19.20 texts/sec | 19660.38 tokens/sec
+
+Processing batch #5 of size 32
+  Token count: 32768 tokens
+  Batch time: 1.6672s (tokenize: 0.0124s, model: 1.6548s)
+  Throughput: 19.19 texts/sec | 19654.83 tokens/sec
+
+Processing batch #6 of size 32
+  Token count: 32768 tokens
+  Batch time: 1.6696s (tokenize: 0.0162s, model: 1.6534s)
+  Throughput: 19.17 texts/sec | 19626.61 tokens/sec
+
+Processing batch #7 of size 32
+  Token count: 32768 tokens
+  Batch time: 1.6645s (tokenize: 0.0161s, model: 1.6484s)
+  Throughput: 19.23 texts/sec | 19686.74 tokens/sec
+
+Processing batch #8 of size 32
+  Token count: 32768 tokens
+  Batch time: 1.6745s (tokenize: 0.0150s, model: 1.6594s)
+  Throughput: 19.11 texts/sec | 19569.33 tokens/sec
+
+Processing batch #9 of size 32
+  Token count: 32768 tokens
+  Batch time: 1.6629s (tokenize: 0.0129s, model: 1.6500s)
+  Throughput: 19.24 texts/sec | 19705.40 tokens/sec
+
+Processing batch #10 of size 32
+  Token count: 32768 tokens
+  Batch time: 1.6651s (tokenize: 0.0154s, model: 1.6497s)
+  Throughput: 19.22 texts/sec | 19678.97 tokens/sec
+
+Processing batch #11 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0647s (tokenize: 0.0032s, model: 0.0615s)
+  Throughput: 15.47 texts/sec | 7919.12 tokens/sec
+
+==================================================
+Benchmark Summary:
+  Device: CPU
+  Total texts processed: 321
+  Total tokens processed: 328192
+  Total batches: 11
+  Total time: 17.06 seconds
+  Average throughput: 18.82 texts/sec
+  Average throughput: 19242.64 tokens/sec
+==================================================
+complete test model bge-m3, batch 32
+test model bge-m3, batch 64
+[W623 07:27:09.722190328 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_addmm_activation(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1, bool use_gelu=False) -> Tensor
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: AutocastCPU
+  previous kernel: registered at /pytorch/aten/src/ATen/autocast_mode.cpp:327
+       new kernel: registered at /opt/workspace/ipex-cpu-dev/csrc/cpu/autocast/autocast_mode.cpp:112 (function operator())
+Using CPU device
+Starting benchmark with 321 texts...
+
+Processing batch #1 of size 64
+  Token count: 65536 tokens
+  Batch time: 3.5530s (tokenize: 0.0188s, model: 3.5342s)
+  Throughput: 18.01 texts/sec | 18445.03 tokens/sec
+
+Processing batch #2 of size 64
+  Token count: 65536 tokens
+  Batch time: 3.4164s (tokenize: 0.0206s, model: 3.3958s)
+  Throughput: 18.73 texts/sec | 19182.72 tokens/sec
+
+Processing batch #3 of size 64
+  Token count: 65536 tokens
+  Batch time: 3.4096s (tokenize: 0.0233s, model: 3.3863s)
+  Throughput: 18.77 texts/sec | 19221.08 tokens/sec
+
+Processing batch #4 of size 64
+  Token count: 65536 tokens
+  Batch time: 3.4600s (tokenize: 0.0257s, model: 3.4343s)
+  Throughput: 18.50 texts/sec | 18941.00 tokens/sec
+
+Processing batch #5 of size 64
+  Token count: 65536 tokens
+  Batch time: 3.4383s (tokenize: 0.0317s, model: 3.4066s)
+  Throughput: 18.61 texts/sec | 19060.75 tokens/sec
+
+Processing batch #6 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0686s (tokenize: 0.0050s, model: 0.0636s)
+  Throughput: 14.58 texts/sec | 7462.73 tokens/sec
+
+==================================================
+Benchmark Summary:
+  Device: CPU
+  Total texts processed: 321
+  Total tokens processed: 328192
+  Total batches: 6
+  Total time: 17.35 seconds
+  Average throughput: 18.51 texts/sec
+  Average throughput: 18920.13 tokens/sec
+==================================================
+complete test model bge-m3, batch 64

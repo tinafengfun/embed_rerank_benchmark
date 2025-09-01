@@ -1,0 +1,4910 @@
+[W623 07:00:51.680116979 OperatorEntry.cpp:154] Warning: Warning only once for all operators,  other operators may also be overridden.
+  Overriding a previously registered kernel for the same operator and the same dispatch key
+  operator: aten::_addmm_activation(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1, bool use_gelu=False) -> Tensor
+    registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+  dispatch key: AutocastCPU
+  previous kernel: registered at /pytorch/aten/src/ATen/autocast_mode.cpp:327
+       new kernel: registered at /opt/workspace/ipex-cpu-dev/csrc/cpu/autocast/autocast_mode.cpp:112 (function operator())
+Using CPU device
+Starting benchmark with 978 texts...
+
+Processing batch #1 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0532s (tokenize: 0.0013s, model: 0.0519s)
+  Throughput: 18.79 texts/sec | 9620.05 tokens/sec
+
+Processing batch #2 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.37 texts/sec | 9919.41 tokens/sec
+
+Processing batch #3 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0537s (tokenize: 0.0011s, model: 0.0526s)
+  Throughput: 18.61 texts/sec | 9529.51 tokens/sec
+
+Processing batch #4 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0013s, model: 0.0501s)
+  Throughput: 19.46 texts/sec | 9961.98 tokens/sec
+
+Processing batch #5 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0502s)
+  Throughput: 19.38 texts/sec | 9923.13 tokens/sec
+
+Processing batch #6 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.57 texts/sec | 10022.00 tokens/sec
+
+Processing batch #7 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0503s)
+  Throughput: 19.37 texts/sec | 9916.71 tokens/sec
+
+Processing batch #8 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9980.17 tokens/sec
+
+Processing batch #9 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.40 texts/sec | 9933.73 tokens/sec
+
+Processing batch #10 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.40 texts/sec | 9932.72 tokens/sec
+
+Processing batch #11 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9945.09 tokens/sec
+
+Processing batch #12 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0549s (tokenize: 0.0013s, model: 0.0537s)
+  Throughput: 18.20 texts/sec | 9318.01 tokens/sec
+
+Processing batch #13 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0536s (tokenize: 0.0015s, model: 0.0521s)
+  Throughput: 18.64 texts/sec | 9545.26 tokens/sec
+
+Processing batch #14 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0015s, model: 0.0503s)
+  Throughput: 19.32 texts/sec | 9891.22 tokens/sec
+
+Processing batch #15 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0013s, model: 0.0501s)
+  Throughput: 19.43 texts/sec | 9947.03 tokens/sec
+
+Processing batch #16 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0502s)
+  Throughput: 19.39 texts/sec | 9927.67 tokens/sec
+
+Processing batch #17 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9943.62 tokens/sec
+
+Processing batch #18 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.52 texts/sec | 9996.43 tokens/sec
+
+Processing batch #19 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.33 texts/sec | 9896.74 tokens/sec
+
+Processing batch #20 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0013s, model: 0.0501s)
+  Throughput: 19.47 texts/sec | 9969.75 tokens/sec
+
+Processing batch #21 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9978.22 tokens/sec
+
+Processing batch #22 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.58 texts/sec | 10026.26 tokens/sec
+
+Processing batch #23 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.39 texts/sec | 9927.30 tokens/sec
+
+Processing batch #24 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.52 texts/sec | 9992.53 tokens/sec
+
+Processing batch #25 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0013s, model: 0.0499s)
+  Throughput: 19.54 texts/sec | 10006.73 tokens/sec
+
+Processing batch #26 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0012s, model: 0.0496s)
+  Throughput: 19.68 texts/sec | 10076.74 tokens/sec
+
+Processing batch #27 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.66 texts/sec | 10064.51 tokens/sec
+
+Processing batch #28 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0013s, model: 0.0496s)
+  Throughput: 19.65 texts/sec | 10061.68 tokens/sec
+
+Processing batch #29 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.63 texts/sec | 10051.13 tokens/sec
+
+Processing batch #30 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9955.33 tokens/sec
+
+Processing batch #31 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0524s (tokenize: 0.0012s, model: 0.0512s)
+  Throughput: 19.07 texts/sec | 9764.84 tokens/sec
+
+Processing batch #32 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0553s (tokenize: 0.0013s, model: 0.0540s)
+  Throughput: 18.08 texts/sec | 9258.63 tokens/sec
+
+Processing batch #33 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0014s, model: 0.0498s)
+  Throughput: 19.55 texts/sec | 10010.09 tokens/sec
+
+Processing batch #34 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0013s, model: 0.0497s)
+  Throughput: 19.61 texts/sec | 10038.02 tokens/sec
+
+Processing batch #35 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0013s, model: 0.0495s)
+  Throughput: 19.70 texts/sec | 10085.68 tokens/sec
+
+Processing batch #36 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0497s)
+  Throughput: 19.65 texts/sec | 10062.76 tokens/sec
+
+Processing batch #37 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0507s (tokenize: 0.0011s, model: 0.0496s)
+  Throughput: 19.71 texts/sec | 10089.99 tokens/sec
+
+Processing batch #38 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0506s (tokenize: 0.0011s, model: 0.0494s)
+  Throughput: 19.78 texts/sec | 10126.68 tokens/sec
+
+Processing batch #39 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.67 texts/sec | 10071.87 tokens/sec
+
+Processing batch #40 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0012s, model: 0.0496s)
+  Throughput: 19.67 texts/sec | 10070.36 tokens/sec
+
+Processing batch #41 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0505s (tokenize: 0.0012s, model: 0.0493s)
+  Throughput: 19.82 texts/sec | 10146.58 tokens/sec
+
+Processing batch #42 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.62 texts/sec | 10047.84 tokens/sec
+
+Processing batch #43 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9979.11 tokens/sec
+
+Processing batch #44 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.53 texts/sec | 10001.60 tokens/sec
+
+Processing batch #45 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.53 texts/sec | 9998.67 tokens/sec
+
+Processing batch #46 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.57 texts/sec | 10018.54 tokens/sec
+
+Processing batch #47 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0010s, model: 0.0502s)
+  Throughput: 19.53 texts/sec | 9998.34 tokens/sec
+
+Processing batch #48 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.53 texts/sec | 9998.29 tokens/sec
+
+Processing batch #49 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.35 texts/sec | 9909.44 tokens/sec
+
+Processing batch #50 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0499s)
+  Throughput: 19.58 texts/sec | 10023.49 tokens/sec
+
+Processing batch #51 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0519s (tokenize: 0.0012s, model: 0.0507s)
+  Throughput: 19.27 texts/sec | 9867.91 tokens/sec
+
+Processing batch #52 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.53 texts/sec | 9999.55 tokens/sec
+
+Processing batch #53 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.54 texts/sec | 10003.79 tokens/sec
+
+Processing batch #54 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.38 texts/sec | 9921.52 tokens/sec
+
+Processing batch #55 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.59 texts/sec | 10028.74 tokens/sec
+
+Processing batch #56 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.47 texts/sec | 9968.27 tokens/sec
+
+Processing batch #57 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.49 texts/sec | 9980.13 tokens/sec
+
+Processing batch #58 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.57 texts/sec | 10021.90 tokens/sec
+
+Processing batch #59 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.54 texts/sec | 10004.30 tokens/sec
+
+Processing batch #60 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.40 texts/sec | 9933.78 tokens/sec
+
+Processing batch #61 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9955.84 tokens/sec
+
+Processing batch #62 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0535s (tokenize: 0.0012s, model: 0.0523s)
+  Throughput: 18.69 texts/sec | 9571.34 tokens/sec
+
+Processing batch #63 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0013s, model: 0.0497s)
+  Throughput: 19.62 texts/sec | 10045.11 tokens/sec
+
+Processing batch #64 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.34 texts/sec | 9903.86 tokens/sec
+
+Processing batch #65 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.52 texts/sec | 9993.87 tokens/sec
+
+Processing batch #66 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9983.84 tokens/sec
+
+Processing batch #67 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.39 texts/sec | 9926.06 tokens/sec
+
+Processing batch #68 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.48 texts/sec | 9971.55 tokens/sec
+
+Processing batch #69 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0013s, model: 0.0501s)
+  Throughput: 19.46 texts/sec | 9962.62 tokens/sec
+
+Processing batch #70 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0524s (tokenize: 0.0012s, model: 0.0512s)
+  Throughput: 19.10 texts/sec | 9777.60 tokens/sec
+
+Processing batch #71 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.35 texts/sec | 9905.00 tokens/sec
+
+Processing batch #72 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.47 texts/sec | 9969.38 tokens/sec
+
+Processing batch #73 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.43 texts/sec | 9949.70 tokens/sec
+
+Processing batch #74 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0013s, model: 0.0501s)
+  Throughput: 19.47 texts/sec | 9968.87 tokens/sec
+
+Processing batch #75 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9958.79 tokens/sec
+
+Processing batch #76 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.55 texts/sec | 10010.37 tokens/sec
+
+Processing batch #77 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.51 texts/sec | 9986.81 tokens/sec
+
+Processing batch #78 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.56 texts/sec | 10014.66 tokens/sec
+
+Processing batch #79 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9941.69 tokens/sec
+
+Processing batch #80 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.53 texts/sec | 9999.37 tokens/sec
+
+Processing batch #81 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.40 texts/sec | 9930.70 tokens/sec
+
+Processing batch #82 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0519s (tokenize: 0.0017s, model: 0.0503s)
+  Throughput: 19.26 texts/sec | 9860.39 tokens/sec
+
+Processing batch #83 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0521s (tokenize: 0.0018s, model: 0.0503s)
+  Throughput: 19.18 texts/sec | 9819.76 tokens/sec
+
+Processing batch #84 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0519s (tokenize: 0.0016s, model: 0.0503s)
+  Throughput: 19.28 texts/sec | 9869.99 tokens/sec
+
+Processing batch #85 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0521s (tokenize: 0.0016s, model: 0.0505s)
+  Throughput: 19.18 texts/sec | 9821.06 tokens/sec
+
+Processing batch #86 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0015s, model: 0.0502s)
+  Throughput: 19.34 texts/sec | 9903.22 tokens/sec
+
+Processing batch #87 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0015s, model: 0.0502s)
+  Throughput: 19.32 texts/sec | 9894.37 tokens/sec
+
+Processing batch #88 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0015s, model: 0.0502s)
+  Throughput: 19.36 texts/sec | 9914.65 tokens/sec
+
+Processing batch #89 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0519s (tokenize: 0.0015s, model: 0.0504s)
+  Throughput: 19.26 texts/sec | 9862.97 tokens/sec
+
+Processing batch #90 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0525s (tokenize: 0.0015s, model: 0.0509s)
+  Throughput: 19.05 texts/sec | 9755.66 tokens/sec
+
+Processing batch #91 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0016s, model: 0.0500s)
+  Throughput: 19.40 texts/sec | 9930.97 tokens/sec
+
+Processing batch #92 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0016s, model: 0.0502s)
+  Throughput: 19.29 texts/sec | 9878.89 tokens/sec
+
+Processing batch #93 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0015s, model: 0.0500s)
+  Throughput: 19.41 texts/sec | 9936.99 tokens/sec
+
+Processing batch #94 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0015s, model: 0.0500s)
+  Throughput: 19.42 texts/sec | 9942.61 tokens/sec
+
+Processing batch #95 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0014s, model: 0.0500s)
+  Throughput: 19.45 texts/sec | 9956.71 tokens/sec
+
+Processing batch #96 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0015s, model: 0.0501s)
+  Throughput: 19.38 texts/sec | 9920.56 tokens/sec
+
+Processing batch #97 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0015s, model: 0.0498s)
+  Throughput: 19.49 texts/sec | 9980.91 tokens/sec
+
+Processing batch #98 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9979.11 tokens/sec
+
+Processing batch #99 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.53 texts/sec | 9998.20 tokens/sec
+
+Processing batch #100 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.58 texts/sec | 10024.15 tokens/sec
+
+Processing batch #101 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.52 texts/sec | 9992.48 tokens/sec
+
+Processing batch #102 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.57 texts/sec | 10021.62 tokens/sec
+
+Processing batch #103 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0013s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9953.30 tokens/sec
+
+Processing batch #104 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9953.21 tokens/sec
+
+Processing batch #105 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.43 texts/sec | 9947.53 tokens/sec
+
+Processing batch #106 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9956.76 tokens/sec
+
+Processing batch #107 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9966.00 tokens/sec
+
+Processing batch #108 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9961.56 tokens/sec
+
+Processing batch #109 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9937.82 tokens/sec
+
+Processing batch #110 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9950.76 tokens/sec
+
+Processing batch #111 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9955.79 tokens/sec
+
+Processing batch #112 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.43 texts/sec | 9947.40 tokens/sec
+
+Processing batch #113 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.38 texts/sec | 9920.38 tokens/sec
+
+Processing batch #114 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9981.38 tokens/sec
+
+Processing batch #115 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9956.85 tokens/sec
+
+Processing batch #116 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0013s, model: 0.0501s)
+  Throughput: 19.48 texts/sec | 9972.16 tokens/sec
+
+Processing batch #117 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0014s, model: 0.0499s)
+  Throughput: 19.49 texts/sec | 9977.90 tokens/sec
+
+Processing batch #118 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9937.68 tokens/sec
+
+Processing batch #119 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.53 texts/sec | 9997.08 tokens/sec
+
+Processing batch #120 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0537s (tokenize: 0.0013s, model: 0.0524s)
+  Throughput: 18.61 texts/sec | 9529.76 tokens/sec
+
+Processing batch #121 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0013s, model: 0.0496s)
+  Throughput: 19.65 texts/sec | 10061.77 tokens/sec
+
+Processing batch #122 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.61 texts/sec | 10041.26 tokens/sec
+
+Processing batch #123 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9935.61 tokens/sec
+
+Processing batch #124 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.55 texts/sec | 10009.29 tokens/sec
+
+Processing batch #125 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9980.59 tokens/sec
+
+Processing batch #126 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.48 texts/sec | 9971.92 tokens/sec
+
+Processing batch #127 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9985.09 tokens/sec
+
+Processing batch #128 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.55 texts/sec | 10009.53 tokens/sec
+
+Processing batch #129 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0550s (tokenize: 0.0015s, model: 0.0535s)
+  Throughput: 18.17 texts/sec | 9303.19 tokens/sec
+
+Processing batch #130 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0527s (tokenize: 0.0016s, model: 0.0511s)
+  Throughput: 18.97 texts/sec | 9714.04 tokens/sec
+
+Processing batch #131 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0015s, model: 0.0501s)
+  Throughput: 19.35 texts/sec | 9908.11 tokens/sec
+
+Processing batch #132 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.62 texts/sec | 10046.61 tokens/sec
+
+Processing batch #133 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0507s (tokenize: 0.0012s, model: 0.0495s)
+  Throughput: 19.71 texts/sec | 10093.55 tokens/sec
+
+Processing batch #134 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.66 texts/sec | 10067.43 tokens/sec
+
+Processing batch #135 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.65 texts/sec | 10063.23 tokens/sec
+
+Processing batch #136 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0011s, model: 0.0498s)
+  Throughput: 19.62 texts/sec | 10045.96 tokens/sec
+
+Processing batch #137 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.54 texts/sec | 10002.63 tokens/sec
+
+Processing batch #138 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0537s (tokenize: 0.0012s, model: 0.0525s)
+  Throughput: 18.62 texts/sec | 9533.69 tokens/sec
+
+Processing batch #139 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.38 texts/sec | 9924.23 tokens/sec
+
+Processing batch #140 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.57 texts/sec | 10021.06 tokens/sec
+
+Processing batch #141 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0013s, model: 0.0500s)
+  Throughput: 19.50 texts/sec | 9983.75 tokens/sec
+
+Processing batch #142 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.41 texts/sec | 9935.61 tokens/sec
+
+Processing batch #143 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9956.94 tokens/sec
+
+Processing batch #144 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9936.95 tokens/sec
+
+Processing batch #145 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.47 texts/sec | 9968.04 tokens/sec
+
+Processing batch #146 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.47 texts/sec | 9968.27 tokens/sec
+
+Processing batch #147 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.35 texts/sec | 9906.97 tokens/sec
+
+Processing batch #148 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0522s (tokenize: 0.0012s, model: 0.0509s)
+  Throughput: 19.17 texts/sec | 9813.70 tokens/sec
+
+Processing batch #149 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0579s (tokenize: 0.0012s, model: 0.0567s)
+  Throughput: 17.26 texts/sec | 8838.33 tokens/sec
+
+Processing batch #150 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0012s, model: 0.0506s)
+  Throughput: 19.32 texts/sec | 9893.59 tokens/sec
+
+Processing batch #151 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.47 texts/sec | 9969.05 tokens/sec
+
+Processing batch #152 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9979.29 tokens/sec
+
+Processing batch #153 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9981.56 tokens/sec
+
+Processing batch #154 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.41 texts/sec | 9939.85 tokens/sec
+
+Processing batch #155 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.55 texts/sec | 10007.33 tokens/sec
+
+Processing batch #156 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0013s, model: 0.0505s)
+  Throughput: 19.33 texts/sec | 9897.29 tokens/sec
+
+Processing batch #157 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9982.68 tokens/sec
+
+Processing batch #158 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.40 texts/sec | 9933.64 tokens/sec
+
+Processing batch #159 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.53 texts/sec | 10000.16 tokens/sec
+
+Processing batch #160 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.56 texts/sec | 10015.78 tokens/sec
+
+Processing batch #161 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.39 texts/sec | 9925.19 tokens/sec
+
+Processing batch #162 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.48 texts/sec | 9974.19 tokens/sec
+
+Processing batch #163 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.41 texts/sec | 9936.03 tokens/sec
+
+Processing batch #164 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9944.08 tokens/sec
+
+Processing batch #165 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.35 texts/sec | 9908.75 tokens/sec
+
+Processing batch #166 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.49 texts/sec | 9978.18 tokens/sec
+
+Processing batch #167 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.50 texts/sec | 9985.18 tokens/sec
+
+Processing batch #168 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0549s (tokenize: 0.0012s, model: 0.0537s)
+  Throughput: 18.23 texts/sec | 9334.25 tokens/sec
+
+Processing batch #169 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0532s (tokenize: 0.0012s, model: 0.0521s)
+  Throughput: 18.78 texts/sec | 9616.52 tokens/sec
+
+Processing batch #170 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9938.14 tokens/sec
+
+Processing batch #171 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0499s)
+  Throughput: 19.58 texts/sec | 10024.34 tokens/sec
+
+Processing batch #172 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.41 texts/sec | 9935.57 tokens/sec
+
+Processing batch #173 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.52 texts/sec | 9993.46 tokens/sec
+
+Processing batch #174 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.56 texts/sec | 10012.28 tokens/sec
+
+Processing batch #175 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0507s (tokenize: 0.0011s, model: 0.0496s)
+  Throughput: 19.72 texts/sec | 10098.63 tokens/sec
+
+Processing batch #176 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.53 texts/sec | 10001.55 tokens/sec
+
+Processing batch #177 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0498s)
+  Throughput: 19.65 texts/sec | 10058.61 tokens/sec
+
+Processing batch #178 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0519s (tokenize: 0.0011s, model: 0.0508s)
+  Throughput: 19.28 texts/sec | 9869.77 tokens/sec
+
+Processing batch #179 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0533s (tokenize: 0.0011s, model: 0.0521s)
+  Throughput: 18.78 texts/sec | 9612.90 tokens/sec
+
+Processing batch #180 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.37 texts/sec | 9919.32 tokens/sec
+
+Processing batch #181 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9953.48 tokens/sec
+
+Processing batch #182 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.55 texts/sec | 10009.76 tokens/sec
+
+Processing batch #183 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0011s, model: 0.0499s)
+  Throughput: 19.60 texts/sec | 10034.74 tokens/sec
+
+Processing batch #184 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.57 texts/sec | 10020.50 tokens/sec
+
+Processing batch #185 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0014s, model: 0.0500s)
+  Throughput: 19.47 texts/sec | 9969.84 tokens/sec
+
+Processing batch #186 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.57 texts/sec | 10020.22 tokens/sec
+
+Processing batch #187 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0519s (tokenize: 0.0012s, model: 0.0507s)
+  Throughput: 19.26 texts/sec | 9862.56 tokens/sec
+
+Processing batch #188 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0497s)
+  Throughput: 19.66 texts/sec | 10068.19 tokens/sec
+
+Processing batch #189 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.66 texts/sec | 10064.51 tokens/sec
+
+Processing batch #190 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0011s, model: 0.0497s)
+  Throughput: 19.68 texts/sec | 10073.66 tokens/sec
+
+Processing batch #191 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.67 texts/sec | 10069.37 tokens/sec
+
+Processing batch #192 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0497s)
+  Throughput: 19.66 texts/sec | 10066.25 tokens/sec
+
+Processing batch #193 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0498s)
+  Throughput: 19.64 texts/sec | 10054.04 tokens/sec
+
+Processing batch #194 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0013s, model: 0.0495s)
+  Throughput: 19.67 texts/sec | 10070.26 tokens/sec
+
+Processing batch #195 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0011s, model: 0.0498s)
+  Throughput: 19.62 texts/sec | 10047.93 tokens/sec
+
+Processing batch #196 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0506s (tokenize: 0.0011s, model: 0.0495s)
+  Throughput: 19.75 texts/sec | 10112.52 tokens/sec
+
+Processing batch #197 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.63 texts/sec | 10050.89 tokens/sec
+
+Processing batch #198 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.57 texts/sec | 10020.55 tokens/sec
+
+Processing batch #199 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.48 texts/sec | 9971.46 tokens/sec
+
+Processing batch #200 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.48 texts/sec | 9971.88 tokens/sec
+
+Processing batch #201 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0013s, model: 0.0502s)
+  Throughput: 19.43 texts/sec | 9946.52 tokens/sec
+
+Processing batch #202 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0013s, model: 0.0505s)
+  Throughput: 19.29 texts/sec | 9875.94 tokens/sec
+
+Processing batch #203 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0527s (tokenize: 0.0011s, model: 0.0516s)
+  Throughput: 18.98 texts/sec | 9715.63 tokens/sec
+
+Processing batch #204 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.45 texts/sec | 9956.30 tokens/sec
+
+Processing batch #205 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.44 texts/sec | 9954.50 tokens/sec
+
+Processing batch #206 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.60 texts/sec | 10034.60 tokens/sec
+
+Processing batch #207 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0012s, model: 0.0506s)
+  Throughput: 19.30 texts/sec | 9883.17 tokens/sec
+
+Processing batch #208 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.39 texts/sec | 9928.68 tokens/sec
+
+Processing batch #209 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.51 texts/sec | 9988.44 tokens/sec
+
+Processing batch #210 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.47 texts/sec | 9967.25 tokens/sec
+
+Processing batch #211 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.58 texts/sec | 10026.77 tokens/sec
+
+Processing batch #212 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.63 texts/sec | 10050.42 tokens/sec
+
+Processing batch #213 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.38 texts/sec | 9921.61 tokens/sec
+
+Processing batch #214 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9965.58 tokens/sec
+
+Processing batch #215 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.54 texts/sec | 10004.54 tokens/sec
+
+Processing batch #216 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0013s, model: 0.0503s)
+  Throughput: 19.35 texts/sec | 9905.96 tokens/sec
+
+Processing batch #217 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.57 texts/sec | 10020.92 tokens/sec
+
+Processing batch #218 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.61 texts/sec | 10041.45 tokens/sec
+
+Processing batch #219 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.57 texts/sec | 10019.94 tokens/sec
+
+Processing batch #220 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0013s, model: 0.0496s)
+  Throughput: 19.64 texts/sec | 10054.04 tokens/sec
+
+Processing batch #221 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0011s, model: 0.0499s)
+  Throughput: 19.59 texts/sec | 10031.27 tokens/sec
+
+Processing batch #222 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0507s (tokenize: 0.0012s, model: 0.0495s)
+  Throughput: 19.73 texts/sec | 10102.05 tokens/sec
+
+Processing batch #223 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0012s, model: 0.0496s)
+  Throughput: 19.68 texts/sec | 10078.58 tokens/sec
+
+Processing batch #224 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.58 texts/sec | 10026.35 tokens/sec
+
+Processing batch #225 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9962.76 tokens/sec
+
+Processing batch #226 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0521s (tokenize: 0.0012s, model: 0.0508s)
+  Throughput: 19.21 texts/sec | 9835.91 tokens/sec
+
+Processing batch #227 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.40 texts/sec | 9930.93 tokens/sec
+
+Processing batch #228 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.48 texts/sec | 9973.41 tokens/sec
+
+Processing batch #229 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.59 texts/sec | 10030.00 tokens/sec
+
+Processing batch #230 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.51 texts/sec | 9990.25 tokens/sec
+
+Processing batch #231 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0014s, model: 0.0499s)
+  Throughput: 19.49 texts/sec | 9980.17 tokens/sec
+
+Processing batch #232 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.52 texts/sec | 9991.87 tokens/sec
+
+Processing batch #233 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0499s)
+  Throughput: 19.63 texts/sec | 10051.74 tokens/sec
+
+Processing batch #234 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.51 texts/sec | 9991.55 tokens/sec
+
+Processing batch #235 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9939.02 tokens/sec
+
+Processing batch #236 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.62 texts/sec | 10047.37 tokens/sec
+
+Processing batch #237 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0547s (tokenize: 0.0012s, model: 0.0535s)
+  Throughput: 18.29 texts/sec | 9364.82 tokens/sec
+
+Processing batch #238 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.54 texts/sec | 10002.21 tokens/sec
+
+Processing batch #239 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.55 texts/sec | 10011.49 tokens/sec
+
+Processing batch #240 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.54 texts/sec | 10003.56 tokens/sec
+
+Processing batch #241 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.44 texts/sec | 9955.37 tokens/sec
+
+Processing batch #242 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.56 texts/sec | 10015.69 tokens/sec
+
+Processing batch #243 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.54 texts/sec | 10004.77 tokens/sec
+
+Processing batch #244 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.56 texts/sec | 10016.20 tokens/sec
+
+Processing batch #245 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.40 texts/sec | 9930.51 tokens/sec
+
+Processing batch #246 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0538s (tokenize: 0.0012s, model: 0.0526s)
+  Throughput: 18.59 texts/sec | 9520.55 tokens/sec
+
+Processing batch #247 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0013s, model: 0.0505s)
+  Throughput: 19.29 texts/sec | 9876.58 tokens/sec
+
+Processing batch #248 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9964.66 tokens/sec
+
+Processing batch #249 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.40 texts/sec | 9933.64 tokens/sec
+
+Processing batch #250 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9958.05 tokens/sec
+
+Processing batch #251 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.35 texts/sec | 9909.34 tokens/sec
+
+Processing batch #252 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.41 texts/sec | 9938.97 tokens/sec
+
+Processing batch #253 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9959.76 tokens/sec
+
+Processing batch #254 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.53 texts/sec | 10001.41 tokens/sec
+
+Processing batch #255 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9941.23 tokens/sec
+
+Processing batch #256 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.39 texts/sec | 9930.24 tokens/sec
+
+Processing batch #257 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.54 texts/sec | 10002.25 tokens/sec
+
+Processing batch #258 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9941.69 tokens/sec
+
+Processing batch #259 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.55 texts/sec | 10010.83 tokens/sec
+
+Processing batch #260 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0011s, model: 0.0506s)
+  Throughput: 19.35 texts/sec | 9906.10 tokens/sec
+
+Processing batch #261 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.50 texts/sec | 9982.63 tokens/sec
+
+Processing batch #262 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.43 texts/sec | 9948.18 tokens/sec
+
+Processing batch #263 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9945.37 tokens/sec
+
+Processing batch #264 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.37 texts/sec | 9919.23 tokens/sec
+
+Processing batch #265 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0526s (tokenize: 0.0012s, model: 0.0515s)
+  Throughput: 19.00 texts/sec | 9727.86 tokens/sec
+
+Processing batch #266 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.46 texts/sec | 9965.17 tokens/sec
+
+Processing batch #267 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.53 texts/sec | 9999.60 tokens/sec
+
+Processing batch #268 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0011s, model: 0.0506s)
+  Throughput: 19.34 texts/sec | 9901.39 tokens/sec
+
+Processing batch #269 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0011s, model: 0.0499s)
+  Throughput: 19.59 texts/sec | 10029.96 tokens/sec
+
+Processing batch #270 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9981.10 tokens/sec
+
+Processing batch #271 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.56 texts/sec | 10014.94 tokens/sec
+
+Processing batch #272 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.52 texts/sec | 9992.34 tokens/sec
+
+Processing batch #273 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.59 texts/sec | 10032.16 tokens/sec
+
+Processing batch #274 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.40 texts/sec | 9934.92 tokens/sec
+
+Processing batch #275 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.64 texts/sec | 10054.75 tokens/sec
+
+Processing batch #276 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9986.39 tokens/sec
+
+Processing batch #277 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0013s, model: 0.0501s)
+  Throughput: 19.46 texts/sec | 9965.26 tokens/sec
+
+Processing batch #278 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.47 texts/sec | 9968.73 tokens/sec
+
+Processing batch #279 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9980.87 tokens/sec
+
+Processing batch #280 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.52 texts/sec | 9992.71 tokens/sec
+
+Processing batch #281 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9977.53 tokens/sec
+
+Processing batch #282 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.36 texts/sec | 9911.54 tokens/sec
+
+Processing batch #283 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0013s, model: 0.0500s)
+  Throughput: 19.52 texts/sec | 9995.22 tokens/sec
+
+Processing batch #284 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0013s, model: 0.0501s)
+  Throughput: 19.45 texts/sec | 9959.44 tokens/sec
+
+Processing batch #285 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9955.51 tokens/sec
+
+Processing batch #286 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.47 texts/sec | 9966.88 tokens/sec
+
+Processing batch #287 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0011s, model: 0.0497s)
+  Throughput: 19.68 texts/sec | 10074.14 tokens/sec
+
+Processing batch #288 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.43 texts/sec | 9945.78 tokens/sec
+
+Processing batch #289 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0014s, model: 0.0499s)
+  Throughput: 19.50 texts/sec | 9983.42 tokens/sec
+
+Processing batch #290 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0014s, model: 0.0499s)
+  Throughput: 19.50 texts/sec | 9984.02 tokens/sec
+
+Processing batch #291 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9978.64 tokens/sec
+
+Processing batch #292 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.58 texts/sec | 10022.42 tokens/sec
+
+Processing batch #293 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.55 texts/sec | 10008.45 tokens/sec
+
+Processing batch #294 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.48 texts/sec | 9973.36 tokens/sec
+
+Processing batch #295 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0011s, model: 0.0498s)
+  Throughput: 19.62 texts/sec | 10046.94 tokens/sec
+
+Processing batch #296 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0541s (tokenize: 0.0012s, model: 0.0529s)
+  Throughput: 18.48 texts/sec | 9460.07 tokens/sec
+
+Processing batch #297 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0013s, model: 0.0501s)
+  Throughput: 19.46 texts/sec | 9962.76 tokens/sec
+
+Processing batch #298 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0012s, model: 0.0506s)
+  Throughput: 19.32 texts/sec | 9892.82 tokens/sec
+
+Processing batch #299 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0011s, model: 0.0505s)
+  Throughput: 19.38 texts/sec | 9921.48 tokens/sec
+
+Processing batch #300 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9935.80 tokens/sec
+
+Processing batch #301 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9938.70 tokens/sec
+
+Processing batch #302 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9959.94 tokens/sec
+
+Processing batch #303 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9979.20 tokens/sec
+
+Processing batch #304 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0529s (tokenize: 0.0011s, model: 0.0517s)
+  Throughput: 18.92 texts/sec | 9686.44 tokens/sec
+
+Processing batch #305 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0537s (tokenize: 0.0021s, model: 0.0516s)
+  Throughput: 18.63 texts/sec | 9540.94 tokens/sec
+
+Processing batch #306 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0015s, model: 0.0503s)
+  Throughput: 19.30 texts/sec | 9883.39 tokens/sec
+
+Processing batch #307 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0519s (tokenize: 0.0015s, model: 0.0504s)
+  Throughput: 19.28 texts/sec | 9872.99 tokens/sec
+
+Processing batch #308 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0015s, model: 0.0501s)
+  Throughput: 19.38 texts/sec | 9921.57 tokens/sec
+
+Processing batch #309 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9957.36 tokens/sec
+
+Processing batch #310 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0013s, model: 0.0501s)
+  Throughput: 19.44 texts/sec | 9950.76 tokens/sec
+
+Processing batch #311 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0011s, model: 0.0505s)
+  Throughput: 19.36 texts/sec | 9911.63 tokens/sec
+
+Processing batch #312 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0013s, model: 0.0501s)
+  Throughput: 19.44 texts/sec | 9954.22 tokens/sec
+
+Processing batch #313 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0015s, model: 0.0502s)
+  Throughput: 19.33 texts/sec | 9899.25 tokens/sec
+
+Processing batch #314 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9952.37 tokens/sec
+
+Processing batch #315 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.44 texts/sec | 9951.59 tokens/sec
+
+Processing batch #316 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.43 texts/sec | 9947.03 tokens/sec
+
+Processing batch #317 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0013s, model: 0.0502s)
+  Throughput: 19.43 texts/sec | 9948.23 tokens/sec
+
+Processing batch #318 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.49 texts/sec | 9980.54 tokens/sec
+
+Processing batch #319 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0503s)
+  Throughput: 19.38 texts/sec | 9923.22 tokens/sec
+
+Processing batch #320 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9952.61 tokens/sec
+
+Processing batch #321 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.65 texts/sec | 10060.64 tokens/sec
+
+Processing batch #322 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0498s)
+  Throughput: 19.64 texts/sec | 10058.14 tokens/sec
+
+Processing batch #323 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9939.66 tokens/sec
+
+Processing batch #324 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0552s (tokenize: 0.0011s, model: 0.0541s)
+  Throughput: 18.10 texts/sec | 9267.26 tokens/sec
+
+Processing batch #325 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0535s (tokenize: 0.0015s, model: 0.0520s)
+  Throughput: 18.70 texts/sec | 9572.49 tokens/sec
+
+Processing batch #326 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9957.31 tokens/sec
+
+Processing batch #327 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.39 texts/sec | 9926.38 tokens/sec
+
+Processing batch #328 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.48 texts/sec | 9974.61 tokens/sec
+
+Processing batch #329 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.51 texts/sec | 9986.81 tokens/sec
+
+Processing batch #330 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9940.08 tokens/sec
+
+Processing batch #331 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0013s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9951.78 tokens/sec
+
+Processing batch #332 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0013s, model: 0.0500s)
+  Throughput: 19.49 texts/sec | 9981.05 tokens/sec
+
+Processing batch #333 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.48 texts/sec | 9972.02 tokens/sec
+
+Processing batch #334 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.40 texts/sec | 9930.84 tokens/sec
+
+Processing batch #335 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.45 texts/sec | 9957.68 tokens/sec
+
+Processing batch #336 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.48 texts/sec | 9973.50 tokens/sec
+
+Processing batch #337 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9961.38 tokens/sec
+
+Processing batch #338 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.64 texts/sec | 10057.95 tokens/sec
+
+Processing batch #339 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.43 texts/sec | 9949.84 tokens/sec
+
+Processing batch #340 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.36 texts/sec | 9912.18 tokens/sec
+
+Processing batch #341 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.49 texts/sec | 9976.32 tokens/sec
+
+Processing batch #342 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9945.46 tokens/sec
+
+Processing batch #343 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.43 texts/sec | 9946.84 tokens/sec
+
+Processing batch #344 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.48 texts/sec | 9973.59 tokens/sec
+
+Processing batch #345 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9982.86 tokens/sec
+
+Processing batch #346 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9955.84 tokens/sec
+
+Processing batch #347 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.56 texts/sec | 10014.66 tokens/sec
+
+Processing batch #348 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9961.89 tokens/sec
+
+Processing batch #349 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0530s (tokenize: 0.0011s, model: 0.0518s)
+  Throughput: 18.88 texts/sec | 9668.82 tokens/sec
+
+Processing batch #350 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0545s (tokenize: 0.0011s, model: 0.0533s)
+  Throughput: 18.36 texts/sec | 9398.84 tokens/sec
+
+Processing batch #351 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.44 texts/sec | 9951.54 tokens/sec
+
+Processing batch #352 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0014s, model: 0.0501s)
+  Throughput: 19.42 texts/sec | 9941.41 tokens/sec
+
+Processing batch #353 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9940.95 tokens/sec
+
+Processing batch #354 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0534s (tokenize: 0.0012s, model: 0.0522s)
+  Throughput: 18.73 texts/sec | 9591.95 tokens/sec
+
+Processing batch #355 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0013s, model: 0.0504s)
+  Throughput: 19.34 texts/sec | 9902.35 tokens/sec
+
+Processing batch #356 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.47 texts/sec | 9969.47 tokens/sec
+
+Processing batch #357 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0013s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9952.37 tokens/sec
+
+Processing batch #358 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.51 texts/sec | 9988.95 tokens/sec
+
+Processing batch #359 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.45 texts/sec | 9957.17 tokens/sec
+
+Processing batch #360 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0503s)
+  Throughput: 19.40 texts/sec | 9930.74 tokens/sec
+
+Processing batch #361 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9954.68 tokens/sec
+
+Processing batch #362 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.43 texts/sec | 9946.34 tokens/sec
+
+Processing batch #363 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.48 texts/sec | 9974.70 tokens/sec
+
+Processing batch #364 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.48 texts/sec | 9974.89 tokens/sec
+
+Processing batch #365 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.36 texts/sec | 9912.00 tokens/sec
+
+Processing batch #366 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.47 texts/sec | 9966.32 tokens/sec
+
+Processing batch #367 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.52 texts/sec | 9993.59 tokens/sec
+
+Processing batch #368 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9979.01 tokens/sec
+
+Processing batch #369 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9978.04 tokens/sec
+
+Processing batch #370 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9985.42 tokens/sec
+
+Processing batch #371 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0016s, model: 0.0501s)
+  Throughput: 19.33 texts/sec | 9896.56 tokens/sec
+
+Processing batch #372 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.39 texts/sec | 9926.75 tokens/sec
+
+Processing batch #373 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.54 texts/sec | 10005.19 tokens/sec
+
+Processing batch #374 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0521s (tokenize: 0.0012s, model: 0.0509s)
+  Throughput: 19.19 texts/sec | 9826.86 tokens/sec
+
+Processing batch #375 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.39 texts/sec | 9925.83 tokens/sec
+
+Processing batch #376 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0519s (tokenize: 0.0012s, model: 0.0506s)
+  Throughput: 19.28 texts/sec | 9873.90 tokens/sec
+
+Processing batch #377 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.52 texts/sec | 9991.74 tokens/sec
+
+Processing batch #378 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.64 texts/sec | 10058.24 tokens/sec
+
+Processing batch #379 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.57 texts/sec | 10020.69 tokens/sec
+
+Processing batch #380 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0011s, model: 0.0497s)
+  Throughput: 19.68 texts/sec | 10075.04 tokens/sec
+
+Processing batch #381 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.64 texts/sec | 10053.24 tokens/sec
+
+Processing batch #382 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.65 texts/sec | 10059.93 tokens/sec
+
+Processing batch #383 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0015s, model: 0.0501s)
+  Throughput: 19.40 texts/sec | 9932.95 tokens/sec
+
+Processing batch #384 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0507s (tokenize: 0.0012s, model: 0.0496s)
+  Throughput: 19.71 texts/sec | 10089.19 tokens/sec
+
+Processing batch #385 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.53 texts/sec | 9996.90 tokens/sec
+
+Processing batch #386 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.58 texts/sec | 10023.49 tokens/sec
+
+Processing batch #387 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.48 texts/sec | 9973.78 tokens/sec
+
+Processing batch #388 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.42 texts/sec | 9942.88 tokens/sec
+
+Processing batch #389 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.49 texts/sec | 9979.06 tokens/sec
+
+Processing batch #390 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9965.08 tokens/sec
+
+Processing batch #391 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.49 texts/sec | 9977.11 tokens/sec
+
+Processing batch #392 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.39 texts/sec | 9929.69 tokens/sec
+
+Processing batch #393 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.44 texts/sec | 9951.91 tokens/sec
+
+Processing batch #394 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0013s, model: 0.0504s)
+  Throughput: 19.34 texts/sec | 9901.76 tokens/sec
+
+Processing batch #395 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.56 texts/sec | 10012.37 tokens/sec
+
+Processing batch #396 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0012s, model: 0.0507s)
+  Throughput: 19.30 texts/sec | 9879.44 tokens/sec
+
+Processing batch #397 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.44 texts/sec | 9952.33 tokens/sec
+
+Processing batch #398 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0010s, model: 0.0504s)
+  Throughput: 19.45 texts/sec | 9959.94 tokens/sec
+
+Processing batch #399 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0012s, model: 0.0506s)
+  Throughput: 19.31 texts/sec | 9889.27 tokens/sec
+
+Processing batch #400 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0524s (tokenize: 0.0012s, model: 0.0512s)
+  Throughput: 19.07 texts/sec | 9761.73 tokens/sec
+
+Processing batch #401 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0013s, model: 0.0505s)
+  Throughput: 19.31 texts/sec | 9885.30 tokens/sec
+
+Processing batch #402 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0503s)
+  Throughput: 19.38 texts/sec | 9923.72 tokens/sec
+
+Processing batch #403 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0521s (tokenize: 0.0017s, model: 0.0504s)
+  Throughput: 19.21 texts/sec | 9833.57 tokens/sec
+
+Processing batch #404 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9953.25 tokens/sec
+
+Processing batch #405 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0011s, model: 0.0505s)
+  Throughput: 19.38 texts/sec | 9921.34 tokens/sec
+
+Processing batch #406 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.43 texts/sec | 9948.64 tokens/sec
+
+Processing batch #407 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0011s, model: 0.0506s)
+  Throughput: 19.32 texts/sec | 9890.86 tokens/sec
+
+Processing batch #408 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0519s (tokenize: 0.0012s, model: 0.0507s)
+  Throughput: 19.26 texts/sec | 9862.20 tokens/sec
+
+Processing batch #409 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9941.18 tokens/sec
+
+Processing batch #410 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.47 texts/sec | 9967.48 tokens/sec
+
+Processing batch #411 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0014s, model: 0.0501s)
+  Throughput: 19.42 texts/sec | 9942.74 tokens/sec
+
+Processing batch #412 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9937.04 tokens/sec
+
+Processing batch #413 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0538s (tokenize: 0.0012s, model: 0.0526s)
+  Throughput: 18.59 texts/sec | 9517.64 tokens/sec
+
+Processing batch #414 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.55 texts/sec | 10008.78 tokens/sec
+
+Processing batch #415 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0013s, model: 0.0499s)
+  Throughput: 19.53 texts/sec | 9999.27 tokens/sec
+
+Processing batch #416 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.60 texts/sec | 10035.72 tokens/sec
+
+Processing batch #417 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.60 texts/sec | 10033.09 tokens/sec
+
+Processing batch #418 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.61 texts/sec | 10040.65 tokens/sec
+
+Processing batch #419 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.52 texts/sec | 9992.34 tokens/sec
+
+Processing batch #420 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.58 texts/sec | 10023.07 tokens/sec
+
+Processing batch #421 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9962.26 tokens/sec
+
+Processing batch #422 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.57 texts/sec | 10017.56 tokens/sec
+
+Processing batch #423 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.51 texts/sec | 9990.48 tokens/sec
+
+Processing batch #424 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.48 texts/sec | 9974.61 tokens/sec
+
+Processing batch #425 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.35 texts/sec | 9908.98 tokens/sec
+
+Processing batch #426 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0506s)
+  Throughput: 19.33 texts/sec | 9896.01 tokens/sec
+
+Processing batch #427 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9963.64 tokens/sec
+
+Processing batch #428 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.47 texts/sec | 9967.90 tokens/sec
+
+Processing batch #429 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.37 texts/sec | 9915.34 tokens/sec
+
+Processing batch #430 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.39 texts/sec | 9925.24 tokens/sec
+
+Processing batch #431 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.44 texts/sec | 9951.91 tokens/sec
+
+Processing batch #432 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.40 texts/sec | 9932.86 tokens/sec
+
+Processing batch #433 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.52 texts/sec | 9992.85 tokens/sec
+
+Processing batch #434 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.51 texts/sec | 9989.41 tokens/sec
+
+Processing batch #435 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.43 texts/sec | 9950.53 tokens/sec
+
+Processing batch #436 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.41 texts/sec | 9936.35 tokens/sec
+
+Processing batch #437 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0507s (tokenize: 0.0010s, model: 0.0496s)
+  Throughput: 19.74 texts/sec | 10105.62 tokens/sec
+
+Processing batch #438 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0010s, model: 0.0499s)
+  Throughput: 19.63 texts/sec | 10050.47 tokens/sec
+
+Processing batch #439 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.44 texts/sec | 9954.96 tokens/sec
+
+Processing batch #440 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9986.53 tokens/sec
+
+Processing batch #441 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9941.55 tokens/sec
+
+Processing batch #442 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.49 texts/sec | 9977.76 tokens/sec
+
+Processing batch #443 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.41 texts/sec | 9939.75 tokens/sec
+
+Processing batch #444 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.45 texts/sec | 9959.53 tokens/sec
+
+Processing batch #445 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.38 texts/sec | 9922.81 tokens/sec
+
+Processing batch #446 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0011s, model: 0.0506s)
+  Throughput: 19.32 texts/sec | 9889.77 tokens/sec
+
+Processing batch #447 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0498s)
+  Throughput: 19.66 texts/sec | 10067.71 tokens/sec
+
+Processing batch #448 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0011s, model: 0.0499s)
+  Throughput: 19.61 texts/sec | 10042.10 tokens/sec
+
+Processing batch #449 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0011s, model: 0.0499s)
+  Throughput: 19.60 texts/sec | 10036.14 tokens/sec
+
+Processing batch #450 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0011s, model: 0.0505s)
+  Throughput: 19.37 texts/sec | 9916.07 tokens/sec
+
+Processing batch #451 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0553s (tokenize: 0.0012s, model: 0.0542s)
+  Throughput: 18.07 texts/sec | 9250.81 tokens/sec
+
+Processing batch #452 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0522s (tokenize: 0.0013s, model: 0.0509s)
+  Throughput: 19.14 texts/sec | 9801.34 tokens/sec
+
+Processing batch #453 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.42 texts/sec | 9943.25 tokens/sec
+
+Processing batch #454 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.45 texts/sec | 9959.90 tokens/sec
+
+Processing batch #455 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.43 texts/sec | 9949.61 tokens/sec
+
+Processing batch #456 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.39 texts/sec | 9930.06 tokens/sec
+
+Processing batch #457 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.53 texts/sec | 9997.60 tokens/sec
+
+Processing batch #458 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0011s, model: 0.0506s)
+  Throughput: 19.34 texts/sec | 9904.45 tokens/sec
+
+Processing batch #459 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.43 texts/sec | 9949.24 tokens/sec
+
+Processing batch #460 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.51 texts/sec | 9987.41 tokens/sec
+
+Processing batch #461 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0011s, model: 0.0505s)
+  Throughput: 19.36 texts/sec | 9911.54 tokens/sec
+
+Processing batch #462 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.39 texts/sec | 9930.15 tokens/sec
+
+Processing batch #463 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0011s, model: 0.0505s)
+  Throughput: 19.39 texts/sec | 9926.61 tokens/sec
+
+Processing batch #464 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.47 texts/sec | 9966.93 tokens/sec
+
+Processing batch #465 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0011s, model: 0.0505s)
+  Throughput: 19.36 texts/sec | 9913.05 tokens/sec
+
+Processing batch #466 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.48 texts/sec | 9974.10 tokens/sec
+
+Processing batch #467 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.40 texts/sec | 9933.41 tokens/sec
+
+Processing batch #468 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.34 texts/sec | 9902.95 tokens/sec
+
+Processing batch #469 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0014s, model: 0.0503s)
+  Throughput: 19.35 texts/sec | 9905.92 tokens/sec
+
+Processing batch #470 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.51 texts/sec | 9990.94 tokens/sec
+
+Processing batch #471 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0535s (tokenize: 0.0011s, model: 0.0524s)
+  Throughput: 18.68 texts/sec | 9566.14 tokens/sec
+
+Processing batch #472 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.39 texts/sec | 9929.55 tokens/sec
+
+Processing batch #473 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0498s)
+  Throughput: 19.63 texts/sec | 10052.02 tokens/sec
+
+Processing batch #474 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0503s)
+  Throughput: 19.40 texts/sec | 9931.20 tokens/sec
+
+Processing batch #475 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.48 texts/sec | 9975.26 tokens/sec
+
+Processing batch #476 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0568s (tokenize: 0.0011s, model: 0.0557s)
+  Throughput: 17.59 texts/sec | 9008.28 tokens/sec
+
+Processing batch #477 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0526s (tokenize: 0.0012s, model: 0.0514s)
+  Throughput: 19.02 texts/sec | 9737.92 tokens/sec
+
+Processing batch #478 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.43 texts/sec | 9950.25 tokens/sec
+
+Processing batch #479 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.47 texts/sec | 9968.68 tokens/sec
+
+Processing batch #480 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.54 texts/sec | 10006.73 tokens/sec
+
+Processing batch #481 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.37 texts/sec | 9917.76 tokens/sec
+
+Processing batch #482 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9959.53 tokens/sec
+
+Processing batch #483 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.38 texts/sec | 9923.26 tokens/sec
+
+Processing batch #484 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.44 texts/sec | 9950.81 tokens/sec
+
+Processing batch #485 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9965.58 tokens/sec
+
+Processing batch #486 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.39 texts/sec | 9928.45 tokens/sec
+
+Processing batch #487 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.41 texts/sec | 9935.75 tokens/sec
+
+Processing batch #488 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.43 texts/sec | 9947.21 tokens/sec
+
+Processing batch #489 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.42 texts/sec | 9943.02 tokens/sec
+
+Processing batch #490 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.40 texts/sec | 9931.34 tokens/sec
+
+Processing batch #491 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.42 texts/sec | 9940.54 tokens/sec
+
+Processing batch #492 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.39 texts/sec | 9927.16 tokens/sec
+
+Processing batch #493 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9960.08 tokens/sec
+
+Processing batch #494 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0503s)
+  Throughput: 19.37 texts/sec | 9918.82 tokens/sec
+
+Processing batch #495 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9944.26 tokens/sec
+
+Processing batch #496 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.39 texts/sec | 9926.47 tokens/sec
+
+Processing batch #497 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0011s, model: 0.0506s)
+  Throughput: 19.33 texts/sec | 9898.38 tokens/sec
+
+Processing batch #498 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9939.66 tokens/sec
+
+Processing batch #499 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0011s, model: 0.0506s)
+  Throughput: 19.33 texts/sec | 9895.33 tokens/sec
+
+Processing batch #500 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.34 texts/sec | 9901.39 tokens/sec
+
+Processing batch #501 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0530s (tokenize: 0.0012s, model: 0.0518s)
+  Throughput: 18.88 texts/sec | 9667.30 tokens/sec
+
+Processing batch #502 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0556s (tokenize: 0.0014s, model: 0.0542s)
+  Throughput: 17.98 texts/sec | 9208.25 tokens/sec
+
+Processing batch #503 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9984.07 tokens/sec
+
+Processing batch #504 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.44 texts/sec | 9952.84 tokens/sec
+
+Processing batch #505 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.40 texts/sec | 9933.55 tokens/sec
+
+Processing batch #506 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.34 texts/sec | 9899.57 tokens/sec
+
+Processing batch #507 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.45 texts/sec | 9960.78 tokens/sec
+
+Processing batch #508 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0499s)
+  Throughput: 19.57 texts/sec | 10020.97 tokens/sec
+
+Processing batch #509 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0507s (tokenize: 0.0011s, model: 0.0496s)
+  Throughput: 19.71 texts/sec | 10093.31 tokens/sec
+
+Processing batch #510 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0013s, model: 0.0498s)
+  Throughput: 19.56 texts/sec | 10016.15 tokens/sec
+
+Processing batch #511 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0496s)
+  Throughput: 19.66 texts/sec | 10064.84 tokens/sec
+
+Processing batch #512 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.66 texts/sec | 10068.14 tokens/sec
+
+Processing batch #513 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0014s, model: 0.0499s)
+  Throughput: 19.48 texts/sec | 9972.62 tokens/sec
+
+Processing batch #514 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0011s, model: 0.0505s)
+  Throughput: 19.38 texts/sec | 9920.38 tokens/sec
+
+Processing batch #515 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0503s)
+  Throughput: 19.38 texts/sec | 9922.58 tokens/sec
+
+Processing batch #516 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0519s (tokenize: 0.0014s, model: 0.0505s)
+  Throughput: 19.28 texts/sec | 9869.90 tokens/sec
+
+Processing batch #517 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.54 texts/sec | 10002.49 tokens/sec
+
+Processing batch #518 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.41 texts/sec | 9935.48 tokens/sec
+
+Processing batch #519 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0015s, model: 0.0501s)
+  Throughput: 19.37 texts/sec | 9918.22 tokens/sec
+
+Processing batch #520 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.51 texts/sec | 9988.02 tokens/sec
+
+Processing batch #521 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.52 texts/sec | 9992.15 tokens/sec
+
+Processing batch #522 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.48 texts/sec | 9973.92 tokens/sec
+
+Processing batch #523 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9983.98 tokens/sec
+
+Processing batch #524 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9964.75 tokens/sec
+
+Processing batch #525 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0502s)
+  Throughput: 19.39 texts/sec | 9926.52 tokens/sec
+
+Processing batch #526 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.40 texts/sec | 9932.90 tokens/sec
+
+Processing batch #527 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9980.17 tokens/sec
+
+Processing batch #528 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.47 texts/sec | 9969.33 tokens/sec
+
+Processing batch #529 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0534s (tokenize: 0.0012s, model: 0.0522s)
+  Throughput: 18.73 texts/sec | 9591.90 tokens/sec
+
+Processing batch #530 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9957.17 tokens/sec
+
+Processing batch #531 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.51 texts/sec | 9987.41 tokens/sec
+
+Processing batch #532 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9956.11 tokens/sec
+
+Processing batch #533 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9983.93 tokens/sec
+
+Processing batch #534 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.44 texts/sec | 9951.36 tokens/sec
+
+Processing batch #535 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0503s)
+  Throughput: 19.38 texts/sec | 9923.45 tokens/sec
+
+Processing batch #536 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.45 texts/sec | 9959.94 tokens/sec
+
+Processing batch #537 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.43 texts/sec | 9949.47 tokens/sec
+
+Processing batch #538 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0013s, model: 0.0502s)
+  Throughput: 19.40 texts/sec | 9934.47 tokens/sec
+
+Processing batch #539 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.51 texts/sec | 9989.92 tokens/sec
+
+Processing batch #540 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.42 texts/sec | 9944.68 tokens/sec
+
+Processing batch #541 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.52 texts/sec | 9991.74 tokens/sec
+
+Processing batch #542 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.49 texts/sec | 9977.48 tokens/sec
+
+Processing batch #543 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.42 texts/sec | 9944.17 tokens/sec
+
+Processing batch #544 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9960.08 tokens/sec
+
+Processing batch #545 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.46 texts/sec | 9964.47 tokens/sec
+
+Processing batch #546 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0010s, model: 0.0503s)
+  Throughput: 19.50 texts/sec | 9985.05 tokens/sec
+
+Processing batch #547 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0498s)
+  Throughput: 19.64 texts/sec | 10053.95 tokens/sec
+
+Processing batch #548 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0011s, model: 0.0499s)
+  Throughput: 19.61 texts/sec | 10040.04 tokens/sec
+
+Processing batch #549 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0498s)
+  Throughput: 19.66 texts/sec | 10063.61 tokens/sec
+
+Processing batch #550 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0012s, model: 0.0496s)
+  Throughput: 19.70 texts/sec | 10086.30 tokens/sec
+
+Processing batch #551 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.64 texts/sec | 10053.48 tokens/sec
+
+Processing batch #552 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0013s, model: 0.0499s)
+  Throughput: 19.54 texts/sec | 10002.39 tokens/sec
+
+Processing batch #553 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0011s, model: 0.0497s)
+  Throughput: 19.67 texts/sec | 10072.67 tokens/sec
+
+Processing batch #554 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.61 texts/sec | 10039.85 tokens/sec
+
+Processing batch #555 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.62 texts/sec | 10045.53 tokens/sec
+
+Processing batch #556 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.63 texts/sec | 10051.88 tokens/sec
+
+Processing batch #557 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0498s)
+  Throughput: 19.63 texts/sec | 10049.76 tokens/sec
+
+Processing batch #558 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.58 texts/sec | 10025.74 tokens/sec
+
+Processing batch #559 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0014s, model: 0.0494s)
+  Throughput: 19.66 texts/sec | 10066.58 tokens/sec
+
+Processing batch #560 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0507s (tokenize: 0.0012s, model: 0.0495s)
+  Throughput: 19.72 texts/sec | 10099.10 tokens/sec
+
+Processing batch #561 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.53 texts/sec | 10000.30 tokens/sec
+
+Processing batch #562 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0507s (tokenize: 0.0012s, model: 0.0495s)
+  Throughput: 19.73 texts/sec | 10099.63 tokens/sec
+
+Processing batch #563 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.62 texts/sec | 10047.93 tokens/sec
+
+Processing batch #564 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0507s (tokenize: 0.0012s, model: 0.0496s)
+  Throughput: 19.72 texts/sec | 10096.40 tokens/sec
+
+Processing batch #565 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0012s, model: 0.0496s)
+  Throughput: 19.68 texts/sec | 10076.08 tokens/sec
+
+Processing batch #566 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.65 texts/sec | 10059.32 tokens/sec
+
+Processing batch #567 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0497s)
+  Throughput: 19.66 texts/sec | 10067.53 tokens/sec
+
+Processing batch #568 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0014s, model: 0.0499s)
+  Throughput: 19.51 texts/sec | 9989.92 tokens/sec
+
+Processing batch #569 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.54 texts/sec | 10003.42 tokens/sec
+
+Processing batch #570 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0498s)
+  Throughput: 19.64 texts/sec | 10054.09 tokens/sec
+
+Processing batch #571 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.39 texts/sec | 9929.46 tokens/sec
+
+Processing batch #572 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9983.10 tokens/sec
+
+Processing batch #573 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.51 texts/sec | 9990.43 tokens/sec
+
+Processing batch #574 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0502s)
+  Throughput: 19.39 texts/sec | 9930.06 tokens/sec
+
+Processing batch #575 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.49 texts/sec | 9979.15 tokens/sec
+
+Processing batch #576 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0507s (tokenize: 0.0011s, model: 0.0496s)
+  Throughput: 19.71 texts/sec | 10093.08 tokens/sec
+
+Processing batch #577 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.34 texts/sec | 9903.68 tokens/sec
+
+Processing batch #578 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0013s, model: 0.0501s)
+  Throughput: 19.47 texts/sec | 9966.74 tokens/sec
+
+Processing batch #579 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.48 texts/sec | 9971.83 tokens/sec
+
+Processing batch #580 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0013s, model: 0.0500s)
+  Throughput: 19.48 texts/sec | 9971.83 tokens/sec
+
+Processing batch #581 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.35 texts/sec | 9905.00 tokens/sec
+
+Processing batch #582 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.51 texts/sec | 9988.34 tokens/sec
+
+Processing batch #583 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.52 texts/sec | 9996.34 tokens/sec
+
+Processing batch #584 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0011s, model: 0.0498s)
+  Throughput: 19.62 texts/sec | 10043.18 tokens/sec
+
+Processing batch #585 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.37 texts/sec | 9916.94 tokens/sec
+
+Processing batch #586 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.48 texts/sec | 9971.83 tokens/sec
+
+Processing batch #587 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.60 texts/sec | 10035.02 tokens/sec
+
+Processing batch #588 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0538s (tokenize: 0.0013s, model: 0.0525s)
+  Throughput: 18.59 texts/sec | 9518.23 tokens/sec
+
+Processing batch #589 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9957.22 tokens/sec
+
+Processing batch #590 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.43 texts/sec | 9945.92 tokens/sec
+
+Processing batch #591 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.47 texts/sec | 9969.15 tokens/sec
+
+Processing batch #592 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.62 texts/sec | 10045.02 tokens/sec
+
+Processing batch #593 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.47 texts/sec | 9967.30 tokens/sec
+
+Processing batch #594 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.55 texts/sec | 10011.86 tokens/sec
+
+Processing batch #595 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.57 texts/sec | 10021.86 tokens/sec
+
+Processing batch #596 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.51 texts/sec | 9987.60 tokens/sec
+
+Processing batch #597 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9957.68 tokens/sec
+
+Processing batch #598 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0547s (tokenize: 0.0011s, model: 0.0535s)
+  Throughput: 18.29 texts/sec | 9364.25 tokens/sec
+
+Processing batch #599 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.48 texts/sec | 9975.17 tokens/sec
+
+Processing batch #600 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.48 texts/sec | 9971.78 tokens/sec
+
+Processing batch #601 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.52 texts/sec | 9995.73 tokens/sec
+
+Processing batch #602 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.45 texts/sec | 9958.61 tokens/sec
+
+Processing batch #603 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0536s (tokenize: 0.0012s, model: 0.0524s)
+  Throughput: 18.66 texts/sec | 9553.25 tokens/sec
+
+Processing batch #604 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0522s (tokenize: 0.0015s, model: 0.0507s)
+  Throughput: 19.17 texts/sec | 9813.97 tokens/sec
+
+Processing batch #605 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.54 texts/sec | 10006.40 tokens/sec
+
+Processing batch #606 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0013s, model: 0.0501s)
+  Throughput: 19.46 texts/sec | 9961.70 tokens/sec
+
+Processing batch #607 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9951.73 tokens/sec
+
+Processing batch #608 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.49 texts/sec | 9979.89 tokens/sec
+
+Processing batch #609 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.53 texts/sec | 9996.85 tokens/sec
+
+Processing batch #610 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.45 texts/sec | 9956.94 tokens/sec
+
+Processing batch #611 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.64 texts/sec | 10054.75 tokens/sec
+
+Processing batch #612 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0507s (tokenize: 0.0012s, model: 0.0496s)
+  Throughput: 19.71 texts/sec | 10093.88 tokens/sec
+
+Processing batch #613 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.60 texts/sec | 10036.10 tokens/sec
+
+Processing batch #614 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9938.37 tokens/sec
+
+Processing batch #615 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0013s, model: 0.0502s)
+  Throughput: 19.42 texts/sec | 9944.31 tokens/sec
+
+Processing batch #616 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.37 texts/sec | 9914.97 tokens/sec
+
+Processing batch #617 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9984.44 tokens/sec
+
+Processing batch #618 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.38 texts/sec | 9921.98 tokens/sec
+
+Processing batch #619 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9962.21 tokens/sec
+
+Processing batch #620 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0013s, model: 0.0500s)
+  Throughput: 19.51 texts/sec | 9987.65 tokens/sec
+
+Processing batch #621 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9962.90 tokens/sec
+
+Processing batch #622 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0012s, model: 0.0496s)
+  Throughput: 19.69 texts/sec | 10079.53 tokens/sec
+
+Processing batch #623 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0012s, model: 0.0496s)
+  Throughput: 19.70 texts/sec | 10084.83 tokens/sec
+
+Processing batch #624 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.62 texts/sec | 10046.10 tokens/sec
+
+Processing batch #625 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0013s, model: 0.0496s)
+  Throughput: 19.66 texts/sec | 10064.03 tokens/sec
+
+Processing batch #626 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0014s, model: 0.0499s)
+  Throughput: 19.51 texts/sec | 9990.29 tokens/sec
+
+Processing batch #627 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.59 texts/sec | 10032.20 tokens/sec
+
+Processing batch #628 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.56 texts/sec | 10015.13 tokens/sec
+
+Processing batch #629 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0011s, model: 0.0499s)
+  Throughput: 19.61 texts/sec | 10041.73 tokens/sec
+
+Processing batch #630 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.62 texts/sec | 10043.37 tokens/sec
+
+Processing batch #631 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0505s (tokenize: 0.0011s, model: 0.0493s)
+  Throughput: 19.80 texts/sec | 10138.44 tokens/sec
+
+Processing batch #632 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0496s)
+  Throughput: 19.65 texts/sec | 10060.31 tokens/sec
+
+Processing batch #633 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0524s (tokenize: 0.0012s, model: 0.0512s)
+  Throughput: 19.09 texts/sec | 9776.09 tokens/sec
+
+Processing batch #634 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0533s (tokenize: 0.0024s, model: 0.0509s)
+  Throughput: 18.76 texts/sec | 9604.30 tokens/sec
+
+Processing batch #635 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0014s, model: 0.0500s)
+  Throughput: 19.45 texts/sec | 9958.01 tokens/sec
+
+Processing batch #636 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0014s, model: 0.0500s)
+  Throughput: 19.43 texts/sec | 9948.87 tokens/sec
+
+Processing batch #637 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0012s, model: 0.0496s)
+  Throughput: 19.68 texts/sec | 10076.31 tokens/sec
+
+Processing batch #638 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0013s, model: 0.0500s)
+  Throughput: 19.51 texts/sec | 9989.18 tokens/sec
+
+Processing batch #639 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0013s, model: 0.0496s)
+  Throughput: 19.64 texts/sec | 10057.58 tokens/sec
+
+Processing batch #640 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0013s, model: 0.0500s)
+  Throughput: 19.49 texts/sec | 9978.13 tokens/sec
+
+Processing batch #641 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0014s, model: 0.0501s)
+  Throughput: 19.42 texts/sec | 9945.42 tokens/sec
+
+Processing batch #642 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9940.54 tokens/sec
+
+Processing batch #643 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.54 texts/sec | 10005.61 tokens/sec
+
+Processing batch #644 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.59 texts/sec | 10031.13 tokens/sec
+
+Processing batch #645 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0497s)
+  Throughput: 19.66 texts/sec | 10063.75 tokens/sec
+
+Processing batch #646 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.32 texts/sec | 9891.73 tokens/sec
+
+Processing batch #647 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0535s (tokenize: 0.0012s, model: 0.0523s)
+  Throughput: 18.70 texts/sec | 9572.62 tokens/sec
+
+Processing batch #648 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0013s, model: 0.0500s)
+  Throughput: 19.45 texts/sec | 9960.55 tokens/sec
+
+Processing batch #649 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0013s, model: 0.0499s)
+  Throughput: 19.55 texts/sec | 10010.93 tokens/sec
+
+Processing batch #650 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.40 texts/sec | 9932.49 tokens/sec
+
+Processing batch #651 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0012s, model: 0.0506s)
+  Throughput: 19.29 texts/sec | 9877.58 tokens/sec
+
+Processing batch #652 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.39 texts/sec | 9928.04 tokens/sec
+
+Processing batch #653 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0519s (tokenize: 0.0014s, model: 0.0505s)
+  Throughput: 19.27 texts/sec | 9868.59 tokens/sec
+
+Processing batch #654 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9979.57 tokens/sec
+
+Processing batch #655 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0013s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9951.31 tokens/sec
+
+Processing batch #656 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.38 texts/sec | 9920.93 tokens/sec
+
+Processing batch #657 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.48 texts/sec | 9971.32 tokens/sec
+
+Processing batch #658 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.55 texts/sec | 10008.97 tokens/sec
+
+Processing batch #659 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0012s, model: 0.0507s)
+  Throughput: 19.30 texts/sec | 9879.26 tokens/sec
+
+Processing batch #660 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9941.73 tokens/sec
+
+Processing batch #661 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.47 texts/sec | 9968.31 tokens/sec
+
+Processing batch #662 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9941.18 tokens/sec
+
+Processing batch #663 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9944.08 tokens/sec
+
+Processing batch #664 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.54 texts/sec | 10004.77 tokens/sec
+
+Processing batch #665 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9944.45 tokens/sec
+
+Processing batch #666 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0535s (tokenize: 0.0011s, model: 0.0524s)
+  Throughput: 18.68 texts/sec | 9565.67 tokens/sec
+
+Processing batch #667 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0547s (tokenize: 0.0013s, model: 0.0533s)
+  Throughput: 18.29 texts/sec | 9365.39 tokens/sec
+
+Processing batch #668 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0519s (tokenize: 0.0013s, model: 0.0505s)
+  Throughput: 19.28 texts/sec | 9872.72 tokens/sec
+
+Processing batch #669 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9938.47 tokens/sec
+
+Processing batch #670 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.37 texts/sec | 9918.45 tokens/sec
+
+Processing batch #671 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.35 texts/sec | 9905.73 tokens/sec
+
+Processing batch #672 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0520s (tokenize: 0.0013s, model: 0.0507s)
+  Throughput: 19.24 texts/sec | 9851.34 tokens/sec
+
+Processing batch #673 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.35 texts/sec | 9906.24 tokens/sec
+
+Processing batch #674 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.33 texts/sec | 9897.06 tokens/sec
+
+Processing batch #675 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0498s)
+  Throughput: 19.64 texts/sec | 10054.19 tokens/sec
+
+Processing batch #676 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.59 texts/sec | 10030.19 tokens/sec
+
+Processing batch #677 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0011s, model: 0.0497s)
+  Throughput: 19.69 texts/sec | 10080.90 tokens/sec
+
+Processing batch #678 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.58 texts/sec | 10023.92 tokens/sec
+
+Processing batch #679 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.55 texts/sec | 10009.34 tokens/sec
+
+Processing batch #680 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.63 texts/sec | 10051.22 tokens/sec
+
+Processing batch #681 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.55 texts/sec | 10011.07 tokens/sec
+
+Processing batch #682 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.56 texts/sec | 10014.10 tokens/sec
+
+Processing batch #683 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.61 texts/sec | 10037.93 tokens/sec
+
+Processing batch #684 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0013s, model: 0.0498s)
+  Throughput: 19.58 texts/sec | 10022.89 tokens/sec
+
+Processing batch #685 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.43 texts/sec | 9950.30 tokens/sec
+
+Processing batch #686 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.56 texts/sec | 10013.12 tokens/sec
+
+Processing batch #687 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0013s, model: 0.0499s)
+  Throughput: 19.53 texts/sec | 9998.43 tokens/sec
+
+Processing batch #688 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.65 texts/sec | 10059.23 tokens/sec
+
+Processing batch #689 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0013s, model: 0.0497s)
+  Throughput: 19.62 texts/sec | 10046.19 tokens/sec
+
+Processing batch #690 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0526s (tokenize: 0.0014s, model: 0.0512s)
+  Throughput: 19.02 texts/sec | 9740.17 tokens/sec
+
+Processing batch #691 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0013s, model: 0.0500s)
+  Throughput: 19.51 texts/sec | 9987.69 tokens/sec
+
+Processing batch #692 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0013s, model: 0.0500s)
+  Throughput: 19.49 texts/sec | 9978.41 tokens/sec
+
+Processing batch #693 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0013s, model: 0.0502s)
+  Throughput: 19.41 texts/sec | 9939.11 tokens/sec
+
+Processing batch #694 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0014s, model: 0.0499s)
+  Throughput: 19.47 texts/sec | 9969.28 tokens/sec
+
+Processing batch #695 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.65 texts/sec | 10061.82 tokens/sec
+
+Processing batch #696 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0013s, model: 0.0497s)
+  Throughput: 19.61 texts/sec | 10042.53 tokens/sec
+
+Processing batch #697 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.55 texts/sec | 10010.51 tokens/sec
+
+Processing batch #698 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0011s, model: 0.0499s)
+  Throughput: 19.60 texts/sec | 10033.09 tokens/sec
+
+Processing batch #699 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0527s (tokenize: 0.0012s, model: 0.0516s)
+  Throughput: 18.96 texts/sec | 9708.55 tokens/sec
+
+Processing batch #700 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0545s (tokenize: 0.0013s, model: 0.0532s)
+  Throughput: 18.36 texts/sec | 9400.44 tokens/sec
+
+Processing batch #701 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.47 texts/sec | 9969.42 tokens/sec
+
+Processing batch #702 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.58 texts/sec | 10023.68 tokens/sec
+
+Processing batch #703 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.48 texts/sec | 9972.25 tokens/sec
+
+Processing batch #704 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0013s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9935.94 tokens/sec
+
+Processing batch #705 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0534s (tokenize: 0.0012s, model: 0.0523s)
+  Throughput: 18.72 texts/sec | 9585.95 tokens/sec
+
+Processing batch #706 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.60 texts/sec | 10036.28 tokens/sec
+
+Processing batch #707 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.60 texts/sec | 10035.35 tokens/sec
+
+Processing batch #708 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.58 texts/sec | 10023.03 tokens/sec
+
+Processing batch #709 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9982.63 tokens/sec
+
+Processing batch #710 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.54 texts/sec | 10005.28 tokens/sec
+
+Processing batch #711 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0014s, model: 0.0502s)
+  Throughput: 19.36 texts/sec | 9914.47 tokens/sec
+
+Processing batch #712 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0503s)
+  Throughput: 19.37 texts/sec | 9919.64 tokens/sec
+
+Processing batch #713 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.48 texts/sec | 9973.31 tokens/sec
+
+Processing batch #714 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.43 texts/sec | 9949.10 tokens/sec
+
+Processing batch #715 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.41 texts/sec | 9937.41 tokens/sec
+
+Processing batch #716 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.37 texts/sec | 9916.57 tokens/sec
+
+Processing batch #717 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0011s, model: 0.0507s)
+  Throughput: 19.31 texts/sec | 9887.99 tokens/sec
+
+Processing batch #718 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0010s, model: 0.0502s)
+  Throughput: 19.53 texts/sec | 10000.95 tokens/sec
+
+Processing batch #719 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.41 texts/sec | 9939.16 tokens/sec
+
+Processing batch #720 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.38 texts/sec | 9924.41 tokens/sec
+
+Processing batch #721 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.40 texts/sec | 9931.07 tokens/sec
+
+Processing batch #722 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9964.94 tokens/sec
+
+Processing batch #723 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.48 texts/sec | 9974.15 tokens/sec
+
+Processing batch #724 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.44 texts/sec | 9953.85 tokens/sec
+
+Processing batch #725 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.39 texts/sec | 9929.78 tokens/sec
+
+Processing batch #726 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0519s (tokenize: 0.0014s, model: 0.0505s)
+  Throughput: 19.27 texts/sec | 9864.28 tokens/sec
+
+Processing batch #727 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.40 texts/sec | 9932.17 tokens/sec
+
+Processing batch #728 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0519s (tokenize: 0.0012s, model: 0.0507s)
+  Throughput: 19.25 texts/sec | 9856.00 tokens/sec
+
+Processing batch #729 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0520s (tokenize: 0.0013s, model: 0.0507s)
+  Throughput: 19.24 texts/sec | 9851.48 tokens/sec
+
+Processing batch #730 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9965.17 tokens/sec
+
+Processing batch #731 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.38 texts/sec | 9923.68 tokens/sec
+
+Processing batch #732 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0519s (tokenize: 0.0012s, model: 0.0507s)
+  Throughput: 19.27 texts/sec | 9866.64 tokens/sec
+
+Processing batch #733 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0520s (tokenize: 0.0014s, model: 0.0506s)
+  Throughput: 19.25 texts/sec | 9854.96 tokens/sec
+
+Processing batch #734 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0519s (tokenize: 0.0012s, model: 0.0507s)
+  Throughput: 19.28 texts/sec | 9868.81 tokens/sec
+
+Processing batch #735 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9961.42 tokens/sec
+
+Processing batch #736 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9958.56 tokens/sec
+
+Processing batch #737 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0013s, model: 0.0502s)
+  Throughput: 19.43 texts/sec | 9947.44 tokens/sec
+
+Processing batch #738 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.47 texts/sec | 9971.14 tokens/sec
+
+Processing batch #739 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.39 texts/sec | 9925.24 tokens/sec
+
+Processing batch #740 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0014s, model: 0.0504s)
+  Throughput: 19.30 texts/sec | 9882.98 tokens/sec
+
+Processing batch #741 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.34 texts/sec | 9901.49 tokens/sec
+
+Processing batch #742 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0011s, model: 0.0499s)
+  Throughput: 19.60 texts/sec | 10036.85 tokens/sec
+
+Processing batch #743 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0013s, model: 0.0497s)
+  Throughput: 19.62 texts/sec | 10047.27 tokens/sec
+
+Processing batch #744 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0498s)
+  Throughput: 19.66 texts/sec | 10065.31 tokens/sec
+
+Processing batch #745 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0011s, model: 0.0499s)
+  Throughput: 19.61 texts/sec | 10038.11 tokens/sec
+
+Processing batch #746 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0507s (tokenize: 0.0011s, model: 0.0496s)
+  Throughput: 19.72 texts/sec | 10096.21 tokens/sec
+
+Processing batch #747 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0498s)
+  Throughput: 19.66 texts/sec | 10067.86 tokens/sec
+
+Processing batch #748 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.63 texts/sec | 10052.16 tokens/sec
+
+Processing batch #749 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9981.89 tokens/sec
+
+Processing batch #750 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0011s, model: 0.0499s)
+  Throughput: 19.60 texts/sec | 10037.27 tokens/sec
+
+Processing batch #751 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0499s)
+  Throughput: 19.57 texts/sec | 10021.72 tokens/sec
+
+Processing batch #752 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.64 texts/sec | 10054.80 tokens/sec
+
+Processing batch #753 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.48 texts/sec | 9973.92 tokens/sec
+
+Processing batch #754 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0506s)
+  Throughput: 19.33 texts/sec | 9896.42 tokens/sec
+
+Processing batch #755 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9983.37 tokens/sec
+
+Processing batch #756 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9962.12 tokens/sec
+
+Processing batch #757 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.36 texts/sec | 9914.24 tokens/sec
+
+Processing batch #758 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.56 texts/sec | 10013.68 tokens/sec
+
+Processing batch #759 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.57 texts/sec | 10018.30 tokens/sec
+
+Processing batch #760 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.63 texts/sec | 10050.52 tokens/sec
+
+Processing batch #761 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.58 texts/sec | 10027.15 tokens/sec
+
+Processing batch #762 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0507s (tokenize: 0.0011s, model: 0.0496s)
+  Throughput: 19.71 texts/sec | 10091.99 tokens/sec
+
+Processing batch #763 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0013s, model: 0.0498s)
+  Throughput: 19.58 texts/sec | 10026.63 tokens/sec
+
+Processing batch #764 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0539s (tokenize: 0.0012s, model: 0.0527s)
+  Throughput: 18.56 texts/sec | 9501.72 tokens/sec
+
+Processing batch #765 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0524s (tokenize: 0.0012s, model: 0.0512s)
+  Throughput: 19.07 texts/sec | 9766.39 tokens/sec
+
+Processing batch #766 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9935.61 tokens/sec
+
+Processing batch #767 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.35 texts/sec | 9908.80 tokens/sec
+
+Processing batch #768 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9945.28 tokens/sec
+
+Processing batch #769 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.40 texts/sec | 9935.29 tokens/sec
+
+Processing batch #770 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9945.46 tokens/sec
+
+Processing batch #771 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0519s (tokenize: 0.0012s, model: 0.0508s)
+  Throughput: 19.26 texts/sec | 9863.56 tokens/sec
+
+Processing batch #772 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0014s, model: 0.0503s)
+  Throughput: 19.35 texts/sec | 9905.18 tokens/sec
+
+Processing batch #773 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.54 texts/sec | 10003.04 tokens/sec
+
+Processing batch #774 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.40 texts/sec | 9933.55 tokens/sec
+
+Processing batch #775 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0013s, model: 0.0501s)
+  Throughput: 19.46 texts/sec | 9964.34 tokens/sec
+
+Processing batch #776 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0013s, model: 0.0498s)
+  Throughput: 19.55 texts/sec | 10011.72 tokens/sec
+
+Processing batch #777 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.57 texts/sec | 10018.77 tokens/sec
+
+Processing batch #778 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.56 texts/sec | 10012.65 tokens/sec
+
+Processing batch #779 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.53 texts/sec | 9998.90 tokens/sec
+
+Processing batch #780 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.47 texts/sec | 9969.89 tokens/sec
+
+Processing batch #781 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.55 texts/sec | 10008.78 tokens/sec
+
+Processing batch #782 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0011s, model: 0.0497s)
+  Throughput: 19.67 texts/sec | 10069.60 tokens/sec
+
+Processing batch #783 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.58 texts/sec | 10026.35 tokens/sec
+
+Processing batch #784 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.55 texts/sec | 10008.69 tokens/sec
+
+Processing batch #785 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0011s, model: 0.0499s)
+  Throughput: 19.62 texts/sec | 10047.60 tokens/sec
+
+Processing batch #786 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0498s)
+  Throughput: 19.65 texts/sec | 10059.13 tokens/sec
+
+Processing batch #787 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.42 texts/sec | 9941.78 tokens/sec
+
+Processing batch #788 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0013s, model: 0.0498s)
+  Throughput: 19.59 texts/sec | 10028.04 tokens/sec
+
+Processing batch #789 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.60 texts/sec | 10033.61 tokens/sec
+
+Processing batch #790 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.58 texts/sec | 10024.48 tokens/sec
+
+Processing batch #791 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.51 texts/sec | 9988.44 tokens/sec
+
+Processing batch #792 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9962.49 tokens/sec
+
+Processing batch #793 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9985.37 tokens/sec
+
+Processing batch #794 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.58 texts/sec | 10026.82 tokens/sec
+
+Processing batch #795 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0013s, model: 0.0502s)
+  Throughput: 19.41 texts/sec | 9939.62 tokens/sec
+
+Processing batch #796 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.59 texts/sec | 10032.25 tokens/sec
+
+Processing batch #797 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.51 texts/sec | 9991.08 tokens/sec
+
+Processing batch #798 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9982.86 tokens/sec
+
+Processing batch #799 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9976.88 tokens/sec
+
+Processing batch #800 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.63 texts/sec | 10051.97 tokens/sec
+
+Processing batch #801 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.37 texts/sec | 9918.73 tokens/sec
+
+Processing batch #802 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.37 texts/sec | 9917.40 tokens/sec
+
+Processing batch #803 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0503s)
+  Throughput: 19.38 texts/sec | 9921.16 tokens/sec
+
+Processing batch #804 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9985.00 tokens/sec
+
+Processing batch #805 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0504s)
+  Throughput: 19.36 texts/sec | 9913.32 tokens/sec
+
+Processing batch #806 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0014s, model: 0.0504s)
+  Throughput: 19.33 texts/sec | 9894.41 tokens/sec
+
+Processing batch #807 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0014s, model: 0.0504s)
+  Throughput: 19.30 texts/sec | 9881.89 tokens/sec
+
+Processing batch #808 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.48 texts/sec | 9971.37 tokens/sec
+
+Processing batch #809 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0547s (tokenize: 0.0013s, model: 0.0534s)
+  Throughput: 18.28 texts/sec | 9356.98 tokens/sec
+
+Processing batch #810 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.53 texts/sec | 9999.18 tokens/sec
+
+Processing batch #811 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.39 texts/sec | 9928.86 tokens/sec
+
+Processing batch #812 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9956.76 tokens/sec
+
+Processing batch #813 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0013s, model: 0.0500s)
+  Throughput: 19.49 texts/sec | 9977.99 tokens/sec
+
+Processing batch #814 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0503s)
+  Throughput: 19.36 texts/sec | 9913.78 tokens/sec
+
+Processing batch #815 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.49 texts/sec | 9979.20 tokens/sec
+
+Processing batch #816 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.59 texts/sec | 10029.58 tokens/sec
+
+Processing batch #817 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0014s, model: 0.0503s)
+  Throughput: 19.33 texts/sec | 9899.07 tokens/sec
+
+Processing batch #818 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0013s, model: 0.0504s)
+  Throughput: 19.32 texts/sec | 9890.50 tokens/sec
+
+Processing batch #819 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.47 texts/sec | 9969.84 tokens/sec
+
+Processing batch #820 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.43 texts/sec | 9947.95 tokens/sec
+
+Processing batch #821 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9962.90 tokens/sec
+
+Processing batch #822 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0539s (tokenize: 0.0012s, model: 0.0527s)
+  Throughput: 18.54 texts/sec | 9490.55 tokens/sec
+
+Processing batch #823 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.49 texts/sec | 9981.15 tokens/sec
+
+Processing batch #824 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.54 texts/sec | 10004.35 tokens/sec
+
+Processing batch #825 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0503s)
+  Throughput: 19.37 texts/sec | 9918.91 tokens/sec
+
+Processing batch #826 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0013s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9939.16 tokens/sec
+
+Processing batch #827 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.51 texts/sec | 9990.25 tokens/sec
+
+Processing batch #828 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9942.28 tokens/sec
+
+Processing batch #829 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.48 texts/sec | 9976.28 tokens/sec
+
+Processing batch #830 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.62 texts/sec | 10043.65 tokens/sec
+
+Processing batch #831 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0538s (tokenize: 0.0012s, model: 0.0525s)
+  Throughput: 18.60 texts/sec | 9522.70 tokens/sec
+
+Processing batch #832 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0530s (tokenize: 0.0013s, model: 0.0517s)
+  Throughput: 18.85 texts/sec | 9652.61 tokens/sec
+
+Processing batch #833 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0503s)
+  Throughput: 19.39 texts/sec | 9928.72 tokens/sec
+
+Processing batch #834 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0014s, model: 0.0503s)
+  Throughput: 19.34 texts/sec | 9899.80 tokens/sec
+
+Processing batch #835 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9978.74 tokens/sec
+
+Processing batch #836 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0013s, model: 0.0499s)
+  Throughput: 19.53 texts/sec | 10000.90 tokens/sec
+
+Processing batch #837 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0507s (tokenize: 0.0012s, model: 0.0495s)
+  Throughput: 19.72 texts/sec | 10094.36 tokens/sec
+
+Processing batch #838 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0013s, model: 0.0497s)
+  Throughput: 19.62 texts/sec | 10047.04 tokens/sec
+
+Processing batch #839 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0013s, model: 0.0498s)
+  Throughput: 19.59 texts/sec | 10030.33 tokens/sec
+
+Processing batch #840 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0014s, model: 0.0496s)
+  Throughput: 19.61 texts/sec | 10038.96 tokens/sec
+
+Processing batch #841 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.60 texts/sec | 10036.80 tokens/sec
+
+Processing batch #842 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.59 texts/sec | 10032.02 tokens/sec
+
+Processing batch #843 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.48 texts/sec | 9975.30 tokens/sec
+
+Processing batch #844 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0011s, model: 0.0499s)
+  Throughput: 19.60 texts/sec | 10033.56 tokens/sec
+
+Processing batch #845 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.64 texts/sec | 10053.62 tokens/sec
+
+Processing batch #846 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0014s, model: 0.0498s)
+  Throughput: 19.53 texts/sec | 9999.41 tokens/sec
+
+Processing batch #847 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0013s, model: 0.0496s)
+  Throughput: 19.62 texts/sec | 10047.69 tokens/sec
+
+Processing batch #848 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.63 texts/sec | 10051.83 tokens/sec
+
+Processing batch #849 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0497s)
+  Throughput: 19.66 texts/sec | 10065.07 tokens/sec
+
+Processing batch #850 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.45 texts/sec | 9956.07 tokens/sec
+
+Processing batch #851 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.55 texts/sec | 10007.43 tokens/sec
+
+Processing batch #852 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9977.58 tokens/sec
+
+Processing batch #853 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.52 texts/sec | 9995.78 tokens/sec
+
+Processing batch #854 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0503s)
+  Throughput: 19.37 texts/sec | 9915.25 tokens/sec
+
+Processing batch #855 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0014s, model: 0.0503s)
+  Throughput: 19.36 texts/sec | 9913.00 tokens/sec
+
+Processing batch #856 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0014s, model: 0.0500s)
+  Throughput: 19.43 texts/sec | 9946.94 tokens/sec
+
+Processing batch #857 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.48 texts/sec | 9971.23 tokens/sec
+
+Processing batch #858 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0521s (tokenize: 0.0012s, model: 0.0508s)
+  Throughput: 19.21 texts/sec | 9836.54 tokens/sec
+
+Processing batch #859 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0013s, model: 0.0502s)
+  Throughput: 19.42 texts/sec | 9942.56 tokens/sec
+
+Processing batch #860 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0015s, model: 0.0502s)
+  Throughput: 19.33 texts/sec | 9897.20 tokens/sec
+
+Processing batch #861 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.45 texts/sec | 9956.62 tokens/sec
+
+Processing batch #862 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.47 texts/sec | 9969.98 tokens/sec
+
+Processing batch #863 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9962.67 tokens/sec
+
+Processing batch #864 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0564s (tokenize: 0.0011s, model: 0.0553s)
+  Throughput: 17.73 texts/sec | 9076.81 tokens/sec
+
+Processing batch #865 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0534s (tokenize: 0.0012s, model: 0.0522s)
+  Throughput: 18.72 texts/sec | 9583.77 tokens/sec
+
+Processing batch #866 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9965.31 tokens/sec
+
+Processing batch #867 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.53 texts/sec | 10000.11 tokens/sec
+
+Processing batch #868 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.53 texts/sec | 9998.62 tokens/sec
+
+Processing batch #869 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.52 texts/sec | 9994.99 tokens/sec
+
+Processing batch #870 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0521s (tokenize: 0.0014s, model: 0.0507s)
+  Throughput: 19.19 texts/sec | 9825.47 tokens/sec
+
+Processing batch #871 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.38 texts/sec | 9921.57 tokens/sec
+
+Processing batch #872 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9936.63 tokens/sec
+
+Processing batch #873 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.59 texts/sec | 10030.85 tokens/sec
+
+Processing batch #874 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.34 texts/sec | 9900.80 tokens/sec
+
+Processing batch #875 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.39 texts/sec | 9926.80 tokens/sec
+
+Processing batch #876 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.40 texts/sec | 9931.02 tokens/sec
+
+Processing batch #877 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0503s)
+  Throughput: 19.43 texts/sec | 9948.36 tokens/sec
+
+Processing batch #878 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.41 texts/sec | 9937.13 tokens/sec
+
+Processing batch #879 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.55 texts/sec | 10010.46 tokens/sec
+
+Processing batch #880 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.51 texts/sec | 9990.85 tokens/sec
+
+Processing batch #881 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0526s (tokenize: 0.0012s, model: 0.0514s)
+  Throughput: 19.00 texts/sec | 9725.53 tokens/sec
+
+Processing batch #882 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0013s, model: 0.0501s)
+  Throughput: 19.45 texts/sec | 9958.01 tokens/sec
+
+Processing batch #883 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0013s, model: 0.0496s)
+  Throughput: 19.65 texts/sec | 10059.08 tokens/sec
+
+Processing batch #884 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.60 texts/sec | 10036.52 tokens/sec
+
+Processing batch #885 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.65 texts/sec | 10060.03 tokens/sec
+
+Processing batch #886 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.63 texts/sec | 10052.12 tokens/sec
+
+Processing batch #887 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0011s, model: 0.0498s)
+  Throughput: 19.64 texts/sec | 10054.47 tokens/sec
+
+Processing batch #888 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9939.75 tokens/sec
+
+Processing batch #889 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.48 texts/sec | 9973.50 tokens/sec
+
+Processing batch #890 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9981.56 tokens/sec
+
+Processing batch #891 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9978.55 tokens/sec
+
+Processing batch #892 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9952.79 tokens/sec
+
+Processing batch #893 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9956.39 tokens/sec
+
+Processing batch #894 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9962.76 tokens/sec
+
+Processing batch #895 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0013s, model: 0.0501s)
+  Throughput: 19.48 texts/sec | 9971.41 tokens/sec
+
+Processing batch #896 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.60 texts/sec | 10034.50 tokens/sec
+
+Processing batch #897 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0525s (tokenize: 0.0012s, model: 0.0513s)
+  Throughput: 19.04 texts/sec | 9750.87 tokens/sec
+
+Processing batch #898 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0553s (tokenize: 0.0014s, model: 0.0539s)
+  Throughput: 18.08 texts/sec | 9259.03 tokens/sec
+
+Processing batch #899 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.64 texts/sec | 10058.19 tokens/sec
+
+Processing batch #900 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.53 texts/sec | 9998.34 tokens/sec
+
+Processing batch #901 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0013s, model: 0.0498s)
+  Throughput: 19.57 texts/sec | 10019.05 tokens/sec
+
+Processing batch #902 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0013s, model: 0.0497s)
+  Throughput: 19.62 texts/sec | 10043.18 tokens/sec
+
+Processing batch #903 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.66 texts/sec | 10065.35 tokens/sec
+
+Processing batch #904 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0507s (tokenize: 0.0012s, model: 0.0495s)
+  Throughput: 19.72 texts/sec | 10097.20 tokens/sec
+
+Processing batch #905 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.60 texts/sec | 10036.99 tokens/sec
+
+Processing batch #906 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0012s, model: 0.0496s)
+  Throughput: 19.69 texts/sec | 10080.05 tokens/sec
+
+Processing batch #907 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0013s, model: 0.0496s)
+  Throughput: 19.64 texts/sec | 10056.07 tokens/sec
+
+Processing batch #908 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.55 texts/sec | 10009.99 tokens/sec
+
+Processing batch #909 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0506s (tokenize: 0.0011s, model: 0.0495s)
+  Throughput: 19.75 texts/sec | 10111.28 tokens/sec
+
+Processing batch #910 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.63 texts/sec | 10048.82 tokens/sec
+
+Processing batch #911 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0011s, model: 0.0497s)
+  Throughput: 19.69 texts/sec | 10081.94 tokens/sec
+
+Processing batch #912 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0507s (tokenize: 0.0012s, model: 0.0496s)
+  Throughput: 19.71 texts/sec | 10089.90 tokens/sec
+
+Processing batch #913 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0013s, model: 0.0498s)
+  Throughput: 19.58 texts/sec | 10026.86 tokens/sec
+
+Processing batch #914 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0507s (tokenize: 0.0011s, model: 0.0496s)
+  Throughput: 19.71 texts/sec | 10089.05 tokens/sec
+
+Processing batch #915 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.65 texts/sec | 10058.99 tokens/sec
+
+Processing batch #916 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0012s, model: 0.0496s)
+  Throughput: 19.69 texts/sec | 10081.47 tokens/sec
+
+Processing batch #917 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0012s, model: 0.0496s)
+  Throughput: 19.70 texts/sec | 10086.39 tokens/sec
+
+Processing batch #918 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0013s, model: 0.0497s)
+  Throughput: 19.60 texts/sec | 10036.24 tokens/sec
+
+Processing batch #919 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.53 texts/sec | 9999.64 tokens/sec
+
+Processing batch #920 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.56 texts/sec | 10013.12 tokens/sec
+
+Processing batch #921 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.65 texts/sec | 10062.57 tokens/sec
+
+Processing batch #922 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.63 texts/sec | 10049.43 tokens/sec
+
+Processing batch #923 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0011s, model: 0.0496s)
+  Throughput: 19.69 texts/sec | 10080.76 tokens/sec
+
+Processing batch #924 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0011s, model: 0.0497s)
+  Throughput: 19.68 texts/sec | 10074.04 tokens/sec
+
+Processing batch #925 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0510s (tokenize: 0.0012s, model: 0.0498s)
+  Throughput: 19.62 texts/sec | 10046.33 tokens/sec
+
+Processing batch #926 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0508s (tokenize: 0.0012s, model: 0.0496s)
+  Throughput: 19.70 texts/sec | 10085.82 tokens/sec
+
+Processing batch #927 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0013s, model: 0.0499s)
+  Throughput: 19.53 texts/sec | 9999.46 tokens/sec
+
+Processing batch #928 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0013s, model: 0.0504s)
+  Throughput: 19.35 texts/sec | 9908.98 tokens/sec
+
+Processing batch #929 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.54 texts/sec | 10002.25 tokens/sec
+
+Processing batch #930 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0520s (tokenize: 0.0011s, model: 0.0508s)
+  Throughput: 19.24 texts/sec | 9848.45 tokens/sec
+
+Processing batch #931 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0500s)
+  Throughput: 19.53 texts/sec | 9998.53 tokens/sec
+
+Processing batch #932 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0509s (tokenize: 0.0012s, model: 0.0497s)
+  Throughput: 19.66 texts/sec | 10063.66 tokens/sec
+
+Processing batch #933 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.40 texts/sec | 9931.43 tokens/sec
+
+Processing batch #934 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.40 texts/sec | 9932.67 tokens/sec
+
+Processing batch #935 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9977.90 tokens/sec
+
+Processing batch #936 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.48 texts/sec | 9975.54 tokens/sec
+
+Processing batch #937 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.47 texts/sec | 9966.79 tokens/sec
+
+Processing batch #938 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.48 texts/sec | 9976.23 tokens/sec
+
+Processing batch #939 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0528s (tokenize: 0.0011s, model: 0.0516s)
+  Throughput: 18.95 texts/sec | 9704.12 tokens/sec
+
+Processing batch #940 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.32 texts/sec | 9891.32 tokens/sec
+
+Processing batch #941 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.46 texts/sec | 9964.47 tokens/sec
+
+Processing batch #942 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9963.09 tokens/sec
+
+Processing batch #943 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0012s, model: 0.0499s)
+  Throughput: 19.56 texts/sec | 10016.11 tokens/sec
+
+Processing batch #944 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0517s (tokenize: 0.0012s, model: 0.0505s)
+  Throughput: 19.33 texts/sec | 9896.65 tokens/sec
+
+Processing batch #945 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9945.51 tokens/sec
+
+Processing batch #946 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0013s, model: 0.0500s)
+  Throughput: 19.46 texts/sec | 9963.32 tokens/sec
+
+Processing batch #947 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9959.81 tokens/sec
+
+Processing batch #948 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0011s, model: 0.0502s)
+  Throughput: 19.47 texts/sec | 9969.10 tokens/sec
+
+Processing batch #949 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0011s, model: 0.0500s)
+  Throughput: 19.55 texts/sec | 10007.89 tokens/sec
+
+Processing batch #950 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0011s, model: 0.0501s)
+  Throughput: 19.51 texts/sec | 9987.60 tokens/sec
+
+Processing batch #951 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0011s, model: 0.0504s)
+  Throughput: 19.42 texts/sec | 9941.18 tokens/sec
+
+Processing batch #952 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0013s, model: 0.0501s)
+  Throughput: 19.43 texts/sec | 9946.98 tokens/sec
+
+Processing batch #953 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.44 texts/sec | 9954.68 tokens/sec
+
+Processing batch #954 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.47 texts/sec | 9969.75 tokens/sec
+
+Processing batch #955 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.48 texts/sec | 9971.51 tokens/sec
+
+Processing batch #956 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.41 texts/sec | 9939.62 tokens/sec
+
+Processing batch #957 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0503s)
+  Throughput: 19.42 texts/sec | 9942.97 tokens/sec
+
+Processing batch #958 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9962.90 tokens/sec
+
+Processing batch #959 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.38 texts/sec | 9921.98 tokens/sec
+
+Processing batch #960 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9986.11 tokens/sec
+
+Processing batch #961 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0515s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.42 texts/sec | 9944.86 tokens/sec
+
+Processing batch #962 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.46 texts/sec | 9964.84 tokens/sec
+
+Processing batch #963 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0519s (tokenize: 0.0012s, model: 0.0507s)
+  Throughput: 19.26 texts/sec | 9860.57 tokens/sec
+
+Processing batch #964 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9952.01 tokens/sec
+
+Processing batch #965 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0518s (tokenize: 0.0013s, model: 0.0505s)
+  Throughput: 19.31 texts/sec | 9884.85 tokens/sec
+
+Processing batch #966 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.47 texts/sec | 9969.52 tokens/sec
+
+Processing batch #967 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9959.48 tokens/sec
+
+Processing batch #968 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.44 texts/sec | 9951.91 tokens/sec
+
+Processing batch #969 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0012s, model: 0.0504s)
+  Throughput: 19.40 texts/sec | 9931.34 tokens/sec
+
+Processing batch #970 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9979.01 tokens/sec
+
+Processing batch #971 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0516s (tokenize: 0.0013s, model: 0.0503s)
+  Throughput: 19.38 texts/sec | 9921.11 tokens/sec
+
+Processing batch #972 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.47 texts/sec | 9971.09 tokens/sec
+
+Processing batch #973 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0514s (tokenize: 0.0012s, model: 0.0502s)
+  Throughput: 19.45 texts/sec | 9958.33 tokens/sec
+
+Processing batch #974 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.49 texts/sec | 9978.27 tokens/sec
+
+Processing batch #975 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0513s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.50 texts/sec | 9983.23 tokens/sec
+
+Processing batch #976 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0511s (tokenize: 0.0011s, model: 0.0499s)
+  Throughput: 19.59 texts/sec | 10028.64 tokens/sec
+
+Processing batch #977 of size 1
+  Token count: 512 tokens
+  Batch time: 0.0512s (tokenize: 0.0012s, model: 0.0501s)
+  Throughput: 19.51 texts/sec | 9991.50 tokens/sec
+
+Processing batch #978 of size 1
+  Token count: 256 tokens
+  Batch time: 0.0415s (tokenize: 0.0007s, model: 0.0408s)
+  Throughput: 24.08 texts/sec | 6165.19 tokens/sec
+
+==================================================
+Benchmark Summary:
+  Device: CPU
+  Total texts processed: 978
+  Total tokens processed: 500480
+  Total batches: 978
+  Total time: 50.36 seconds
+  Average throughput: 19.42 texts/sec
+  Average throughput: 9938.34 tokens/sec
+==================================================
