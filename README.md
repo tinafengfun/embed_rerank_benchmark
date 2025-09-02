@@ -1,5 +1,5 @@
-#director structure
-.
+**Director structure**
+
 ├── 21st_strip.txt  [H3C dataset]
 ├── batch_benchmark.sh [Benchmark bash entry]
 ├── calc_p99.awk
@@ -7,7 +7,10 @@
 ├── embedding [embedding model]
 ├── stress_benchmark.py [benchmark scripts]
 ├── stress.sh [Benchmark bash entry]
-Gaudi benchmark
+
+
+
+**Gaudi benchmark** 
 1. steps:
 start service by docker-compose, then stress the API with different concurrency and prompt length.
 2. Reference scripts
@@ -22,8 +25,8 @@ for far embedding and rerank service can't work on the same node simutaneousely.
  
 
 
-Xeon benchmark 
-=======================================================================
+**Xeon benchmark** 
+
 How to test
 1. Pull docker and setup service (TEI)
 cd ./embedding
@@ -31,27 +34,32 @@ update .env
 docker compose up --build -d 
 
 2. Make sure API works
- curl -v http://10.239.241.85:32582/v1/embeddings  -X POST  -d '{"input":"What is Deep Learning?"}'             -H 'Content-Type: application/json'
 
-Embedding Performance benchmarking
-CPU:
+'''
+ bash
+ curl -v http://10.239.241.85:32582/v1/embeddings  -X POST  -d '{"input":"What is Deep Learning?"}'             -H 'Content-Type: application/json'
+'''
+
+
+3. Embedding Performance benchmarking
 please refer to loop.sh, stress.sh and  stress_benchmark.py
-sample like this. 
+sample like this.
+
+'''
 for user in 1 4 8 16 32 48 64;
  do
       bash stress.sh embedding $user 2>&1 | tee -a xeon_${model}_${user}_$(date '+%Y%m%d_%H%M%S').log
 done
-HPU
-please refer to loop_hpu.sh for reference
-Parameters in loop_hpu.sh
-
+'''
 
 
 
 Rerank Performance benchmarking
 
 please refer to loop_rerank.sh and ./rerank_bench for detail. 
-A basic usage 
+A basic usage
+
+'''
  cd rerank_bench/
    for user in 1 4 8 16 32 48 64;
     do
@@ -63,9 +71,9 @@ A basic usage
                   --num-queries 1000 --concurrency $user --dataset token_len_1000.json \
                            2>&1 | tee -a xeon_1000_${model}_${user}_$(date '+%Y%m%d_%H%M%S').log
     done
+'''
 
-
-
+'''
 cd rerank_bench
 python concurrent_bench.py --task tei_rerank --url http://192.168.123.103:18080/rerank --num-queries 1
  python concurrent_bench.py -h
@@ -86,7 +94,7 @@ python concurrent_bench.py --task tei_rerank --url http://192.168.123.103:18080/
      每个请求包含的文本块数量 仅对tei_rerank任务有效 示例: 2 = 每个请求包含[chunk1, chunk2] (default: 1)
      --concurrency {1,2,4,8,16,32,64}
      并发连接数 (default: 1)
-
+'''
 
 
 
