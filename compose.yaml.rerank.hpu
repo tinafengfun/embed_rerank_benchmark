@@ -1,0 +1,35 @@
+# Copyright (C) 2025 Intel Corporation
+# SPDX-License-Identifier: Apache-2.0
+# image: ghcr.io/huggingface/text-embeddings-inference:cpu-1.6
+
+services:
+  tei-reranking-serving:
+    image: tei_hpu_0729:latest
+    container_name: tei-reranking-serving 
+    entrypoint: /bin/sh -c "text-embeddings-router --json-output --model-id ${RERANK_MODEL_ID} --dtype bfloat16 --auto-truncate"
+    pull_policy: never
+    ports:
+      - "${TEI_RERANKING_PORT:-12007}:80"
+    volumes:
+      - "${DATA_PATH:-./data}:/data"
+    shm_size: 20g
+    #cpuset: "24-55,136-167"
+    environment:
+      host_ip: ${host_ip}
+      HABANA_VISIBLE_DEVICES: 6 
+      OMPI_MCA_btl_vader_single_copy_mechanism: none
+      MAX_WARMUP_SEQUENCE_LENGTH: ${warmup_length}
+      MAX_WARMUP_BATCH_SIZE: 8
+      MAX_CLIENT_BATCH_SIZE: 64
+      MAX_BATCH_REQUESTS: 8
+      DISABLE_TENSOR_CACHE: True
+      #POOLING: ${pooling}
+      #PAD_SEQUENCE_TO_MULTIPLE_OF: 1024
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/health"]
+      interval: 10s
+      timeout: 6s
+      retries: 48
+
+
+
