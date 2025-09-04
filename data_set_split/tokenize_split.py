@@ -12,13 +12,13 @@ from transformers import AutoTokenizer
 import sys
 import os
 
-def load_bge_m3_tokenizer():
+def load_bge_m3_tokenizer(model_path:str):
     """Load the bge-m3 tokenizer."""
     try:
-        tokenizer = AutoTokenizer.from_pretrained('/model/bge-m3')
+        tokenizer = AutoTokenizer.from_pretrained(model_path)
         return tokenizer
     except Exception as e:
-        logging.error(f"Failed to load bge-m3 tokenizer: {e}")
+        logging.error(f"Failed to load {model_path} tokenizer: {e}")
         logging.info("Attempting to use alternative method...")
         
         # Try using sentence-transformers as fallback
@@ -131,6 +131,7 @@ def main():
     parser.add_argument("--output", "-o", help="Output file path (default: input_file_tokenized.json)")
     parser.add_argument("--length", "-l", type=int, default=512, help="Token length per chunk (default: 512)")
     parser.add_argument("--verbose", "-v", action="store_true", help="Enable verbose logging")
+    parser.add_argument("--model", "-m", htype=str, default="BAAI/bge-m3",help="Tokenizer model")
     
     args = parser.parse_args()
     
@@ -148,7 +149,7 @@ def main():
     try:
         # Load tokenizer
         logging.info("Loading bge-m3 tokenizer...")
-        tokenizer = load_bge_m3_tokenizer()
+        tokenizer = load_bge_m3_tokenizer(args.model)
         logging.info("Tokenizer loaded successfully")
         
         # Process the file
