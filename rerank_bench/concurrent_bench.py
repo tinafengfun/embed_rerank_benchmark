@@ -142,6 +142,11 @@ def send_concurrency_requests_zh(task, request_url, num_queries, num_chunk, conc
     err_total = numpy.sum(response_error)
     print("Total error request is ", err_total)
 
+    req_total = numpy.sum(response_times)
+    req_num = len(response_times) - err_total
+    qps = req_num/req_total
+    print("QPS is ", qps)
+
     return avg_total, p50_total, p90_total, p99_total
 
 def parse_args():
