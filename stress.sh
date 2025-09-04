@@ -12,7 +12,7 @@ RERANKING_QUERIES=/u01/project/rag/benchmark/reranking/rerank_queries.jsonl
 THIS_CPU_LIST=58-65
 OPEA_NAMESPACE=opea-xim
 
-BENCHMARK_DURATION=5m
+BENCHMARK_DURATION=8m
 BENCHMAKR_USERS=$2
 EMBEDDING_QUERIES=$3
 BENCHMAKR_FILE_FORMAT=$4
@@ -37,7 +37,7 @@ echo "Run ${BENCHMARK} with queries ${BENCHMARK_QUERIES}, ${BENCHMAKR_USERS} use
 #NOW=$(date -Iseconds)
 NOW=$(date +%m%d-%H%M)
 
-HF_ENDPOINT=https://hf-mirror.com taskset -c ${THIS_CPU_LIST} python3 stress_benchmark.py -c ${BENCHMAKR_USERS}  -d ${BENCHMARK_DURATION} -t ${BENCHMARK} -s ${BENCHMARK_ENDPOINT} -u 1s -f ${BENCHMARK_QUERIES} -j ${BENCHMAKR_FILE_FORMAT} -m /model/bge-m3 &
+HF_ENDPOINT=https://hf-mirror.com taskset -c ${THIS_CPU_LIST} python3 stress_benchmark.py -c ${BENCHMAKR_USERS}  -d ${BENCHMARK_DURATION} -t ${BENCHMARK} -s ${BENCHMARK_ENDPOINT} -u 1s -f ${BENCHMARK_QUERIES} -j ${BENCHMAKR_FILE_FORMAT} -m ${DATA_PATH}/${H_model} &
 BENCHMARK_PID=$!
 
 RUNNING=1
