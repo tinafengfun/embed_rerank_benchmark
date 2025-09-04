@@ -1,15 +1,16 @@
 #!/bin/bash
 #set -x
 #CONTAINER_NAME=tei-embedding-serving
+unset http_proxy
+unset https_proxy
+unset HTTPS_PROXY
+unset HTTP_PROXY
 CONTAINER_NAME=tei-embedding-serving
-export DATA_PATH=/model/
+export DATA_PATH=/mnt/disk1/models
 COMPOSE_FILE=`pwd`/compose.yaml.hpu
 export host_ip=127.0.0.1
-#for model in bge-large-zh-v1.5;
-#for model in bge-base-zh-v1.5 bge-large-zh-v1.5 bge-m3 Qwen3-Embedding-0.6B Qwen3-Embedding-4B Qwen3-Embedding-8B;
-#for model in bge-m3 ;
-for model in Qwen3-Embedding-0.6B Qwen3-Embedding-4B Qwen3-Embedding-8B;
-#for model in Qwen3-Embedding-0.6B;
+for model in bge-base-zh-v1.5 bge-large-zh-v1.5 bge-m3 Qwen3-Embedding-0.6B Qwen3-Embedding-4B Qwen3-Embedding-8B gte-modernbert-base;
+#for model in gte-modernbert-base;
 do
 # delete docker
 echo "Stopping and removing existing container..."
@@ -19,6 +20,7 @@ if docker ps -a --format '{{.Names}}' | grep -q "^${CONTAINER_NAME}$"; then
         echo "Error: Failed to remove container $CONTAINER_NAME"
             exit 1
 fi
+export H_model=$model                                               
 export EMBEDDING_MODEL_ID=/data/$model
 case $model in
 	bge-base-zh-v1.5|bge-large-zh-v1.5)
@@ -27,11 +29,10 @@ case $model in
                 ;;
        bge-m3)
 		length=2048
-#		files=(21_512.json 21_1024.json 21_4096.json 21_8192.json)
-		files=(21_4096.json 21_8192.json)
+		files=(21_512.json 21_1024.json 21_4096.json 21_8192.json)
                 ;;
        *)
-		length=2048
+		length=4096
 		files=(21_4096.json 21_8192.json)
                 ;;
 esac
@@ -68,9 +69,9 @@ for file in "${files[@]}"; do
 for user in 1 4 8 16 32 64;
 #for user in 1;
 do
-    echo "----star test $model $file $user"
+    echo "----start test $model $file $user"
     prefix=$(basename "$file" .json)
-#    bash stress.sh embedding $user $file json 2>&1 | tee -a embed_result/1_hpu_${model}_${prefix}_${user}_$(date '+%Y%m%d_%H%M%S').log
+    bash stress.sh embedding $user $file json 2>&1 | tee -a embed_result/1_hpu_${model}_${prefix}_${user}_$(date '+%Y%m%d_%H%M%S').log
     bash stress.sh embedding $user $file json 2>&1 | tee -a embed_result/hpu_${model}_${prefix}_${user}_$(date '+%Y%m%d_%H%M%S').log
 done
 done
