@@ -1,11 +1,12 @@
 # Copyright (C) 2025 Intel Corporation
 # SPDX-License-Identifier: Apache-2.0
 # image: ghcr.io/huggingface/text-embeddings-inference:cpu-1.6
-
+version: '3.8'
 services:
-  tei-reranking-serving:
+  tei-embedding-serving:
     image: tei_hpu_0729:latest
     container_name: tei-embedding-serving
+    runtime: habana
     entrypoint: /bin/sh -c "text-embeddings-router --json-output --model-id ${EMBEDDING_MODEL_ID} --dtype bfloat16 --auto-truncate"
     pull_policy: never
     ports:
@@ -16,13 +17,13 @@ services:
     #cpuset: "24-55,136-167"
     environment:
       host_ip: ${host_ip}
-      HABANA_VISIBLE_DEVICES: 2
+      HABANA_VISIBLE_DEVICES: 0
       OMPI_MCA_btl_vader_single_copy_mechanism: none
       MAX_WARMUP_SEQUENCE_LENGTH: ${warmup_length}
       MAX_WARMUP_BATCH_SIZE: 16
       MAX_CLIENT_BATCH_SIZE: 64
       MAX_BATCH_REQUESTS: 16 
-      DISABLE_TENSOR_CACHE: True
+      #DISABLE_TENSOR_CACHE: True
       #POOLING: ${pooling}
       #PAD_SEQUENCE_TO_MULTIPLE_OF: 1024
     healthcheck:
